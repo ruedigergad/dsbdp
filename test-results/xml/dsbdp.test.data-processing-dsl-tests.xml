@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dsbdp.test.data-processing-dsl-tests" errors="0" failures="0" tests="23" time="0.1118" timestamp="2016-03-15_22:10:53+0100">
+    <testcase name="incremental-byte-array-to-json-str-test" classname="dsbdp.test.data-processing-dsl-tests" time="0.0117">
+    </testcase>
+    <testcase name="byte-array-to-java-map-with-additional-operation-and-two-data-values-test" classname="dsbdp.test.data-processing-dsl-tests" time="0.0026">
+    </testcase>
+    <testcase name="combine-proc-fns-nth-test" classname="dsbdp.test.data-processing-dsl-tests" time="0.0026">
+    </testcase>
+    <testcase name="byte-array-to-clj-map-test" classname="dsbdp.test.data-processing-dsl-tests" time="0.0014">
+    </testcase>
+    <testcase name="byte-array-to-csv-str-test" classname="dsbdp.test.data-processing-dsl-tests" time="0.0033">
+    </testcase>
+    <testcase name="output-type-defaults-to-java-map-test" classname="dsbdp.test.data-processing-dsl-tests" time="0.0025">
+    </testcase>
+    <testcase name="incremental-byte-array-to-clj-map-test" classname="dsbdp.test.data-processing-dsl-tests" time="0.0019">
+    </testcase>
+    <testcase name="byte-array-to-java-map-test" classname="dsbdp.test.data-processing-dsl-tests" time="0.0027">
+    </testcase>
+    <testcase name="dsl-expression-to-combined-function-vector-test-1" classname="dsbdp.test.data-processing-dsl-tests" time="0.0092">
+    </testcase>
+    <testcase name="byte-array-to-java-map-with-additional-operation-test" classname="dsbdp.test.data-processing-dsl-tests" time="0.0026">
+    </testcase>
+    <testcase name="combine-proc-fns-1st-test" classname="dsbdp.test.data-processing-dsl-tests" time="0.0015">
+    </testcase>
+    <testcase name="clojure-map-to-java-map-with-additional-operation-and-two-data-values-test" classname="dsbdp.test.data-processing-dsl-tests" time="0.0026">
+    </testcase>
+    <testcase name="byte-array-to-json-str-test" classname="dsbdp.test.data-processing-dsl-tests" time="0.0081">
+    </testcase>
+    <testcase name="incremental-byte-array-to-csv-str-test" classname="dsbdp.test.data-processing-dsl-tests" time="0.0026">
+    </testcase>
+    <testcase name="clojure-vector-to-java-map-with-additional-operation-and-two-data-values-test" classname="dsbdp.test.data-processing-dsl-tests" time="0.0021">
+    </testcase>
+    <testcase name="clojure-list-to-java-map-with-additional-operation-and-two-data-values-test" classname="dsbdp.test.data-processing-dsl-tests" time="0.0021">
+    </testcase>
+    <testcase name="simple-documenation-example-test-1" classname="dsbdp.test.data-processing-dsl-tests" time="0.0251">
+    </testcase>
+    <testcase name="byte-array-to-json-str-qm-test" classname="dsbdp.test.data-processing-dsl-tests" time="0.0069">
+    </testcase>
+    <testcase name="byte-array-to-java-map-with-additional-operation-and-float-type-test" classname="dsbdp.test.data-processing-dsl-tests" time="0.0031">
+    </testcase>
+    <testcase name="java-map-to-java-map-with-additional-operation-and-two-data-values-test" classname="dsbdp.test.data-processing-dsl-tests" time="0.0020">
+    </testcase>
+    <testcase name="java-list-to-java-map-with-additional-operation-and-two-data-values-test" classname="dsbdp.test.data-processing-dsl-tests" time="0.0020">
+    </testcase>
+    <testcase name="incremental-byte-array-to-java-map-test" classname="dsbdp.test.data-processing-dsl-tests" time="0.0024">
+    </testcase>
+    <testcase name="byte-array-to-csv-str-qm-test" classname="dsbdp.test.data-processing-dsl-tests" time="0.0037">
+    </testcase>
+</testsuite>

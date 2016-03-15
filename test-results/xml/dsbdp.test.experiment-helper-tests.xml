@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dsbdp.test.experiment-helper-tests" errors="0" failures="0" tests="8" time="0.1554" timestamp="2016-03-15_22:10:53+0100">
+    <testcase name="busy-sleep-proc-fns-test-1" classname="dsbdp.test.experiment-helper-tests" time="0.0619">
+    </testcase>
+    <testcase name="create-inc-proc-fns-test" classname="dsbdp.test.experiment-helper-tests" time="0.0172">
+    </testcase>
+    <testcase name="factorial-test" classname="dsbdp.test.experiment-helper-tests" time="0.0013">
+    </testcase>
+    <testcase name="create-no-op-proc-fns-test" classname="dsbdp.test.experiment-helper-tests" time="0.0141">
+    </testcase>
+    <testcase name="busy-sleep-test-1" classname="dsbdp.test.experiment-helper-tests" time="0.0006">
+    </testcase>
+    <testcase name="busy-sleep-test-2" classname="dsbdp.test.experiment-helper-tests" time="0.0015">
+    </testcase>
+    <testcase name="create-factorial-proc-fns-test" classname="dsbdp.test.experiment-helper-tests" time="0.0172">
+    </testcase>
+    <testcase name="create-hashmap-inc-put-proc-fns-test" classname="dsbdp.test.experiment-helper-tests" time="0.0391">
+    </testcase>
+</testsuite>

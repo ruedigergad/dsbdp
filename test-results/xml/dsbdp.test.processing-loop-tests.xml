@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dsbdp.test.processing-loop-tests" errors="0" failures="0" tests="2" time="0.1058" timestamp="2016-03-15_22:10:54+0100">
+    <testcase name="simple-processing-loop-test" classname="dsbdp.test.processing-loop-tests" time="0.0012">
+    </testcase>
+    <testcase name="simple-processing-loop-interrupt-test" classname="dsbdp.test.processing-loop-tests" time="0.1037">
+    </testcase>
+</testsuite>

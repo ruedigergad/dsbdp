@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dsbdp.test.byte-array-conversion-tests" errors="0" failures="0" tests="15" time="0.0173" timestamp="2016-03-15_22:10:53+0100">
+    <testcase name="int32-conversion-test" classname="dsbdp.test.byte-array-conversion-tests" time="0.0020">
+    </testcase>
+    <testcase name="int16-conversion-test" classname="dsbdp.test.byte-array-conversion-tests" time="0.0003">
+    </testcase>
+    <testcase name="int4l-conversion-test" classname="dsbdp.test.byte-array-conversion-tests" time="0.0002">
+    </testcase>
+    <testcase name="timestamp-be-conversion-test" classname="dsbdp.test.byte-array-conversion-tests" time="0.0003">
+    </testcase>
+    <testcase name="int32be-conversion-test" classname="dsbdp.test.byte-array-conversion-tests" time="0.0002">
+    </testcase>
+    <testcase name="eth-mac-addr-str-conversion-test-1" classname="dsbdp.test.byte-array-conversion-tests" time="0.0003">
+    </testcase>
+    <testcase name="timestamp-str-conversion-test" classname="dsbdp.test.byte-array-conversion-tests" time="0.0009">
+    </testcase>
+    <testcase name="timestamp-str-be-conversion-test" classname="dsbdp.test.byte-array-conversion-tests" time="0.0003">
+    </testcase>
+    <testcase name="int8-conversion-test" classname="dsbdp.test.byte-array-conversion-tests" time="0.0002">
+    </testcase>
+    <testcase name="timestamp-conversion-test" classname="dsbdp.test.byte-array-conversion-tests" time="0.0002">
+    </testcase>
+    <testcase name="eth-mac-addr-str-conversion-test-2" classname="dsbdp.test.byte-array-conversion-tests" time="0.0003">
+    </testcase>
+    <testcase name="int4h-conversion-test" classname="dsbdp.test.byte-array-conversion-tests" time="0.0002">
+    </testcase>
+    <testcase name="ipv4-addr-str-conversion-test-1" classname="dsbdp.test.byte-array-conversion-tests" time="0.0003">
+    </testcase>
+    <testcase name="int16be-conversion-test" classname="dsbdp.test.byte-array-conversion-tests" time="0.0002">
+    </testcase>
+    <testcase name="ipv4-addr-str-conversion-test-2" classname="dsbdp.test.byte-array-conversion-tests" time="0.0002">
+    </testcase>
+</testsuite>

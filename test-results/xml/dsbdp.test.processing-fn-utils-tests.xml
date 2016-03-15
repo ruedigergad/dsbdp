@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dsbdp.test.processing-fn-utils-tests" errors="0" failures="0" tests="14" time="0.1132" timestamp="2016-03-15_22:10:54+0100">
+    <testcase name="simple-create-proc-fn-vec-from-template-test" classname="dsbdp.test.processing-fn-utils-tests" time="0.0120">
+    </testcase>
+    <testcase name="create-proc-fn-vec-from-template-with-ret-val-test" classname="dsbdp.test.processing-fn-utils-tests" time="0.0132">
+    </testcase>
+    <testcase name="calculate-distribution-mapping-8-to-4-test" classname="dsbdp.test.processing-fn-utils-tests" time="0.0007">
+    </testcase>
+    <testcase name="calculate-distribution-mapping-12-to-4-skewed-test-2" classname="dsbdp.test.processing-fn-utils-tests" time="0.0002">
+    </testcase>
+    <testcase name="calculate-distribution-mapping-12-to-4-skewed-test-1" classname="dsbdp.test.processing-fn-utils-tests" time="0.0002">
+    </testcase>
+    <testcase name="simple-combine-proc-fns-nth-test" classname="dsbdp.test.processing-fn-utils-tests" time="0.0244">
+    </testcase>
+    <testcase name="create-proc-fn-vec-from-template-with-index-test" classname="dsbdp.test.processing-fn-utils-tests" time="0.0097">
+    </testcase>
+    <testcase name="simple-combine-proc-fns-vec-test" classname="dsbdp.test.processing-fn-utils-tests" time="0.0239">
+    </testcase>
+    <testcase name="calculate-distribution-mapping-4-to-4-test" classname="dsbdp.test.processing-fn-utils-tests" time="0.0002">
+    </testcase>
+    <testcase name="calculate-distribution-mapping-15-to-4-skewed-fill-end-test" classname="dsbdp.test.processing-fn-utils-tests" time="0.0002">
+    </testcase>
+    <testcase name="calculate-distribution-mapping-6-to-4-skewed-test" classname="dsbdp.test.processing-fn-utils-tests" time="0.0002">
+    </testcase>
+    <testcase name="simple-combine-proc-fns-1st-test" classname="dsbdp.test.processing-fn-utils-tests" time="0.0246">
+    </testcase>
+    <testcase name="calculate-distribution-mapping-15-to-4-skewed-test" classname="dsbdp.test.processing-fn-utils-tests" time="0.0002">
+    </testcase>
+    <testcase name="calculate-distribution-mapping-6-to-4-uniform-test" classname="dsbdp.test.processing-fn-utils-tests" time="0.0002">
+    </testcase>
+</testsuite>

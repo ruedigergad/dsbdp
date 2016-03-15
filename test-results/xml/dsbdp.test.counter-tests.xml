@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dsbdp.test.counter-tests" errors="0" failures="0" tests="2" time="0.0031" timestamp="2016-03-15_22:10:53+0100">
+    <testcase name="simple-counter-increment-test" classname="dsbdp.test.counter-tests" time="0.0007">
+    </testcase>
+    <testcase name="simple-counter-reset-test" classname="dsbdp.test.counter-tests" time="0.0013">
+    </testcase>
+</testsuite>

@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" id="0" name="byte-array-conversion-tests" package="dsbdp.test" tests="15" time="0.0173" timestamp="2016-03-15_22:10:53+0100">
+        <testcase classname="dsbdp.test.byte-array-conversion-tests" name="int32-conversion-test" time="0.0020">
+    </testcase>
+
+        <testcase classname="dsbdp.test.byte-array-conversion-tests" name="int16-conversion-test" time="0.0003">
+    </testcase>
+
+        <testcase classname="dsbdp.test.byte-array-conversion-tests" name="int4l-conversion-test" time="0.0002">
+    </testcase>
+
+        <testcase classname="dsbdp.test.byte-array-conversion-tests" name="timestamp-be-conversion-test" time="0.0003">
+    </testcase>
+
+        <testcase classname="dsbdp.test.byte-array-conversion-tests" name="int32be-conversion-test" time="0.0002">
+    </testcase>
+
+        <testcase classname="dsbdp.test.byte-array-conversion-tests" name="eth-mac-addr-str-conversion-test-1" time="0.0003">
+    </testcase>
+
+        <testcase classname="dsbdp.test.byte-array-conversion-tests" name="timestamp-str-conversion-test" time="0.0009">
+    </testcase>
+
+        <testcase classname="dsbdp.test.byte-array-conversion-tests" name="timestamp-str-be-conversion-test" time="0.0003">
+    </testcase>
+
+        <testcase classname="dsbdp.test.byte-array-conversion-tests" name="int8-conversion-test" time="0.0002">
+    </testcase>
+
+        <testcase classname="dsbdp.test.byte-array-conversion-tests" name="timestamp-conversion-test" time="0.0002">
+    </testcase>
+
+        <testcase classname="dsbdp.test.byte-array-conversion-tests" name="eth-mac-addr-str-conversion-test-2" time="0.0003">
+    </testcase>
+
+        <testcase classname="dsbdp.test.byte-array-conversion-tests" name="int4h-conversion-test" time="0.0002">
+    </testcase>
+
+        <testcase classname="dsbdp.test.byte-array-conversion-tests" name="ipv4-addr-str-conversion-test-1" time="0.0003">
+    </testcase>
+
+        <testcase classname="dsbdp.test.byte-array-conversion-tests" name="int16be-conversion-test" time="0.0002">
+    </testcase>
+
+        <testcase classname="dsbdp.test.byte-array-conversion-tests" name="ipv4-addr-str-conversion-test-2" time="0.0002">
+    </testcase>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" id="1" name="counter-tests" package="dsbdp.test" tests="2" time="0.0031" timestamp="2016-03-15_22:10:53+0100">
+        <testcase classname="dsbdp.test.counter-tests" name="simple-counter-increment-test" time="0.0007">
+    </testcase>
+
+        <testcase classname="dsbdp.test.counter-tests" name="simple-counter-reset-test" time="0.0013">
+    </testcase>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" id="2" name="data-processing-dsl-tests" package="dsbdp.test" tests="23" time="0.1118" timestamp="2016-03-15_22:10:53+0100">
+        <testcase classname="dsbdp.test.data-processing-dsl-tests" name="incremental-byte-array-to-json-str-test" time="0.0117">
+    </testcase>
+
+        <testcase classname="dsbdp.test.data-processing-dsl-tests" name="byte-array-to-java-map-with-additional-operation-and-two-data-values-test" time="0.0026">
+    </testcase>
+
+        <testcase classname="dsbdp.test.data-processing-dsl-tests" name="combine-proc-fns-nth-test" time="0.0026">
+    </testcase>
+
+        <testcase classname="dsbdp.test.data-processing-dsl-tests" name="byte-array-to-clj-map-test" time="0.0014">
+    </testcase>
+
+        <testcase classname="dsbdp.test.data-processing-dsl-tests" name="byte-array-to-csv-str-test" time="0.0033">
+    </testcase>
+
+        <testcase classname="dsbdp.test.data-processing-dsl-tests" name="output-type-defaults-to-java-map-test" time="0.0025">
+    </testcase>
+
+        <testcase classname="dsbdp.test.data-processing-dsl-tests" name="incremental-byte-array-to-clj-map-test" time="0.0019">
+    </testcase>
+
+        <testcase classname="dsbdp.test.data-processing-dsl-tests" name="byte-array-to-java-map-test" time="0.0027">
+    </testcase>
+
+        <testcase classname="dsbdp.test.data-processing-dsl-tests" name="dsl-expression-to-combined-function-vector-test-1" time="0.0092">
+    </testcase>
+
+        <testcase classname="dsbdp.test.data-processing-dsl-tests" name="byte-array-to-java-map-with-additional-operation-test" time="0.0026">
+    </testcase>
+
+        <testcase classname="dsbdp.test.data-processing-dsl-tests" name="combine-proc-fns-1st-test" time="0.0015">
+    </testcase>
+
+        <testcase classname="dsbdp.test.data-processing-dsl-tests" name="clojure-map-to-java-map-with-additional-operation-and-two-data-values-test" time="0.0026">
+    </testcase>
+
+        <testcase classname="dsbdp.test.data-processing-dsl-tests" name="byte-array-to-json-str-test" time="0.0081">
+    </testcase>
+
+        <testcase classname="dsbdp.test.data-processing-dsl-tests" name="incremental-byte-array-to-csv-str-test" time="0.0026">
+    </testcase>
+
+        <testcase classname="dsbdp.test.data-processing-dsl-tests" name="clojure-vector-to-java-map-with-additional-operation-and-two-data-values-test" time="0.0021">
+    </testcase>
+
+        <testcase classname="dsbdp.test.data-processing-dsl-tests" name="clojure-list-to-java-map-with-additional-operation-and-two-data-values-test" time="0.0021">
+    </testcase>
+
+        <testcase classname="dsbdp.test.data-processing-dsl-tests" name="simple-documenation-example-test-1" time="0.0251">
+    </testcase>
+
+        <testcase classname="dsbdp.test.data-processing-dsl-tests" name="byte-array-to-json-str-qm-test" time="0.0069">
+    </testcase>
+
+        <testcase classname="dsbdp.test.data-processing-dsl-tests" name="byte-array-to-java-map-with-additional-operation-and-float-type-test" time="0.0031">
+    </testcase>
+
+        <testcase classname="dsbdp.test.data-processing-dsl-tests" name="java-map-to-java-map-with-additional-operation-and-two-data-values-test" time="0.0020">
+    </testcase>
+
+        <testcase classname="dsbdp.test.data-processing-dsl-tests" name="java-list-to-java-map-with-additional-operation-and-two-data-values-test" time="0.0020">
+    </testcase>
+
+        <testcase classname="dsbdp.test.data-processing-dsl-tests" name="incremental-byte-array-to-java-map-test" time="0.0024">
+    </testcase>
+
+        <testcase classname="dsbdp.test.data-processing-dsl-tests" name="byte-array-to-csv-str-qm-test" time="0.0037">
+    </testcase>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" id="3" name="experiment-helper-tests" package="dsbdp.test" tests="8" time="0.1554" timestamp="2016-03-15_22:10:53+0100">
+        <testcase classname="dsbdp.test.experiment-helper-tests" name="busy-sleep-proc-fns-test-1" time="0.0619">
+    </testcase>
+
+        <testcase classname="dsbdp.test.experiment-helper-tests" name="create-inc-proc-fns-test" time="0.0172">
+    </testcase>
+
+        <testcase classname="dsbdp.test.experiment-helper-tests" name="factorial-test" time="0.0013">
+    </testcase>
+
+        <testcase classname="dsbdp.test.experiment-helper-tests" name="create-no-op-proc-fns-test" time="0.0141">
+    </testcase>
+
+        <testcase classname="dsbdp.test.experiment-helper-tests" name="busy-sleep-test-1" time="0.0006">
+    </testcase>
+
+        <testcase classname="dsbdp.test.experiment-helper-tests" name="busy-sleep-test-2" time="0.0015">
+    </testcase>
+
+        <testcase classname="dsbdp.test.experiment-helper-tests" name="create-factorial-proc-fns-test" time="0.0172">
+    </testcase>
+
+        <testcase classname="dsbdp.test.experiment-helper-tests" name="create-hashmap-inc-put-proc-fns-test" time="0.0391">
+    </testcase>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" id="4" name="local-data-processing-pipeline-tests" package="dsbdp.test" tests="19" time="0.4817" timestamp="2016-03-15_22:10:53+0100">
+        <testcase classname="dsbdp.test.local-data-processing-pipeline-tests" name="simple-pipeline-set-proc-fns-vec-test" time="0.0094">
+    </testcase>
+
+        <testcase classname="dsbdp.test.local-data-processing-pipeline-tests" name="local-transfer-container-set-out-test" time="0.0006">
+    </testcase>
+
+        <testcase classname="dsbdp.test.local-data-processing-pipeline-tests" name="get-pipeline-counts-test" time="0.0028">
+    </testcase>
+
+        <testcase classname="dsbdp.test.local-data-processing-pipeline-tests" name="simple-pipeline-increase-length-by-n-test" time="0.0041">
+    </testcase>
+
+        <testcase classname="dsbdp.test.local-data-processing-pipeline-tests" name="simple-pipeline-decrease-length-by-n-test" time="0.0041">
+    </testcase>
+
+        <testcase classname="dsbdp.test.local-data-processing-pipeline-tests" name="simple-local-processing-element-output-test" time="0.0025">
+    </testcase>
+
+        <testcase classname="dsbdp.test.local-data-processing-pipeline-tests" name="create-local-processing-element-no-id-test" time="0.0015">
+    </testcase>
+
+        <testcase classname="dsbdp.test.local-data-processing-pipeline-tests" name="create-local-processing-element-test" time="0.0012">
+    </testcase>
+
+        <testcase classname="dsbdp.test.local-data-processing-pipeline-tests" name="simple-documentation-example-test-1" time="0.0028">
+    </testcase>
+
+        <testcase classname="dsbdp.test.local-data-processing-pipeline-tests" name="create-local-processing-element-id-test" time="0.0012">
+    </testcase>
+
+        <testcase classname="dsbdp.test.local-data-processing-pipeline-tests" name="simple-pipeline-decrease-length-by-1-test" time="0.0032">
+    </testcase>
+
+        <testcase classname="dsbdp.test.local-data-processing-pipeline-tests" name="simple-local-processing-element-chaining-test" time="0.0017">
+    </testcase>
+
+        <testcase classname="dsbdp.test.local-data-processing-pipeline-tests" name="simple-pipeline-increase-length-by-1-test" time="0.0036">
+    </testcase>
+
+        <testcase classname="dsbdp.test.local-data-processing-pipeline-tests" name="simple-local-processing-element-change-proc-fn-test" time="0.3244">
+    </testcase>
+
+        <testcase classname="dsbdp.test.local-data-processing-pipeline-tests" name="simple-local-processing-element-in-args-test" time="0.0012">
+    </testcase>
+
+        <testcase classname="dsbdp.test.local-data-processing-pipeline-tests" name="simple-three-staged-local-pipeline-send-test" time="0.0018">
+    </testcase>
+
+        <testcase classname="dsbdp.test.local-data-processing-pipeline-tests" name="simple-local-pipeline-send-test" time="0.0014">
+    </testcase>
+
+        <testcase classname="dsbdp.test.local-data-processing-pipeline-tests" name="simple-local-processing-element-counter-drop-test" time="0.1078">
+    </testcase>
+
+        <testcase classname="dsbdp.test.local-data-processing-pipeline-tests" name="local-transfer-container-constructor-test" time="0.0005">
+    </testcase>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" id="5" name="local-dpp-self-adaptivity-tests" package="dsbdp.test" tests="29" time="0.1762" timestamp="2016-03-15_22:10:54+0100">
+        <testcase classname="dsbdp.test.local-dpp-self-adaptivity-tests" name="detect-repeated-drop-test-2" time="0.0067">
+    </testcase>
+
+        <testcase classname="dsbdp.test.local-dpp-self-adaptivity-tests" name="update-fns-mapping-for-four-staged-pipeline-test-1" time="0.0023">
+    </testcase>
+
+        <testcase classname="dsbdp.test.local-dpp-self-adaptivity-tests" name="update-fns-mapping-for-three-staged-pipeline-test-1" time="0.0002">
+    </testcase>
+
+        <testcase classname="dsbdp.test.local-dpp-self-adaptivity-tests" name="moving-average-calculator-test-2" time="0.0013">
+    </testcase>
+
+        <testcase classname="dsbdp.test.local-dpp-self-adaptivity-tests" name="update-fns-mapping-for-four-staged-pipeline-test-5" time="0.0010">
+    </testcase>
+
+        <testcase classname="dsbdp.test.local-dpp-self-adaptivity-tests" name="get-drop-indices-test-1" time="0.0002">
+    </testcase>
+
+        <testcase classname="dsbdp.test.local-dpp-self-adaptivity-tests" name="self-adaptivity-controller-test-1" time="0.0518">
+    </testcase>
+
+        <testcase classname="dsbdp.test.local-dpp-self-adaptivity-tests" name="get-non-drop-indices-test-1" time="0.0002">
+    </testcase>
+
+        <testcase classname="dsbdp.test.local-dpp-self-adaptivity-tests" name="simple-repetition-detection-test-1" time="0.0014">
+    </testcase>
+
+        <testcase classname="dsbdp.test.local-dpp-self-adaptivity-tests" name="update-fns-mapping-for-three-staged-pipeline-test-2" time="0.0011">
+    </testcase>
+
+        <testcase classname="dsbdp.test.local-dpp-self-adaptivity-tests" name="simple-repetition-detection-test-2" time="0.0024">
+    </testcase>
+
+        <testcase classname="dsbdp.test.local-dpp-self-adaptivity-tests" name="moving-average-calculator-test-3" time="0.0003">
+    </testcase>
+
+        <testcase classname="dsbdp.test.local-dpp-self-adaptivity-tests" name="update-fns-mapping-for-four-staged-pipeline-test-4" time="0.0002">
+    </testcase>
+
+        <testcase classname="dsbdp.test.local-dpp-self-adaptivity-tests" name="update-fns-mapping-for-four-staged-pipeline-test-2" time="0.0002">
+    </testcase>
+
+        <testcase classname="dsbdp.test.local-dpp-self-adaptivity-tests" name="update-fns-mapping-for-three-staged-pipeline-test-5" time="0.0009">
+    </testcase>
+
+        <testcase classname="dsbdp.test.local-dpp-self-adaptivity-tests" name="stat-delta-test-2" time="0.0024">
+    </testcase>
+
+        <testcase classname="dsbdp.test.local-dpp-self-adaptivity-tests" name="moving-average-calculator-test-1" time="0.0013">
+    </testcase>
+
+        <testcase classname="dsbdp.test.local-dpp-self-adaptivity-tests" name="stat-delta-test-1" time="0.0009">
+    </testcase>
+
+        <testcase classname="dsbdp.test.local-dpp-self-adaptivity-tests" name="detect-repeated-drop-test-1" time="0.0011">
+    </testcase>
+
+        <testcase classname="dsbdp.test.local-dpp-self-adaptivity-tests" name="update-fns-mapping-for-three-staged-pipeline-test-3" time="0.0002">
+    </testcase>
+
+        <testcase classname="dsbdp.test.local-dpp-self-adaptivity-tests" name="get-drop-indices-test-2" time="0.0001">
+    </testcase>
+
+        <testcase classname="dsbdp.test.local-dpp-self-adaptivity-tests" name="update-fns-mapping-for-four-staged-pipeline-test-6" time="0.0011">
+    </testcase>
+
+        <testcase classname="dsbdp.test.local-dpp-self-adaptivity-tests" name="get-drop-indices-test-3" time="0.0001">
+    </testcase>
+
+        <testcase classname="dsbdp.test.local-dpp-self-adaptivity-tests" name="update-fns-mapping-for-three-staged-pipeline-test-4" time="0.0002">
+    </testcase>
+
+        <testcase classname="dsbdp.test.local-dpp-self-adaptivity-tests" name="self-adaptivity-controller-test-2" time="0.0521">
+    </testcase>
+
+        <testcase classname="dsbdp.test.local-dpp-self-adaptivity-tests" name="get-non-drop-indices-test-2" time="0.0001">
+    </testcase>
+
+        <testcase classname="dsbdp.test.local-dpp-self-adaptivity-tests" name="get-non-drop-indices-test-3" time="0.0001">
+    </testcase>
+
+        <testcase classname="dsbdp.test.local-dpp-self-adaptivity-tests" name="self-adaptivity-controller-test-3" time="0.0385">
+    </testcase>
+
+        <testcase classname="dsbdp.test.local-dpp-self-adaptivity-tests" name="update-fns-mapping-for-four-staged-pipeline-test-3" time="0.0002">
+    </testcase>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" id="6" name="processing-fn-utils-tests" package="dsbdp.test" tests="14" time="0.1132" timestamp="2016-03-15_22:10:54+0100">
+        <testcase classname="dsbdp.test.processing-fn-utils-tests" name="simple-create-proc-fn-vec-from-template-test" time="0.0120">
+    </testcase>
+
+        <testcase classname="dsbdp.test.processing-fn-utils-tests" name="create-proc-fn-vec-from-template-with-ret-val-test" time="0.0132">
+    </testcase>
+
+        <testcase classname="dsbdp.test.processing-fn-utils-tests" name="calculate-distribution-mapping-8-to-4-test" time="0.0007">
+    </testcase>
+
+        <testcase classname="dsbdp.test.processing-fn-utils-tests" name="calculate-distribution-mapping-12-to-4-skewed-test-2" time="0.0002">
+    </testcase>
+
+        <testcase classname="dsbdp.test.processing-fn-utils-tests" name="calculate-distribution-mapping-12-to-4-skewed-test-1" time="0.0002">
+    </testcase>
+
+        <testcase classname="dsbdp.test.processing-fn-utils-tests" name="simple-combine-proc-fns-nth-test" time="0.0244">
+    </testcase>
+
+        <testcase classname="dsbdp.test.processing-fn-utils-tests" name="create-proc-fn-vec-from-template-with-index-test" time="0.0097">
+    </testcase>
+
+        <testcase classname="dsbdp.test.processing-fn-utils-tests" name="simple-combine-proc-fns-vec-test" time="0.0239">
+    </testcase>
+
+        <testcase classname="dsbdp.test.processing-fn-utils-tests" name="calculate-distribution-mapping-4-to-4-test" time="0.0002">
+    </testcase>
+
+        <testcase classname="dsbdp.test.processing-fn-utils-tests" name="calculate-distribution-mapping-15-to-4-skewed-fill-end-test" time="0.0002">
+    </testcase>
+
+        <testcase classname="dsbdp.test.processing-fn-utils-tests" name="calculate-distribution-mapping-6-to-4-skewed-test" time="0.0002">
+    </testcase>
+
+        <testcase classname="dsbdp.test.processing-fn-utils-tests" name="simple-combine-proc-fns-1st-test" time="0.0246">
+    </testcase>
+
+        <testcase classname="dsbdp.test.processing-fn-utils-tests" name="calculate-distribution-mapping-15-to-4-skewed-test" time="0.0002">
+    </testcase>
+
+        <testcase classname="dsbdp.test.processing-fn-utils-tests" name="calculate-distribution-mapping-6-to-4-uniform-test" time="0.0002">
+    </testcase>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" id="7" name="processing-loop-tests" package="dsbdp.test" tests="2" time="0.1058" timestamp="2016-03-15_22:10:54+0100">
+        <testcase classname="dsbdp.test.processing-loop-tests" name="simple-processing-loop-test" time="0.0012">
+    </testcase>
+
+        <testcase classname="dsbdp.test.processing-loop-tests" name="simple-processing-loop-interrupt-test" time="0.1037">
+    </testcase>
+
+  </testsuite>
+</testsuites>

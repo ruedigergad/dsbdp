@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dsbdp.test.local-dpp-self-adaptivity-tests" errors="0" failures="0" tests="29" time="0.1762" timestamp="2016-03-15_22:10:54+0100">
+    <testcase name="detect-repeated-drop-test-2" classname="dsbdp.test.local-dpp-self-adaptivity-tests" time="0.0067">
+    </testcase>
+    <testcase name="update-fns-mapping-for-four-staged-pipeline-test-1" classname="dsbdp.test.local-dpp-self-adaptivity-tests" time="0.0023">
+    </testcase>
+    <testcase name="update-fns-mapping-for-three-staged-pipeline-test-1" classname="dsbdp.test.local-dpp-self-adaptivity-tests" time="0.0002">
+    </testcase>
+    <testcase name="moving-average-calculator-test-2" classname="dsbdp.test.local-dpp-self-adaptivity-tests" time="0.0013">
+    </testcase>
+    <testcase name="update-fns-mapping-for-four-staged-pipeline-test-5" classname="dsbdp.test.local-dpp-self-adaptivity-tests" time="0.0010">
+    </testcase>
+    <testcase name="get-drop-indices-test-1" classname="dsbdp.test.local-dpp-self-adaptivity-tests" time="0.0002">
+    </testcase>
+    <testcase name="self-adaptivity-controller-test-1" classname="dsbdp.test.local-dpp-self-adaptivity-tests" time="0.0518">
+    </testcase>
+    <testcase name="get-non-drop-indices-test-1" classname="dsbdp.test.local-dpp-self-adaptivity-tests" time="0.0002">
+    </testcase>
+    <testcase name="simple-repetition-detection-test-1" classname="dsbdp.test.local-dpp-self-adaptivity-tests" time="0.0014">
+    </testcase>
+    <testcase name="update-fns-mapping-for-three-staged-pipeline-test-2" classname="dsbdp.test.local-dpp-self-adaptivity-tests" time="0.0011">
+    </testcase>
+    <testcase name="simple-repetition-detection-test-2" classname="dsbdp.test.local-dpp-self-adaptivity-tests" time="0.0024">
+    </testcase>
+    <testcase name="moving-average-calculator-test-3" classname="dsbdp.test.local-dpp-self-adaptivity-tests" time="0.0003">
+    </testcase>
+    <testcase name="update-fns-mapping-for-four-staged-pipeline-test-4" classname="dsbdp.test.local-dpp-self-adaptivity-tests" time="0.0002">
+    </testcase>
+    <testcase name="update-fns-mapping-for-four-staged-pipeline-test-2" classname="dsbdp.test.local-dpp-self-adaptivity-tests" time="0.0002">
+    </testcase>
+    <testcase name="update-fns-mapping-for-three-staged-pipeline-test-5" classname="dsbdp.test.local-dpp-self-adaptivity-tests" time="0.0009">
+    </testcase>
+    <testcase name="stat-delta-test-2" classname="dsbdp.test.local-dpp-self-adaptivity-tests" time="0.0024">
+    </testcase>
+    <testcase name="moving-average-calculator-test-1" classname="dsbdp.test.local-dpp-self-adaptivity-tests" time="0.0013">
+    </testcase>
+    <testcase name="stat-delta-test-1" classname="dsbdp.test.local-dpp-self-adaptivity-tests" time="0.0009">
+    </testcase>
+    <testcase name="detect-repeated-drop-test-1" classname="dsbdp.test.local-dpp-self-adaptivity-tests" time="0.0011">
+    </testcase>
+    <testcase name="update-fns-mapping-for-three-staged-pipeline-test-3" classname="dsbdp.test.local-dpp-self-adaptivity-tests" time="0.0002">
+    </testcase>
+    <testcase name="get-drop-indices-test-2" classname="dsbdp.test.local-dpp-self-adaptivity-tests" time="0.0001">
+    </testcase>
+    <testcase name="update-fns-mapping-for-four-staged-pipeline-test-6" classname="dsbdp.test.local-dpp-self-adaptivity-tests" time="0.0011">
+    </testcase>
+    <testcase name="get-drop-indices-test-3" classname="dsbdp.test.local-dpp-self-adaptivity-tests" time="0.0001">
+    </testcase>
+    <testcase name="update-fns-mapping-for-three-staged-pipeline-test-4" classname="dsbdp.test.local-dpp-self-adaptivity-tests" time="0.0002">
+    </testcase>
+    <testcase name="self-adaptivity-controller-test-2" classname="dsbdp.test.local-dpp-self-adaptivity-tests" time="0.0521">
+    </testcase>
+    <testcase name="get-non-drop-indices-test-2" classname="dsbdp.test.local-dpp-self-adaptivity-tests" time="0.0001">
+    </testcase>
+    <testcase name="get-non-drop-indices-test-3" classname="dsbdp.test.local-dpp-self-adaptivity-tests" time="0.0001">
+    </testcase>
+    <testcase name="self-adaptivity-controller-test-3" classname="dsbdp.test.local-dpp-self-adaptivity-tests" time="0.0385">
+    </testcase>
+    <testcase name="update-fns-mapping-for-four-staged-pipeline-test-3" classname="dsbdp.test.local-dpp-self-adaptivity-tests" time="0.0002">
+    </testcase>
+</testsuite>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dsbdp.test.local-data-processing-pipeline-tests" errors="0" failures="0" tests="19" time="0.4817" timestamp="2016-03-15_22:10:53+0100">
+    <testcase name="simple-pipeline-set-proc-fns-vec-test" classname="dsbdp.test.local-data-processing-pipeline-tests" time="0.0094">
+    </testcase>
+    <testcase name="local-transfer-container-set-out-test" classname="dsbdp.test.local-data-processing-pipeline-tests" time="0.0006">
+    </testcase>
+    <testcase name="get-pipeline-counts-test" classname="dsbdp.test.local-data-processing-pipeline-tests" time="0.0028">
+    </testcase>
+    <testcase name="simple-pipeline-increase-length-by-n-test" classname="dsbdp.test.local-data-processing-pipeline-tests" time="0.0041">
+    </testcase>
+    <testcase name="simple-pipeline-decrease-length-by-n-test" classname="dsbdp.test.local-data-processing-pipeline-tests" time="0.0041">
+    </testcase>
+    <testcase name="simple-local-processing-element-output-test" classname="dsbdp.test.local-data-processing-pipeline-tests" time="0.0025">
+    </testcase>
+    <testcase name="create-local-processing-element-no-id-test" classname="dsbdp.test.local-data-processing-pipeline-tests" time="0.0015">
+    </testcase>
+    <testcase name="create-local-processing-element-test" classname="dsbdp.test.local-data-processing-pipeline-tests" time="0.0012">
+    </testcase>
+    <testcase name="simple-documentation-example-test-1" classname="dsbdp.test.local-data-processing-pipeline-tests" time="0.0028">
+    </testcase>
+    <testcase name="create-local-processing-element-id-test" classname="dsbdp.test.local-data-processing-pipeline-tests" time="0.0012">
+    </testcase>
+    <testcase name="simple-pipeline-decrease-length-by-1-test" classname="dsbdp.test.local-data-processing-pipeline-tests" time="0.0032">
+    </testcase>
+    <testcase name="simple-local-processing-element-chaining-test" classname="dsbdp.test.local-data-processing-pipeline-tests" time="0.0017">
+    </testcase>
+    <testcase name="simple-pipeline-increase-length-by-1-test" classname="dsbdp.test.local-data-processing-pipeline-tests" time="0.0036">
+    </testcase>
+    <testcase name="simple-local-processing-element-change-proc-fn-test" classname="dsbdp.test.local-data-processing-pipeline-tests" time="0.3244">
+    </testcase>
+    <testcase name="simple-local-processing-element-in-args-test" classname="dsbdp.test.local-data-processing-pipeline-tests" time="0.0012">
+    </testcase>
+    <testcase name="simple-three-staged-local-pipeline-send-test" classname="dsbdp.test.local-data-processing-pipeline-tests" time="0.0018">
+    </testcase>
+    <testcase name="simple-local-pipeline-send-test" classname="dsbdp.test.local-data-processing-pipeline-tests" time="0.0014">
+    </testcase>
+    <testcase name="simple-local-processing-element-counter-drop-test" classname="dsbdp.test.local-data-processing-pipeline-tests" time="0.1078">
+    </testcase>
+    <testcase name="local-transfer-container-constructor-test" classname="dsbdp.test.local-data-processing-pipeline-tests" time="0.0005">
+    </testcase>
+</testsuite>
