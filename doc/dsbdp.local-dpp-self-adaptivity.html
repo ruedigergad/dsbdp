@@ -1,0 +1,125 @@
+<!DOCTYPE html><html><head><meta charset="utf-8" /><title>Namespace dsbdp.local-dpp-self-adaptivity</title><style type="text/css">body { margin: 10px;
+          padding: 10px;
+          background-color: #DFE9F5;
+          font-family: sans-serif; }
+
+  #top { width: 800px;
+         padding: 10px;
+         margin-left: auto;
+         margin-right: auto;
+         overflow: hidden;
+         background-color: #FFFFFF;
+         color: #123154;
+         border: 3px solid #B4D3F5; }
+
+  pre { padding: 10px;
+        border: 2px dashed #B4D3F5;
+        background-color: #F0F6FD;
+        font-family: monospace; }
+
+  a { color: #4A6A8F; }
+  a:hover { background-color: #B4D3F5; }
+  a:visited { color: #425365; }
+
+  td, th { padding-left: 5px;
+           text-align: left; }
+
+  #ui-widget {
+    position: fixed;
+    top: 0em;
+    left: 0em;
+  }</style><link href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet" /></head><body><div id="ui-widget"><input autofocus="autofocus" id="api-search" placeholder="API Search" tabindex="1" /></div><div id="top"><header><h1>Namespace dsbdp.local-dpp-self-adaptivity</h1><p>Functions for self-adaptive local data processing pipelines.</p></header><section class="ns-toc" id="other-ns-toc"><h2>Other Namespaces</h2><details><summary>Show/Hide</summary><table><tr><td><a href="dsbdp.byte-array-conversion.html">dsbdp.byte-array-conversion</a></td><td><div>Helper functions for converting byte arrays into other data types/representations</div></td></tr><tr><td><a href="dsbdp.data-processing-dsl.html">dsbdp.data-processing-dsl</a></td><td><div>DSL for processing data</div></td></tr><tr><td><a href="dsbdp.experiment-helper.html">dsbdp.experiment-helper</a></td><td><div>Helper that are primarily used during experiments</div></td></tr><tr><td><a href="dsbdp.local-data-processing-pipeline.html">dsbdp.local-data-processing-pipeline</a></td><td><div>Pipeline for processing data</div></td></tr><tr><td><a href="dsbdp.main.html">dsbdp.main</a></td><td><div>Main class for launching experiments</div></td></tr><tr><td><a href="dsbdp.processing-fn-utils.html">dsbdp.processing-fn-utils</a></td><td><div></div></td></tr><tr><td><a href="index.html">Index Page</a></td><td></td></tr><tr><td><a href="var-index.html">Alphabetic Var Index</a></td><td></td></tr></table></details></section><section id="pubvars-toc"><h2>Public Vars</h2><nav><a href="#IDcreate-drop-detector">create-drop-detector</a>, <a href="#IDcreate-mapping-updater">create-mapping-updater</a>, <a href="#IDcreate-moving-average-calculator">create-moving-average-calculator</a>, <a href="#IDcreate-repetition-detector">create-repetition-detector</a>, <a href="#IDcreate-self-adaptivity-controller">create-self-adaptivity-controller</a>, <a href="#IDcreate-stat-delta-counter">create-stat-delta-counter</a>, <a href="#IDget-drop-indices">get-drop-indices</a>, <a href="#IDget-non-drop-indices">get-non-drop-indices</a>, <a href="#IDupdate">update</a>, <a href="#IDupdate-stats">update-stats</a></nav></section><section><h2>Usage Documentation</h2><details open="open"><summary>Show/Hide</summary><pre>Functions for self-adaptive local data processing pipelines.</pre></details><a href="#top">Back to top</a></section><section id="details"><h2>Details of Public Vars</h2><div id="IDcreate-drop-detector"><div><h4>Function: create-drop-detector</h4><pre>Arglists:
+=========
+
+  (create-drop-detector n-repetitions n-detectors threshold)
+
+Docstring:
+==========
+
+  Create a detector for detecting drops based on pipeline stats delta data.
+   n-repetitions define the number of subsequent repetitions of drops that have to occur in order to trigger a detection.
+   n-detectors defines the number of detectors that are to be used.
+   threshold defines the threshold of from which value on a drop is considered.
+   Returns a single argument function that serves as the actual detector.
+   The returned function takes the pipeline stats delta as argument and returns a vector of boolean values that indicate if drops were detected for a given pipeline stage.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/local_dpp_self_adaptivity.clj#L76">View Source</a></div><div id="IDcreate-mapping-updater"><div><h4>Function: create-mapping-updater</h4><pre>Arglists:
+=========
+
+  (create-mapping-updater)
+
+Docstring:
+==========
+
+  Create an updater for updating function mappings based on detected drops.
+   Returns a function that takes a function mapping and a vector of boolean values as returned from a drop detector as input and which calculates a new function mapping with the aim of avoiding drops.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/local_dpp_self_adaptivity.clj#L120">View Source</a></div><div id="IDcreate-moving-average-calculator"><div><h4>Function: create-moving-average-calculator</h4><pre>Arglists:
+=========
+
+  (create-moving-average-calculator cnt)
+
+Docstring:
+==========
+
+  Create a calculator for calculating a moving average of cnt instances.
+   Returns a single argument function that takes a numerical value as argument.
+   The returned function evaluates to the moving average of the last cnt instances of numerical values that were passed.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/local_dpp_self_adaptivity.clj#L64">View Source</a></div><div id="IDcreate-repetition-detector"><div><h4>Function: create-repetition-detector</h4><pre>Arglists:
+=========
+
+  (create-repetition-detector repetitions)
+
+Docstring:
+==========
+
+  Create a detector for detecting repetitions of pred-fn evaluating to true.
+   Returns a function with one argument that takes a predicate function, pred-fn, as argument.
+   The returned function only evaluates to true if pred-fn was true for the number of invocations defined by repetitions.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/local_dpp_self_adaptivity.clj#L50">View Source</a></div><div id="IDcreate-self-adaptivity-controller"><div><h4>Function: create-self-adaptivity-controller</h4><pre>Arglists:
+=========
+
+  (create-self-adaptivity-controller cfg pipeline orig-fns mapping)
+
+Docstring:
+==========
+
+  Create a controller for a self-adaptive data processing pipeline.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/local_dpp_self_adaptivity.clj#L189">View Source</a></div><div id="IDcreate-stat-delta-counter"><div><h4>Function: create-stat-delta-counter</h4><pre>Arglists:
+=========
+
+  (create-stat-delta-counter n)
+
+Docstring:
+==========
+
+  Create a delta counter for calculating the differences between subsequent measurements of pipeline statistics.
+   Returns a function with one argument that takes the stats map as emitted from the pipeline.
+   The returned function calculates the difference between the values of the passed stats map between subsequent invocations.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/local_dpp_self_adaptivity.clj#L19">View Source</a></div><div id="IDget-drop-indices"><div><h4>Function: get-drop-indices</h4><pre>Arglists:
+=========
+
+  (get-drop-indices drop-det-vec)
+
+Docstring:
+==========
+
+  Get a vector of the indices for which drops were detected in the input vector drop-det-vec.
+   More generically, returns a vector of the indices of the elements that were true in in the input vector.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/local_dpp_self_adaptivity.clj#L95">View Source</a></div><div id="IDget-non-drop-indices"><div><h4>Function: get-non-drop-indices</h4><pre>Arglists:
+=========
+
+  (get-non-drop-indices drop-det-vec)
+
+Docstring:
+==========
+
+  Get a vector of the indices for which no drops were detected in the input vector drop-det-vec.
+   More generically, returns a vector of the indices of the elements that were not true in the input vector.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/local_dpp_self_adaptivity.clj#L105">View Source</a></div><div id="IDupdate"><div><h4>Function: update</h4><pre>Arglists:
+=========
+
+  (update v idx f)
+
+Docstring:
+==========
+
+  Update the element at the given index of the vector v by applying the function f to it.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/local_dpp_self_adaptivity.clj#L115">View Source</a></div><div id="IDupdate-stats"><div><h4>Function: update-stats</h4><pre>Arglists:
+=========
+
+  (update-stats obj stats)
+
+Docstring:
+==========
+
+  No docs attached.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/local_dpp_self_adaptivity.clj#L215">View Source</a></div></section></div><footer><p>These docs were generated by the <a href="https://github.com/tsdh/lein-html5-docs">Leiningen HTML5 Docs Plugin</a>, version 3.0.3.</p><a href="http://www.w3.org/html/logo/"><img alt="HTML5 Powered" height="64" src="http://www.w3.org/html/logo/badge/html5-badge-h-solo.png" title="HTML5 Powered" width="63" /></a><script src="http://code.jquery.com/jquery.min.js"></script><script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script><script src="api-search.js"></script></footer></body></html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html><html><head><meta charset="utf-8" /><title>Namespace dsbdp.processing-fn-utils</title><style type="text/css">body { margin: 10px;
+          padding: 10px;
+          background-color: #DFE9F5;
+          font-family: sans-serif; }
+
+  #top { width: 800px;
+         padding: 10px;
+         margin-left: auto;
+         margin-right: auto;
+         overflow: hidden;
+         background-color: #FFFFFF;
+         color: #123154;
+         border: 3px solid #B4D3F5; }
+
+  pre { padding: 10px;
+        border: 2px dashed #B4D3F5;
+        background-color: #F0F6FD;
+        font-family: monospace; }
+
+  a { color: #4A6A8F; }
+  a:hover { background-color: #B4D3F5; }
+  a:visited { color: #425365; }
+
+  td, th { padding-left: 5px;
+           text-align: left; }
+
+  #ui-widget {
+    position: fixed;
+    top: 0em;
+    left: 0em;
+  }</style><link href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet" /></head><body><div id="ui-widget"><input autofocus="autofocus" id="api-search" placeholder="API Search" tabindex="1" /></div><div id="top"><header><h1>Namespace dsbdp.processing-fn-utils</h1><p></p></header><section class="ns-toc" id="other-ns-toc"><h2>Other Namespaces</h2><details><summary>Show/Hide</summary><table><tr><td><a href="dsbdp.byte-array-conversion.html">dsbdp.byte-array-conversion</a></td><td><div>Helper functions for converting byte arrays into other data types/representations</div></td></tr><tr><td><a href="dsbdp.data-processing-dsl.html">dsbdp.data-processing-dsl</a></td><td><div>DSL for processing data</div></td></tr><tr><td><a href="dsbdp.experiment-helper.html">dsbdp.experiment-helper</a></td><td><div>Helper that are primarily used during experiments</div></td></tr><tr><td><a href="dsbdp.local-data-processing-pipeline.html">dsbdp.local-data-processing-pipeline</a></td><td><div>Pipeline for processing data</div></td></tr><tr><td><a href="dsbdp.local-dpp-self-adaptivity.html">dsbdp.local-dpp-self-adaptivity</a></td><td><div>Functions for self-adaptive local data processing pipelines.</div></td></tr><tr><td><a href="dsbdp.main.html">dsbdp.main</a></td><td><div>Main class for launching experiments</div></td></tr><tr><td><a href="index.html">Index Page</a></td><td></td></tr><tr><td><a href="var-index.html">Alphabetic Var Index</a></td><td></td></tr></table></details></section><section id="pubvars-toc"><h2>Public Vars</h2><nav><a href="#IDcalculate-distribution-mapping">calculate-distribution-mapping</a>, <a href="#IDcombine-proc-fns">combine-proc-fns</a>, <a href="#IDcombine-proc-fns-vec">combine-proc-fns-vec</a>, <a href="#IDcreate-proc-fn-vec-from-template">create-proc-fn-vec-from-template</a></nav></section><section id="details"><h2>Details of Public Vars</h2><div id="IDcalculate-distribution-mapping"><div><h4>Function: calculate-distribution-mapping</h4><pre>Arglists:
+=========
+
+  (calculate-distribution-mapping in-seq ratios)
+  (calculate-distribution-mapping in-seq ratios opts)
+
+Docstring:
+==========
+
+  Based on an input sequence, in-seq, and a vector of ratios, calculate a mapping such that the input sequence will be distributed according to the given ratios.
+   The resulting mapping can be used, e.g., with combine-proc-fns-vec.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/processing_fn_utils.clj#L55">View Source</a></div><div id="IDcombine-proc-fns"><div><h4>Function: combine-proc-fns</h4><pre>Arglists:
+=========
+
+  (combine-proc-fns fn-vec start-idx end-idx)
+
+Docstring:
+==========
+
+  Based on the given vector of processing functions, combine the functions starting at start-idx, inclusive, up to end-idx, non inclusive, into a single combined function.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/processing_fn_utils.clj#L33">View Source</a></div><div id="IDcombine-proc-fns-vec"><div><h4>Function: combine-proc-fns-vec</h4><pre>Arglists:
+=========
+
+  (combine-proc-fns-vec fn-mapping fn-vec)
+
+Docstring:
+==========
+
+  Map a vector of processing functions, fn-vec, to a vector of combined functions.
+   The mapping definition fn-mapping, is a vector of integer values that define how many processing functions are combined in each combined function.
+   For a vector of processing functions [a b c d e f] a mapping definition [1 2 3] will result in the following association of processing rules to combined functions f_x: [f_1(a), f_2(b, c), f_3(d e f)].</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/processing_fn_utils.clj#L42">View Source</a></div><div id="IDcreate-proc-fn-vec-from-template"><div><h4>Function: create-proc-fn-vec-from-template</h4><pre>Arglists:
+=========
+
+  (create-proc-fn-vec-from-template fn-1 fn-n n)
+
+Docstring:
+==========
+
+  Create a vector with n processing functions based on the two given &quot;template&quot; functions fn-1 and fn-n.
+   fn-1 is the function that will be put as first function in the resulting vector.
+   Subsequently, fn-n will be repeated n-1 times to fill the vector with n instances.
+   All occurrences of :_idx_ in the supplied functions will be replaced with the numerical index value of the corresponding function in the resulting vector.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/processing_fn_utils.clj#L17">View Source</a></div></section></div><footer><p>These docs were generated by the <a href="https://github.com/tsdh/lein-html5-docs">Leiningen HTML5 Docs Plugin</a>, version 3.0.3.</p><a href="http://www.w3.org/html/logo/"><img alt="HTML5 Powered" height="64" src="http://www.w3.org/html/logo/badge/html5-badge-h-solo.png" title="HTML5 Powered" width="63" /></a><script src="http://code.jquery.com/jquery.min.js"></script><script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script><script src="api-search.js"></script></footer></body></html>

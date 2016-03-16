@@ -1,0 +1,152 @@
+<!DOCTYPE html><html><head><meta charset="utf-8" /><title>Namespace dsbdp.byte-array-conversion</title><style type="text/css">body { margin: 10px;
+          padding: 10px;
+          background-color: #DFE9F5;
+          font-family: sans-serif; }
+
+  #top { width: 800px;
+         padding: 10px;
+         margin-left: auto;
+         margin-right: auto;
+         overflow: hidden;
+         background-color: #FFFFFF;
+         color: #123154;
+         border: 3px solid #B4D3F5; }
+
+  pre { padding: 10px;
+        border: 2px dashed #B4D3F5;
+        background-color: #F0F6FD;
+        font-family: monospace; }
+
+  a { color: #4A6A8F; }
+  a:hover { background-color: #B4D3F5; }
+  a:visited { color: #425365; }
+
+  td, th { padding-left: 5px;
+           text-align: left; }
+
+  #ui-widget {
+    position: fixed;
+    top: 0em;
+    left: 0em;
+  }</style><link href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet" /></head><body><div id="ui-widget"><input autofocus="autofocus" id="api-search" placeholder="API Search" tabindex="1" /></div><div id="top"><header><h1>Namespace dsbdp.byte-array-conversion</h1><p>Helper functions for converting byte arrays into other data types/representations</p></header><section class="ns-toc" id="other-ns-toc"><h2>Other Namespaces</h2><details><summary>Show/Hide</summary><table><tr><td><a href="dsbdp.data-processing-dsl.html">dsbdp.data-processing-dsl</a></td><td><div>DSL for processing data</div></td></tr><tr><td><a href="dsbdp.experiment-helper.html">dsbdp.experiment-helper</a></td><td><div>Helper that are primarily used during experiments</div></td></tr><tr><td><a href="dsbdp.local-data-processing-pipeline.html">dsbdp.local-data-processing-pipeline</a></td><td><div>Pipeline for processing data</div></td></tr><tr><td><a href="dsbdp.local-dpp-self-adaptivity.html">dsbdp.local-dpp-self-adaptivity</a></td><td><div>Functions for self-adaptive local data processing pipelines.</div></td></tr><tr><td><a href="dsbdp.main.html">dsbdp.main</a></td><td><div>Main class for launching experiments</div></td></tr><tr><td><a href="dsbdp.processing-fn-utils.html">dsbdp.processing-fn-utils</a></td><td><div></div></td></tr><tr><td><a href="index.html">Index Page</a></td><td></td></tr><tr><td><a href="var-index.html">Alphabetic Var Index</a></td><td></td></tr></table></details></section><section id="pubvars-toc"><h2>Public Vars</h2><nav><a href="#IDba-to-str">ba-to-str</a>, <a href="#IDeth-mac-addr-str">eth-mac-addr-str</a>, <a href="#IDint16">int16</a>, <a href="#IDint16be">int16be</a>, <a href="#IDint32">int32</a>, <a href="#IDint32be">int32be</a>, <a href="#IDint4h">int4h</a>, <a href="#IDint4l">int4l</a>, <a href="#IDint8">int8</a>, <a href="#IDipv4-addr-str">ipv4-addr-str</a>, <a href="#IDtimestamp">timestamp</a>, <a href="#IDtimestamp-be">timestamp-be</a>, <a href="#IDtimestamp-str">timestamp-str</a>, <a href="#IDtimestamp-str-be">timestamp-str-be</a>, <a href="#IDtimestamp-to-str">timestamp-to-str</a></nav></section><section><h2>Usage Documentation</h2><details open="open"><summary>Show/Hide</summary><pre>Helper functions for converting byte arrays into other data types/representations</pre></details><a href="#top">Back to top</a></section><section id="details"><h2>Details of Public Vars</h2><div id="IDba-to-str"><div><h4>Function: ba-to-str</h4><pre>Arglists:
+=========
+
+  (ba-to-str ba idx len)
+
+Docstring:
+==========
+
+  Convert a byte array ba into a String representation, interpreting the ba content as ASCII values.
+   Starts at index idx and converts the number of len bytes.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/byte_array_conversion.clj#L92">View Source</a></div><div id="IDeth-mac-addr-str"><div><h4>Function: eth-mac-addr-str</h4><pre>Arglists:
+=========
+
+  (eth-mac-addr-str ba idx)
+
+Docstring:
+==========
+
+  Starting at index idx of the byte array ba, convert the following bytes into the Ethernet MAC address String representation.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/byte_array_conversion.clj#L63">View Source</a></div><div id="IDint16"><div><h4>Function: int16</h4><pre>Arglists:
+=========
+
+  (int16 ba idx)
+
+Docstring:
+==========
+
+  Get the Int16 value of the two bytes starting at index idx in the byte-array ba.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/byte_array_conversion.clj#L33">View Source</a></div><div id="IDint16be"><div><h4>Function: int16be</h4><pre>Arglists:
+=========
+
+  (int16be ba idx)
+
+Docstring:
+==========
+
+  Get the big endian Int16 value of the two bytes starting at index idx in the byte-array ba.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/byte_array_conversion.clj#L38">View Source</a></div><div id="IDint32"><div><h4>Function: int32</h4><pre>Arglists:
+=========
+
+  (int32 ba idx)
+
+Docstring:
+==========
+
+  Get the Int32 value of the four bytes starting at index idx in the byte-array ba.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/byte_array_conversion.clj#L43">View Source</a></div><div id="IDint32be"><div><h4>Function: int32be</h4><pre>Arglists:
+=========
+
+  (int32be ba idx)
+
+Docstring:
+==========
+
+  Get the big endian Int32 value of the four bytes starting at index idx in the byte-array ba.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/byte_array_conversion.clj#L48">View Source</a></div><div id="IDint4h"><div><h4>Function: int4h</h4><pre>Arglists:
+=========
+
+  (int4h ba idx)
+
+Docstring:
+==========
+
+  Get the higher 4 bits (nibble) of the byte at the given index idx in the provided byte-array ba.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/byte_array_conversion.clj#L23">View Source</a></div><div id="IDint4l"><div><h4>Function: int4l</h4><pre>Arglists:
+=========
+
+  (int4l ba idx)
+
+Docstring:
+==========
+
+  Get the lower 4 bits (nibble) of the byte at the given index idx in the provided byte-array ba.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/byte_array_conversion.clj#L18">View Source</a></div><div id="IDint8"><div><h4>Function: int8</h4><pre>Arglists:
+=========
+
+  (int8 ba idx)
+
+Docstring:
+==========
+
+  Get the byte at the index idx in the byte-array ba.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/byte_array_conversion.clj#L28">View Source</a></div><div id="IDipv4-addr-str"><div><h4>Function: ipv4-addr-str</h4><pre>Arglists:
+=========
+
+  (ipv4-addr-str ba idx)
+
+Docstring:
+==========
+
+  Starting at index idx of the byte array ba, convert the following bytes into the IPv4 address String representation.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/byte_array_conversion.clj#L68">View Source</a></div><div id="IDtimestamp"><div><h4>Function: timestamp</h4><pre>Arglists:
+=========
+
+  (timestamp ba idx)
+
+Docstring:
+==========
+
+  Get the (pcap) timestamp long value starting at index idx in the byte-array ba.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/byte_array_conversion.clj#L53">View Source</a></div><div id="IDtimestamp-be"><div><h4>Function: timestamp-be</h4><pre>Arglists:
+=========
+
+  (timestamp-be ba idx)
+
+Docstring:
+==========
+
+  Get the (pcap) big endian timestamp long value starting at index idx in the byte-array ba.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/byte_array_conversion.clj#L58">View Source</a></div><div id="IDtimestamp-str"><div><h4>Function: timestamp-str</h4><pre>Arglists:
+=========
+
+  (timestamp-str ba idx)
+
+Docstring:
+==========
+
+  Get the (pcap) timestamp String represenation starting at index idx in the byte-array ba.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/byte_array_conversion.clj#L82">View Source</a></div><div id="IDtimestamp-str-be"><div><h4>Function: timestamp-str-be</h4><pre>Arglists:
+=========
+
+  (timestamp-str-be ba idx)
+
+Docstring:
+==========
+
+  Get the (pcap) big endian timestamp String representation starting at index idx in the byte-array ba.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/byte_array_conversion.clj#L87">View Source</a></div><div id="IDtimestamp-to-str"><div><h4>Function: timestamp-to-str</h4><pre>Arglists:
+=========
+
+  (timestamp-to-str ts)
+
+Docstring:
+==========
+
+  Convert a timestamp from its Long value to a formatted String.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/byte_array_conversion.clj#L73">View Source</a></div></section></div><footer><p>These docs were generated by the <a href="https://github.com/tsdh/lein-html5-docs">Leiningen HTML5 Docs Plugin</a>, version 3.0.3.</p><a href="http://www.w3.org/html/logo/"><img alt="HTML5 Powered" height="64" src="http://www.w3.org/html/logo/badge/html5-badge-h-solo.png" title="HTML5 Powered" width="63" /></a><script src="http://code.jquery.com/jquery.min.js"></script><script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script><script src="api-search.js"></script></footer></body></html>

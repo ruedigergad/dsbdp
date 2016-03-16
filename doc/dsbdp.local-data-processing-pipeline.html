@@ -1,0 +1,141 @@
+<!DOCTYPE html><html><head><meta charset="utf-8" /><title>Namespace dsbdp.local-data-processing-pipeline</title><style type="text/css">body { margin: 10px;
+          padding: 10px;
+          background-color: #DFE9F5;
+          font-family: sans-serif; }
+
+  #top { width: 800px;
+         padding: 10px;
+         margin-left: auto;
+         margin-right: auto;
+         overflow: hidden;
+         background-color: #FFFFFF;
+         color: #123154;
+         border: 3px solid #B4D3F5; }
+
+  pre { padding: 10px;
+        border: 2px dashed #B4D3F5;
+        background-color: #F0F6FD;
+        font-family: monospace; }
+
+  a { color: #4A6A8F; }
+  a:hover { background-color: #B4D3F5; }
+  a:visited { color: #425365; }
+
+  td, th { padding-left: 5px;
+           text-align: left; }
+
+  #ui-widget {
+    position: fixed;
+    top: 0em;
+    left: 0em;
+  }</style><link href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet" /></head><body><div id="ui-widget"><input autofocus="autofocus" id="api-search" placeholder="API Search" tabindex="1" /></div><div id="top"><header><h1>Namespace dsbdp.local-data-processing-pipeline</h1><p>Pipeline for processing data</p></header><section class="ns-toc" id="other-ns-toc"><h2>Other Namespaces</h2><details><summary>Show/Hide</summary><table><tr><td><a href="dsbdp.byte-array-conversion.html">dsbdp.byte-array-conversion</a></td><td><div>Helper functions for converting byte arrays into other data types/representations</div></td></tr><tr><td><a href="dsbdp.data-processing-dsl.html">dsbdp.data-processing-dsl</a></td><td><div>DSL for processing data</div></td></tr><tr><td><a href="dsbdp.experiment-helper.html">dsbdp.experiment-helper</a></td><td><div>Helper that are primarily used during experiments</div></td></tr><tr><td><a href="dsbdp.local-dpp-self-adaptivity.html">dsbdp.local-dpp-self-adaptivity</a></td><td><div>Functions for self-adaptive local data processing pipelines.</div></td></tr><tr><td><a href="dsbdp.main.html">dsbdp.main</a></td><td><div>Main class for launching experiments</div></td></tr><tr><td><a href="dsbdp.processing-fn-utils.html">dsbdp.processing-fn-utils</a></td><td><div></div></td></tr><tr><td><a href="index.html">Index Page</a></td><td></td></tr><tr><td><a href="var-index.html">Alphabetic Var Index</a></td><td></td></tr></table></details></section><section id="pubvars-toc"><h2>Public Vars</h2><nav><a href="#IDcreate-local-processing-element">create-local-processing-element</a>, <a href="#IDcreate-local-processing-pipeline">create-local-processing-pipeline</a>, <a href="#IDcreate-queue">create-queue</a>, <a href="#IDenqueue">enqueue</a>, <a href="#IDget-counts">get-counts</a>, <a href="#IDget-id">get-id</a>, <a href="#IDget-in-fn">get-in-fn</a>, <a href="#IDget-out-queue">get-out-queue</a>, <a href="#IDget-thread-name">get-thread-name</a>, <a href="#IDinterrupt">interrupt</a>, <a href="#IDqueue-setup">queue-setup</a>, <a href="#IDqueue-size">queue-size</a>, <a href="#IDset-proc-fn">set-proc-fn</a>, <a href="#IDset-proc-fns-vec">set-proc-fns-vec</a>, <a href="#IDtake-from-queue">take-from-queue</a></nav></section><section><h2>Usage Documentation</h2><details open="open"><summary>Show/Hide</summary><pre>Pipeline for processing data</pre></details><a href="#top">Back to top</a></section><section id="details"><h2>Details of Public Vars</h2><div id="IDcreate-local-processing-element"><div><h4>Function: create-local-processing-element</h4><pre>Arglists:
+=========
+
+  (create-local-processing-element in-queue initial-proc-fn)
+  (create-local-processing-element in-queue initial-proc-fn id)
+
+Docstring:
+==========
+
+  Create a local processing element that is intended to be used in a local data processing pipeline.
+   Input data will be read from the input queue in-queue and processed with the given initial processing function initial-proc-fn.
+   Optionally, the name of the worker thread for the newly created processing element can be set to ProcessingElement_id for which id is replaced with the given id.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/local_data_processing_pipeline.clj#L155">View Source</a></div><div id="IDcreate-local-processing-pipeline"><div><h4>Function: create-local-processing-pipeline</h4><pre>Arglists:
+=========
+
+  (create-local-processing-pipeline fns out-fn)
+
+Docstring:
+==========
+
+  Create a local data processing pipeline.
+   fns is expected to be a vector of functions with two arguments.
+   For each function in fns, one processing element will be created in which the respective function is executed.
+   The output function out-fn is called with the result as emitted by the last processing element.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/local_data_processing_pipeline.clj#L229">View Source</a></div><div id="IDcreate-queue"><div><h4>Macro: create-queue</h4><pre>Arglists:
+=========
+
+  (create-queue)
+
+Docstring:
+==========
+
+  No docs attached.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/local_data_processing_pipeline.clj#L50">View Source</a></div><div id="IDenqueue"><div><h4>Macro: enqueue</h4><pre>Arglists:
+=========
+
+  (enqueue queue data enqueued-counter dropped-counter)
+
+Docstring:
+==========
+
+  No docs attached.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/local_data_processing_pipeline.clj#L62">View Source</a></div><div id="IDget-counts"><div><h4>Function: get-counts</h4><pre>Arglists:
+=========
+
+  (get-counts obj)
+
+Docstring:
+==========
+
+  Get the statistic counts of the given processing element or pipeline.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/local_data_processing_pipeline.clj#L219">View Source</a></div><div id="IDget-id"><div><h4>Function: get-id</h4><pre>Arglists:
+=========
+
+  (get-id obj)
+
+Docstring:
+==========
+
+  Get the id of the given processing element.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/local_data_processing_pipeline.clj#L209">View Source</a></div><div id="IDget-in-fn"><div><h4>Function: get-in-fn</h4><pre>Arglists:
+=========
+
+  (get-in-fn obj)
+
+Docstring:
+==========
+
+  Get the input function of the given processing pipeline.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/local_data_processing_pipeline.clj#L307">View Source</a></div><div id="IDget-out-queue"><div><h4>Function: get-out-queue</h4><pre>Arglists:
+=========
+
+  (get-out-queue obj)
+
+Docstring:
+==========
+
+  Get the output queue of the given processing element or pipeline.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/local_data_processing_pipeline.clj#L204">View Source</a></div><div id="IDget-thread-name"><div><h4>Function: get-thread-name</h4><pre>Arglists:
+=========
+
+  (get-thread-name obj)
+
+Docstring:
+==========
+
+  Get the thread name of the given processing element.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/local_data_processing_pipeline.clj#L214">View Source</a></div><div id="IDinterrupt"><div><h4>Function: interrupt</h4><pre>Arglists:
+=========
+
+  (interrupt obj)
+
+Docstring:
+==========
+
+  Interrupt the given processing element or pipeline.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/local_data_processing_pipeline.clj#L199">View Source</a></div><div id="IDqueue-setup"><div><h4>Var: queue-setup</h4><pre>  No docs attached.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/local_data_processing_pipeline.clj#L23">View Source</a></div><div id="IDqueue-size"><div><h4>Var: queue-size</h4><pre>  No docs attached.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/local_data_processing_pipeline.clj#L22">View Source</a></div><div id="IDset-proc-fn"><div><h4>Function: set-proc-fn</h4><pre>Arglists:
+=========
+
+  (set-proc-fn obj proc-fn)
+
+Docstring:
+==========
+
+  Set the processing function for the given processing element obj to proc-fn.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/local_data_processing_pipeline.clj#L224">View Source</a></div><div id="IDset-proc-fns-vec"><div><h4>Function: set-proc-fns-vec</h4><pre>Arglists:
+=========
+
+  (set-proc-fns-vec obj fns)
+
+Docstring:
+==========
+
+  Set the processing function vector of the given pipeline obj to fns.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/local_data_processing_pipeline.clj#L312">View Source</a></div><div id="IDtake-from-queue"><div><h4>Macro: take-from-queue</h4><pre>Arglists:
+=========
+
+  (take-from-queue queue)
+
+Docstring:
+==========
+
+  No docs attached.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/local_data_processing_pipeline.clj#L140">View Source</a></div></section></div><footer><p>These docs were generated by the <a href="https://github.com/tsdh/lein-html5-docs">Leiningen HTML5 Docs Plugin</a>, version 3.0.3.</p><a href="http://www.w3.org/html/logo/"><img alt="HTML5 Powered" height="64" src="http://www.w3.org/html/logo/badge/html5-badge-h-solo.png" title="HTML5 Powered" width="63" /></a><script src="http://code.jquery.com/jquery.min.js"></script><script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script><script src="api-search.js"></script></footer></body></html>

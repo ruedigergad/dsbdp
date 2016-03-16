@@ -1,0 +1,126 @@
+<!DOCTYPE html><html><head><meta charset="utf-8" /><title>Namespace dsbdp.experiment-helper</title><style type="text/css">body { margin: 10px;
+          padding: 10px;
+          background-color: #DFE9F5;
+          font-family: sans-serif; }
+
+  #top { width: 800px;
+         padding: 10px;
+         margin-left: auto;
+         margin-right: auto;
+         overflow: hidden;
+         background-color: #FFFFFF;
+         color: #123154;
+         border: 3px solid #B4D3F5; }
+
+  pre { padding: 10px;
+        border: 2px dashed #B4D3F5;
+        background-color: #F0F6FD;
+        font-family: monospace; }
+
+  a { color: #4A6A8F; }
+  a:hover { background-color: #B4D3F5; }
+  a:visited { color: #425365; }
+
+  td, th { padding-left: 5px;
+           text-align: left; }
+
+  #ui-widget {
+    position: fixed;
+    top: 0em;
+    left: 0em;
+  }</style><link href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet" /></head><body><div id="ui-widget"><input autofocus="autofocus" id="api-search" placeholder="API Search" tabindex="1" /></div><div id="top"><header><h1>Namespace dsbdp.experiment-helper</h1><p>Helper that are primarily used during experiments</p></header><section class="ns-toc" id="other-ns-toc"><h2>Other Namespaces</h2><details><summary>Show/Hide</summary><table><tr><td><a href="dsbdp.byte-array-conversion.html">dsbdp.byte-array-conversion</a></td><td><div>Helper functions for converting byte arrays into other data types/representations</div></td></tr><tr><td><a href="dsbdp.data-processing-dsl.html">dsbdp.data-processing-dsl</a></td><td><div>DSL for processing data</div></td></tr><tr><td><a href="dsbdp.local-data-processing-pipeline.html">dsbdp.local-data-processing-pipeline</a></td><td><div>Pipeline for processing data</div></td></tr><tr><td><a href="dsbdp.local-dpp-self-adaptivity.html">dsbdp.local-dpp-self-adaptivity</a></td><td><div>Functions for self-adaptive local data processing pipelines.</div></td></tr><tr><td><a href="dsbdp.main.html">dsbdp.main</a></td><td><div>Main class for launching experiments</div></td></tr><tr><td><a href="dsbdp.processing-fn-utils.html">dsbdp.processing-fn-utils</a></td><td><div></div></td></tr><tr><td><a href="index.html">Index Page</a></td><td></td></tr><tr><td><a href="var-index.html">Alphabetic Var Index</a></td><td></td></tr></table></details></section><section id="pubvars-toc"><h2>Public Vars</h2><nav><a href="#IDchunker">chunker</a>, <a href="#IDcreate-busy-sleep-proc-fns">create-busy-sleep-proc-fns</a>, <a href="#IDcreate-factorial-proc-fns">create-factorial-proc-fns</a>, <a href="#IDcreate-hashmap-inc-put-proc-fns">create-hashmap-inc-put-proc-fns</a>, <a href="#IDcreate-inc-proc-fns">create-inc-proc-fns</a>, <a href="#IDcreate-no-op-proc-fns">create-no-op-proc-fns</a>, <a href="#IDfactorial">factorial</a>, <a href="#IDget-sentences">get-sentences</a>, <a href="#IDopennlp-multi-sentence-direct-test-fn">opennlp-multi-sentence-direct-test-fn</a>, <a href="#IDopennlp-single-sentence-direct-test-fn">opennlp-single-sentence-direct-test-fn</a>, <a href="#IDopennlp-single-sentence-inc-test-fns">opennlp-single-sentence-inc-test-fns</a>, <a href="#IDpcap-byte-array-test-data">pcap-byte-array-test-data</a>, <a href="#IDpos-tag">pos-tag</a>, <a href="#IDsample-pcap-processing-definition-clj-map">sample-pcap-processing-definition-clj-map</a>, <a href="#IDsample-pcap-processing-definition-csv">sample-pcap-processing-definition-csv</a>, <a href="#IDsample-pcap-processing-definition-java-map">sample-pcap-processing-definition-java-map</a>, <a href="#IDsample-pcap-processing-definition-json">sample-pcap-processing-definition-json</a>, <a href="#IDsample-pcap-processing-definition-rules">sample-pcap-processing-definition-rules</a>, <a href="#IDsynthetic-average-throughput-self-adaptivity-processing-fns">synthetic-average-throughput-self-adaptivity-processing-fns</a>, <a href="#IDsynthetic-high-throughput-self-adaptivity-processing-fns">synthetic-high-throughput-self-adaptivity-processing-fns</a>, <a href="#IDsynthetic-low-throughput-self-adaptivity-processing-fns">synthetic-low-throughput-self-adaptivity-processing-fns</a>, <a href="#IDtokenize">tokenize</a></nav></section><section><h2>Usage Documentation</h2><details open="open"><summary>Show/Hide</summary><pre>Helper that are primarily used during experiments</pre></details><a href="#top">Back to top</a></section><section id="details"><h2>Details of Public Vars</h2><div id="IDchunker"><div><h4>Function: chunker</h4><pre>Arglists:
+=========
+
+
+Docstring:
+==========
+
+  No docs attached.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/experiment_helper.clj#L38">View Source</a></div><div id="IDcreate-busy-sleep-proc-fns"><div><h4>Function: create-busy-sleep-proc-fns</h4><pre>Arglists:
+=========
+
+  (create-busy-sleep-proc-fns n)
+
+Docstring:
+==========
+
+  Create a vector of processing functions that perform a busy sleep.
+   The duration of the busy sleep is given as input data in nanoseconds.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/experiment_helper.clj#L84">View Source</a></div><div id="IDcreate-factorial-proc-fns"><div><h4>Function: create-factorial-proc-fns</h4><pre>Arglists:
+=========
+
+  (create-factorial-proc-fns n)
+
+Docstring:
+==========
+
+  Create a vector of processing functions that each calculate the factorial of the input data.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/experiment_helper.clj#L76">View Source</a></div><div id="IDcreate-hashmap-inc-put-proc-fns"><div><h4>Function: create-hashmap-inc-put-proc-fns</h4><pre>Arglists:
+=========
+
+  (create-hashmap-inc-put-proc-fns n)
+
+Docstring:
+==========
+
+  The general behaviour is analogous to create-inc-proc-fns, however, the results are stored in a map in which the index of the processing function is used as key to which the result of the operation is associated as value.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/experiment_helper.clj#L57">View Source</a></div><div id="IDcreate-inc-proc-fns"><div><h4>Function: create-inc-proc-fns</h4><pre>Arglists:
+=========
+
+  (create-inc-proc-fns n)
+
+Docstring:
+==========
+
+  Create a vector of functions which each perform a single increment operation.
+   The first function will increment the input argument and subsequent functions will increment the output argument.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/experiment_helper.clj#L48">View Source</a></div><div id="IDcreate-no-op-proc-fns"><div><h4>Function: create-no-op-proc-fns</h4><pre>Arglists:
+=========
+
+  (create-no-op-proc-fns n)
+
+Docstring:
+==========
+
+  Create a vector of n no-op functions.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/experiment_helper.clj#L40">View Source</a></div><div id="IDfactorial"><div><h4>Function: factorial</h4><pre>Arglists:
+=========
+
+  (factorial n)
+  (factorial result i n)
+
+Docstring:
+==========
+
+  A purposely naive implementation for calculating factorials.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/experiment_helper.clj#L67">View Source</a></div><div id="IDget-sentences"><div><h4>Function: get-sentences</h4><pre>Arglists:
+=========
+
+
+Docstring:
+==========
+
+  No docs attached.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/experiment_helper.clj#L35">View Source</a></div><div id="IDopennlp-multi-sentence-direct-test-fn"><div><h4>Function: opennlp-multi-sentence-direct-test-fn</h4><pre>Arglists:
+=========
+
+  (opennlp-multi-sentence-direct-test-fn in-str)
+
+Docstring:
+==========
+
+  No docs attached.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/experiment_helper.clj#L132">View Source</a></div><div id="IDopennlp-single-sentence-direct-test-fn"><div><h4>Function: opennlp-single-sentence-direct-test-fn</h4><pre>Arglists:
+=========
+
+  (opennlp-single-sentence-direct-test-fn sentence)
+
+Docstring:
+==========
+
+  No docs attached.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/experiment_helper.clj#L128">View Source</a></div><div id="IDopennlp-single-sentence-inc-test-fns"><div><h4>Var: opennlp-single-sentence-inc-test-fns</h4><pre>  No docs attached.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/experiment_helper.clj#L137">View Source</a></div><div id="IDpcap-byte-array-test-data"><div><h4>Var: pcap-byte-array-test-data</h4><pre>  The byte array representation of a UDP packet for being used as dummy data.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/experiment_helper.clj#L26">View Source</a></div><div id="IDpos-tag"><div><h4>Function: pos-tag</h4><pre>Arglists:
+=========
+
+
+Docstring:
+==========
+
+  No docs attached.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/experiment_helper.clj#L37">View Source</a></div><div id="IDsample-pcap-processing-definition-clj-map"><div><h4>Var: sample-pcap-processing-definition-clj-map</h4><pre>  No docs attached.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/experiment_helper.clj#L120">View Source</a></div><div id="IDsample-pcap-processing-definition-csv"><div><h4>Var: sample-pcap-processing-definition-csv</h4><pre>  No docs attached.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/experiment_helper.clj#L112">View Source</a></div><div id="IDsample-pcap-processing-definition-java-map"><div><h4>Var: sample-pcap-processing-definition-java-map</h4><pre>  No docs attached.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/experiment_helper.clj#L124">View Source</a></div><div id="IDsample-pcap-processing-definition-json"><div><h4>Var: sample-pcap-processing-definition-json</h4><pre>  No docs attached.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/experiment_helper.clj#L116">View Source</a></div><div id="IDsample-pcap-processing-definition-rules"><div><h4>Var: sample-pcap-processing-definition-rules</h4><pre>  No docs attached.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/experiment_helper.clj#L93">View Source</a></div><div id="IDsynthetic-average-throughput-self-adaptivity-processing-fns"><div><h4>Var: synthetic-average-throughput-self-adaptivity-processing-fns</h4><pre>  No docs attached.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/experiment_helper.clj#L160">View Source</a></div><div id="IDsynthetic-high-throughput-self-adaptivity-processing-fns"><div><h4>Var: synthetic-high-throughput-self-adaptivity-processing-fns</h4><pre>  No docs attached.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/experiment_helper.clj#L177">View Source</a></div><div id="IDsynthetic-low-throughput-self-adaptivity-processing-fns"><div><h4>Var: synthetic-low-throughput-self-adaptivity-processing-fns</h4><pre>  No docs attached.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/experiment_helper.clj#L143">View Source</a></div><div id="IDtokenize"><div><h4>Function: tokenize</h4><pre>Arglists:
+=========
+
+
+Docstring:
+==========
+
+  No docs attached.</pre></div><a href="#top">Back to top</a> <a href="https://github.com/ruedigergad/dsbdp/blob/master/src/dsbdp/experiment_helper.clj#L36">View Source</a></div></section></div><footer><p>These docs were generated by the <a href="https://github.com/tsdh/lein-html5-docs">Leiningen HTML5 Docs Plugin</a>, version 3.0.3.</p><a href="http://www.w3.org/html/logo/"><img alt="HTML5 Powered" height="64" src="http://www.w3.org/html/logo/badge/html5-badge-h-solo.png" title="HTML5 Powered" width="63" /></a><script src="http://code.jquery.com/jquery.min.js"></script><script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script><script src="api-search.js"></script></footer></body></html>
