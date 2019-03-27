@@ -1,0 +1,15 @@
+set term pdfcairo dashed 
+#font 'Times,10' size 3.5, 1.4
+set output "overview_sorted_by_throughput.pdf";
+set yrange [0:6500]
+set xlabel "Scenario"
+set ylabel "Throughput [kdips]"
+set grid
+set xtics rotate nomirror
+set nokey
+plot [-0.5:20.5] \
+     "extracted_data_sorted_by_throughput.txt" using 4:xticlabel(2),\
+     "extracted_data_sorted_by_throughput.txt" using 4:6 with errorbars
+
+#     "baseline_test_setup_pps.data" using 1:($2/1000) with linespoints linewidth 4,\
+

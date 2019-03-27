@@ -1,0 +1,17 @@
+Using queue-setup defined in: queue-setup.cfg
+Using queue-setup: LinkedTransferQueue_tryTransfer-counted-1ms
+Setting up queue creation for: LinkedTransferQueue_tryTransfer-counted-1ms
+(java.util.concurrent.LinkedTransferQueue.)
+Enqueueing data via:
+(if (.tryTransfer out-queue c 1 java.util.concurrent.TimeUnit/MILLISECONDS) (.inc out-counter) (.inc out-drop-counter))
+Setting up queue creation for: LinkedTransferQueue_tryTransfer-counted-1ms
+(java.util.concurrent.LinkedTransferQueue.)
+Enqueueing data via:
+(if (.tryTransfer in-queue (LocalTransferContainer. in nil) 1 java.util.concurrent.TimeUnit/MILLISECONDS) (.inc in-counter) (.inc in-drop-counter))
+proc-fns-full: [(clojure.core/fn [_ _])]
+proc-fns-short: [(fn [_ _])]
+proc-fns-pretty:
+ [(fn [_ _])]
+
+Created /home/rc/repositories/private/clojure/dsbdp/target/dsbdp-0.1.0-SNAPSHOT.jar
+Created /home/rc/repositories/private/clojure/dsbdp/target/dsbdp-0.1.0-SNAPSHOT-standalone.jar

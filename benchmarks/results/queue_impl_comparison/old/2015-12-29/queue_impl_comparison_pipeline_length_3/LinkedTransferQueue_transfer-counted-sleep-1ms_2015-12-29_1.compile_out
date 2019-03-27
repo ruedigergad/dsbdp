@@ -1,0 +1,22 @@
+Compiling 4 source files to /home/rc/repositories/private/clojure/dsbdp/target/classes
+Compiling dsbdp.main
+Using queue-setup defined in: queue-setup.cfg
+Using queue-setup: LinkedTransferQueue_transfer-counted-sleep-1ms
+Setting up queue creation for: LinkedTransferQueue_transfer-counted-sleep-1ms
+(java.util.concurrent.LinkedTransferQueue.)
+Enqueueing data via:
+(if (.hasWaitingConsumer out-queue) (do (.transfer out-queue c) (.inc out-counter)) (do (.inc out-drop-counter) (clj-assorted-utils.util/sleep 1)))
+Setting up queue creation for: LinkedTransferQueue_transfer-counted-sleep-1ms
+(java.util.concurrent.LinkedTransferQueue.)
+Enqueueing data via:
+(if (.hasWaitingConsumer in-queue) (do (.transfer in-queue (LocalTransferContainer. in nil)) (.inc in-counter)) (do (.inc in-drop-counter) (clj-assorted-utils.util/sleep 1)))
+proc-fns-full: [(clojure.core/fn [_ _]) (clojure.core/fn [_ _]) (clojure.core/fn [_ _])]
+proc-fns-short: [(fn [_ _]) (fn [_ _]) (fn [_ _])]
+proc-fns-pretty:
+ [(fn [_ _])
+ (fn [_ _])
+ (fn [_ _])]
+
+Compiling dsbdp.main
+Created /home/rc/repositories/private/clojure/dsbdp/target/dsbdp-0.1.0-SNAPSHOT.jar
+Created /home/rc/repositories/private/clojure/dsbdp/target/dsbdp-0.1.0-SNAPSHOT-standalone.jar

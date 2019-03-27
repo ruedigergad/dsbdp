@@ -1,0 +1,22 @@
+set term pdfcairo dashed font 'Times New Roman,10' size 2, 1.75
+#font 'Times,10' size 3.5, 1.4
+set output "latency_comparison_no-op_2016-05-28.pdf";
+set yrange [10:10000000]
+set xrange [-0.5:18.5]
+set xlabel "Queue Implementation"
+set ylabel "Latency [ns]"
+set grid
+set xtics rotate
+set key below samplen 2
+set logscale y
+set format y "10^{%L}"
+set bmargin 9
+set rmargin 1
+plot "2016-05-21_no-op/extracted_data.txt" using -1:xticlabel(1) with lines notitle,\
+     18 lw 2 lc "red" title "D",\
+     "2016-05-21_no-op/extracted_data.txt" using 7:9 pt 1 ps 1 lw 2 lc "green" with errorbars title "PL2",\
+     "2016-05-28_no-op/extracted_data.txt" using 7:9 pt 2 ps 1 lw 2 lc "orange" with errorbars title "PL4",\
+     "2016-05-28_no-op/extracted_data.txt" using 7:9 pt 3 ps 1 lw 2 lc "blue" with errorbars title "PL8"
+
+#     "baseline_test_setup_pps.data" using 1:($2/1000) with linespoints linewidth 4,\
+

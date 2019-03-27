@@ -1,0 +1,23 @@
+set term pdfcairo enhanced dashed font 'Times New Roman, 10' size 1.75, 1.4
+set output "pcap-json_latency_comparison_2.pdf";
+set yrange [1000:1000000000]
+set xrange [0.8:78]
+set xtics (1,2,4,8,16,32,64,256,1024,4096,16384)
+set xlabel "Parallelism"
+set ylabel "Latency [ns]"
+set format y "10^{%L}"
+set format x "2^{%L}"
+set grid
+set xtics rotate
+set key below right samplen 2
+set logscale y
+set logscale x 2
+set bmargin 5
+set rmargin 1
+plot "2016-05-23_pcap-json/extracted_data_simple_pmap.txt" using 2:5 with lines lc "red" lw 2 title "Direct",\
+     "2016-05-26_async_chan/extracted_data_pcap-json.txt" using 2:12 pt 3 ps 1.25 lc "orange" lw 2 with lines notitle,\
+     "2016-05-26_async_chan/extracted_data_pcap-json.txt" using 2:12:14 pt 3 ps 1.25 lc "orange" lw 2 with errorbars title "Async",\
+     "2016-05-23_pcap-json/extracted_data_simple-reducers-map-partition-divisor.txt" using 2:12 pt 2 ps 1.25 lc "blue" lw 2 with lines notitle,\
+     "2016-05-23_pcap-json/extracted_data_simple-reducers-map-partition-divisor.txt" using 2:12:14 pt 2 ps 1.25 lc "blue" lw 2 with errorbars title "R.Map",\
+
+

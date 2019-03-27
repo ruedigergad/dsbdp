@@ -1,0 +1,13 @@
+set term pdfcairo font 'Times,14' dl 1 size 6, 2
+set output "plot.pdf";
+set yrange [0:275]
+set xrange [-0.5:6.5]
+set xlabel "Mapping: Fns to Processing Elements"
+set ylabel "Throughput [kdips]"
+set grid
+set xtics rotate
+set key center top vertical maxrows 3 maxcols 2
+plot "extracted_data.txt" using 3:xticlabel(1) with points ps 0 lw 2.5 dt 1 lc "black" notitle,\
+     "extracted_data.txt" using 3:5 with errorbars lw 2.5 dt 1 pt 1 ps 1.5 lc "black" notitle,\
+
+

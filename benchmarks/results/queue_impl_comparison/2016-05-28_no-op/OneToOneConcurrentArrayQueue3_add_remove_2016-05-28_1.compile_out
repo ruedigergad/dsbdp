@@ -1,0 +1,44 @@
+Compiling 9 source files to /home/rc/repositories/private/clojure/dsbdp/target/classes
+Compiling dsbdp.parallel-processing
+Using queue-setup defined in: queue-setup.cfg
+Using queue-setup: OneToOneConcurrentArrayQueue3_add_remove
+Reflection warning, dsbdp/local_data_processing_pipeline.clj:68:7 - call to method contains can't be resolved (target class is unknown).
+Setting up data exchange via: OneToOneConcurrentArrayQueue3_add_remove
+(uk.co.real_logic.queues.OneToOneConcurrentArrayQueue3. dsbdp.local-data-processing-pipeline/queue-size)
+Retrieving data via:
+(if (clojure.core/not (.isEmpty in-queue)) (.remove in-queue))
+Enqueueing data via:
+(if (clojure.core/< (.size out-queue) dsbdp.local-data-processing-pipeline/queue-size) (.add out-queue c))
+Setting up data exchange via: OneToOneConcurrentArrayQueue3_add_remove
+(uk.co.real_logic.queues.OneToOneConcurrentArrayQueue3. dsbdp.local-data-processing-pipeline/queue-size)
+Retrieving data via:
+(if (clojure.core/not (.isEmpty (clojure.core/deref out-queue))) (.remove (clojure.core/deref out-queue)))
+Reflection warning, dsbdp/local_data_processing_pipeline.clj:279:5 - reference to field start can't be resolved.
+Reflection warning, dsbdp/local_data_processing_pipeline.clj:291:19 - reference to field interrupt can't be resolved.
+Enqueueing data via:
+(if (clojure.core/< (.size in-queue) dsbdp.local-data-processing-pipeline/queue-size) (.add in-queue (LocalTransferContainer. in nil)))
+Reflection warning, dsbdp/local_data_processing_pipeline.clj:298:30 - reference to field interrupt can't be resolved.
+Reflection warning, dsbdp/local_data_processing_pipeline.clj:311:52 - reference to field start can't be resolved.
+Reflection warning, dsbdp/local_data_processing_pipeline.clj:319:30 - reference to field interrupt can't be resolved.
+Reflection warning, dsbdp/local_data_processing_pipeline.clj:320:52 - reference to field start can't be resolved.
+Compiling dsbdp.local-dpp-self-adaptivity
+WARNING: update already refers to: #'clojure.core/update in namespace: dsbdp.local-dpp-self-adaptivity, being replaced by: #'dsbdp.local-dpp-self-adaptivity/update
+Compiling dsbdp.data-processing-dsl
+Compiling dsbdp.local-data-processing-pipeline
+Using queue-setup defined in: queue-setup.cfg
+Using queue-setup: OneToOneConcurrentArrayQueue3_add_remove
+Compiling dsbdp.byte-array-conversion
+Compiling dsbdp.processing-fn-utils
+Compiling dsbdp.main
+Reflection warning, opennlp/treebank.clj:236:29 - reference to field getMentions can't be resolved.
+WARNING: update already refers to: #'clojure.core/update in namespace: dsbdp.main, being replaced by: #'dsbdp.local-dpp-self-adaptivity/update
+Reflection warning, dsbdp/main.clj:209:17 - call to method endsWith can't be resolved (target class is unknown).
+Reflection warning, dsbdp/main.clj:214:17 - call to method endsWith can't be resolved (target class is unknown).
+Reflection warning, dsbdp/main.clj:220:17 - call to method endsWith can't be resolved (target class is unknown).
+Reflection warning, dsbdp/main.clj:230:17 - call to method endsWith can't be resolved (target class is unknown).
+Reflection warning, dsbdp/main.clj:234:17 - call to method endsWith can't be resolved (target class is unknown).
+Reflection warning, dsbdp/main.clj:238:17 - call to method endsWith can't be resolved (target class is unknown).
+Reflection warning, dsbdp/main.clj:260:35 - call to method contains can't be resolved (target class is unknown).
+Compiling dsbdp.experiment-helper
+Created /home/rc/repositories/private/clojure/dsbdp/target/dsbdp-0.2.0-SNAPSHOT.jar
+Created /home/rc/repositories/private/clojure/dsbdp/target/dsbdp-0.2.0-SNAPSHOT-standalone.jar

@@ -1,0 +1,17 @@
+Using queue-setup defined in: queue-setup.cfg
+Using queue-setup: OneToOneConcurrentArrayQueue3_add-counted_remove
+Starting dsbdp main...
+Using options: {:scenario busy-sleep, :fn-mapping [5 5 4 3], :pipeline-length 2, :in-data [250000 250000 250000 250000]}
+Using args: []
+in-data: [250000 250000 250000 250000]
+proc-fns-full: [(fn [i _] (dsbdp.ExperimentHelper/busySleep (i 0)) 0) (fn [i _] (dsbdp.ExperimentHelper/busySleep (i 1)) 0) (fn [i _] (dsbdp.ExperimentHelper/busySleep (i 2)) 0) (fn [i _] (dsbdp.ExperimentHelper/busySleep (i 3)) 0)]
+proc-fns-short: [(fn [i _] (busySleep (i 0)) 0) (fn [i _] (busySleep (i 1)) 0) (fn [i _] (busySleep (i 2)) 0) (fn [i _] (busySleep (i 3)) 0)]
+proc-fns-pretty:
+ [(fn [i _] (busySleep (i 0)) 0)
+ (fn [i _] (busySleep (i 1)) 0)
+ (fn [i _] (busySleep (i 2)) 0)
+ (fn [i _] (busySleep (i 3)) 0)]
+
+Starting experiment...
+time-delta: 0 ms; in: 2.0 k; out: 0.0 k; in-delta: 0 k/s; out-delta: 0 k/s;
+{3 {:out 11, :dropped 0}, 2 {:out 12, :dropped 0}, 1 {:out 29, :dropped 0}, 0 {:out 29, :dropped 0}, :pipeline {:in 542, :dropped 1458}}

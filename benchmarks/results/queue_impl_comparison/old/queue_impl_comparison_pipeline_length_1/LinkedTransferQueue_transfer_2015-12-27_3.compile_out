@@ -1,0 +1,17 @@
+Using queue-setup defined in: queue-setup.cfg
+Using queue-setup: LinkedTransferQueue_transfer
+Setting up queue creation for: LinkedTransferQueue_transfer
+(java.util.concurrent.LinkedTransferQueue.)
+Enqueueing data via:
+(.transfer out-queue c)
+Setting up queue creation for: LinkedTransferQueue_transfer
+(java.util.concurrent.LinkedTransferQueue.)
+Enqueueing data via:
+(.transfer in-queue (LocalTransferContainer. in nil))
+proc-fns-full: [(clojure.core/fn [_ _])]
+proc-fns-short: [(fn [_ _])]
+proc-fns-pretty:
+ [(fn [_ _])]
+
+Created /home/rc/repositories/private/clojure/dsbdp/target/dsbdp-0.1.0-SNAPSHOT.jar
+Created /home/rc/repositories/private/clojure/dsbdp/target/dsbdp-0.1.0-SNAPSHOT-standalone.jar

@@ -1,0 +1,8 @@
+Using queue-setup defined in: queue-setup.cfg
+Using queue-setup: LinkedTransferQueue_transfer-counted-sleep-1ms
+Starting dsbdp main...
+Using options: {:pipeline-length 2, :fn-mapping [8 9], :scenario pcap-json#inc}
+Using args: []
+Starting experiment...
+time-delta: 0 ms; in: 0.002 k; out: 0.0 k; in-delta: 0 k/s; out-delta: 0 k/s;
+{:pipeline {:in 1, :dropped 7}, 0 {:out 0, :dropped 0}, 1 {:out 0, :dropped 0}}

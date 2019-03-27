@@ -1,0 +1,70 @@
+Compiling 7 source files to /home/rc/repositories/private/clojure/dsbdp/target/classes
+Compiling dsbdp.local-dpp-self-adaptivity
+Compiling dsbdp.data-processing-dsl
+Compiling dsbdp.local-data-processing-pipeline
+Using queue-setup defined in: queue-setup.cfg
+Using queue-setup: LinkedTransferQueue_transfer-counted-sleep-1ms
+Setting up queue creation for: LinkedTransferQueue_transfer-counted-sleep-1ms
+(java.util.concurrent.LinkedTransferQueue.)
+Retrieving data from queue via:
+(.take in-queue)
+Enqueueing data via:
+(if (.hasWaitingConsumer out-queue) (do (.transfer out-queue c) (.inc out-counter)) (do (.inc out-drop-counter) (clj-assorted-utils.util/sleep 1)))
+Setting up queue creation for: LinkedTransferQueue_transfer-counted-sleep-1ms
+(java.util.concurrent.LinkedTransferQueue.)
+Retrieving data from queue via:
+(.take (clojure.core/deref out-queue))
+Reflection warning, dsbdp/local_data_processing_pipeline.clj:244:5 - reference to field start can't be resolved.
+Reflection warning, dsbdp/local_data_processing_pipeline.clj:256:19 - reference to field interrupt can't be resolved.
+Enqueueing data via:
+(if (.hasWaitingConsumer in-queue) (do (.transfer in-queue (LocalTransferContainer. in nil)) (.inc in-counter)) (do (.inc in-drop-counter) (clj-assorted-utils.util/sleep 1)))
+Reflection warning, dsbdp/local_data_processing_pipeline.clj:263:30 - reference to field interrupt can't be resolved.
+Reflection warning, dsbdp/local_data_processing_pipeline.clj:276:52 - reference to field start can't be resolved.
+Reflection warning, dsbdp/local_data_processing_pipeline.clj:284:30 - reference to field interrupt can't be resolved.
+Reflection warning, dsbdp/local_data_processing_pipeline.clj:285:52 - reference to field start can't be resolved.
+Compiling dsbdp.byte-array-conversion
+Compiling dsbdp.processing-fn-utils
+Compiling dsbdp.main
+Reflection warning, opennlp/nlp.clj:33:10 - call to static method spansToStrings on opennlp.tools.util.Span can't be resolved (argument types: unknown, unknown).
+Reflection warning, opennlp/nlp.clj:41:20 - reference to field getStart can't be resolved.
+Reflection warning, opennlp/nlp.clj:41:37 - reference to field getEnd can't be resolved.
+Reflection warning, opennlp/nlp.clj:41:52 - reference to field getType can't be resolved.
+Reflection warning, opennlp/nlp.clj:104:18 - call to opennlp.tools.postag.POSTaggerME ctor can't be resolved.
+Reflection warning, opennlp/nlp.clj:105:16 - call to method tag on opennlp.tools.postag.POSTaggerME can't be resolved (argument types: unknown).
+Reflection warning, opennlp/nlp.clj:127:18 - call to opennlp.tools.namefind.NameFinderME ctor can't be resolved.
+Reflection warning, opennlp/nlp.clj:132:19 - call to static method spansToStrings on opennlp.tools.util.Span can't be resolved (argument types: [Lopennlp.tools.util.Span;, unknown).
+Reflection warning, opennlp/nlp.clj:231:9 - call to opennlp.tools.tokenize.TokenSample ctor can't be resolved.
+Reflection warning, opennlp/nlp.clj:255:23 - call to opennlp.tools.doccat.DocumentCategorizerME ctor can't be resolved.
+Reflection warning, opennlp/nlp.clj:256:20 - call to method categorize on opennlp.tools.doccat.DocumentCategorizerME can't be resolved (argument types: unknown).
+Reflection warning, opennlp/treebank.clj:27:25 - call to method startsWith can't be resolved (target class is unknown).
+Reflection warning, opennlp/treebank.clj:74:19 - call to opennlp.tools.chunker.ChunkerME ctor can't be resolved.
+Reflection warning, opennlp/treebank.clj:76:33 - call to method chunk on opennlp.tools.chunker.ChunkerME can't be resolved (argument types: java.lang.Object, java.lang.Object).
+Reflection warning, opennlp/treebank.clj:145:5 - call to method show can't be resolved (target class is unknown).
+Reflection warning, opennlp/treebank.clj:198:11 - reference to field getSpan can't be resolved.
+Reflection warning, opennlp/treebank.clj:199:19 - reference to field getStart can't be resolved.
+Reflection warning, opennlp/treebank.clj:200:20 - reference to field getText can't be resolved.
+Reflection warning, opennlp/treebank.clj:200:39 - reference to field getStart can't be resolved.
+Reflection warning, opennlp/treebank.clj:202:19 - reference to field getEnd can't be resolved.
+Reflection warning, opennlp/treebank.clj:208:32 - reference to field getSpan can't be resolved.
+Reflection warning, opennlp/treebank.clj:208:21 - reference to field getStart can't be resolved.
+Reflection warning, opennlp/treebank.clj:209:18 - reference to field getChildren can't be resolved.
+Reflection warning, opennlp/treebank.clj:210:32 - reference to field getType can't be resolved.
+Reflection warning, opennlp/treebank.clj:212:25 - reference to field getType can't be resolved.
+Reflection warning, opennlp/treebank.clj:218:18 - reference to field getText can't be resolved.
+Reflection warning, opennlp/treebank.clj:218:47 - reference to field getSpan can't be resolved.
+Reflection warning, opennlp/treebank.clj:218:38 - reference to field getEnd can't be resolved.
+Reflection warning, opennlp/treebank.clj:219:32 - reference to field getType can't be resolved.
+Reflection warning, opennlp/treebank.clj:226:34 - reference to field getParse can't be resolved.
+Reflection warning, opennlp/treebank.clj:226:23 - reference to field getParse can't be resolved.
+Reflection warning, opennlp/treebank.clj:234:29 - reference to field getMentions can't be resolved.
+Reflection warning, opennlp/treebank.clj:261:23 - reference to field getText can't be resolved.
+Reflection warning, opennlp/treebank.clj:261:36 - reference to field getSpan can't be resolved.
+Reflection warning, opennlp/treebank.clj:261:15 - call to opennlp.tools.parser.Parse ctor can't be resolved.
+Reflection warning, opennlp/treebank.clj:262:7 - call to method insert can't be resolved (target class is unknown).
+Reflection warning, opennlp/treebank.clj:263:7 - call to method setParse can't be resolved (target class is unknown).
+Reflection warning, opennlp/treebank.clj:270:31 - reference to field getMentionFinder can't be resolved.
+Reflection warning, opennlp/treebank.clj:270:17 - call to method getMentions can't be resolved (target class is unknown).
+Reflection warning, opennlp/treebank.clj:286:18 - call to method getEntities can't be resolved (target class is unknown).
+Compiling dsbdp.experiment-helper
+Created /home/rc/repositories/private/clojure/dsbdp/target/dsbdp-0.1.0-SNAPSHOT.jar
+Created /home/rc/repositories/private/clojure/dsbdp/target/dsbdp-0.1.0-SNAPSHOT-standalone.jar

@@ -1,0 +1,6 @@
+no-op-direct_flooding_2016-05-23_1.stats_out 	 25165.77 26708.6 26774.47 214.9238 	 0 0 0 0
+no-op-direct_flooding_with-latency-measurement_2016-05-23_1.stats_out 	 9526.266 9774.905 9834.091 40.59523 	 18 18.03738 19 0.1905916
+opennlp-single-direct_flooding_2016-05-23_1.stats_out 	 2.749 2.903421 2.935 0.02523439 	 0 0 0 0
+opennlp-single-direct_flooding_with-latency-measurement_2016-05-23_1.stats_out 	 2.82 2.895355 2.914 0.01536122 	 343057 345209.6 354478 1832.784
+pcap-json-direct_flooding_2016-05-23_1.stats_out 	 117.261 124.5141 126.025 1.761632 	 0 0 0 0
+pcap-json-direct_flooding_with-latency-measurement_2016-05-23_1.stats_out 	 109.9 124.4135 125.608 1.779701 	 7867 7945.402 9002 125.2621

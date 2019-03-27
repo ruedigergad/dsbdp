@@ -1,0 +1,17 @@
+set term pdfcairo dashed 
+#font 'Times,10' size 3.5, 1.4
+set output "comparison_no-op_pcap-inc_2016-01-03.pdf";
+set yrange [80:10000]
+set xrange [-0.5:20.5]
+set xlabel "Foo"
+set ylabel "Bar"
+set grid
+set xtics rotate
+set nokey
+set logscale y
+plot "2016-01-03_no-op/extracted_data.txt" using -1:xticlabel(1) with lines,\
+     "2016-01-03_no-op/extracted_data.txt" using 3:5 pt 2 ps 1.5 lw 2 with errorbars,\
+     "2016-01-03_pcap-inc/extracted_data.txt" using 3:5 pt 1 ps 1.5 lw 2 with errorbars
+
+#     "baseline_test_setup_pps.data" using 1:($2/1000) with linespoints linewidth 4,\
+

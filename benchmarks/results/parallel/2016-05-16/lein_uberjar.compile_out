@@ -1,0 +1,44 @@
+Compiling 7 source files to /home/rc/repositories/private/clojure/dsbdp/target/classes
+Compiling dsbdp.parallel-processing
+queue-setup.cfg not found. Using default.
+Using queue-setup: LinkedTransferQueue_tryTransfer-counted-10ms
+Reflection warning, dsbdp/local_data_processing_pipeline.clj:68:7 - call to method contains can't be resolved (target class is unknown).
+Setting up data exchange via: LinkedTransferQueue_tryTransfer-counted-10ms
+(java.util.concurrent.LinkedTransferQueue.)
+Retrieving data via:
+(.take in-queue)
+Enqueueing data via:
+(if (.tryTransfer out-queue c 10 java.util.concurrent.TimeUnit/MILLISECONDS) (.inc out-counter) (.inc out-drop-counter))
+Setting up data exchange via: LinkedTransferQueue_tryTransfer-counted-10ms
+(java.util.concurrent.LinkedTransferQueue.)
+Retrieving data via:
+(.take (clojure.core/deref out-queue))
+Reflection warning, dsbdp/local_data_processing_pipeline.clj:279:5 - reference to field start can't be resolved.
+Reflection warning, dsbdp/local_data_processing_pipeline.clj:291:19 - reference to field interrupt can't be resolved.
+Enqueueing data via:
+(if (.tryTransfer in-queue (LocalTransferContainer. in nil) 10 java.util.concurrent.TimeUnit/MILLISECONDS) (.inc in-counter) (.inc in-drop-counter))
+Reflection warning, dsbdp/local_data_processing_pipeline.clj:298:30 - reference to field interrupt can't be resolved.
+Reflection warning, dsbdp/local_data_processing_pipeline.clj:311:52 - reference to field start can't be resolved.
+Reflection warning, dsbdp/local_data_processing_pipeline.clj:319:30 - reference to field interrupt can't be resolved.
+Reflection warning, dsbdp/local_data_processing_pipeline.clj:320:52 - reference to field start can't be resolved.
+Compiling dsbdp.local-dpp-self-adaptivity
+WARNING: update already refers to: #'clojure.core/update in namespace: dsbdp.local-dpp-self-adaptivity, being replaced by: #'dsbdp.local-dpp-self-adaptivity/update
+Compiling dsbdp.data-processing-dsl
+Compiling dsbdp.local-data-processing-pipeline
+queue-setup.cfg not found. Using default.
+Using queue-setup: LinkedTransferQueue_tryTransfer-counted-10ms
+Compiling dsbdp.byte-array-conversion
+Compiling dsbdp.processing-fn-utils
+Compiling dsbdp.main
+Reflection warning, opennlp/treebank.clj:236:29 - reference to field getMentions can't be resolved.
+WARNING: update already refers to: #'clojure.core/update in namespace: dsbdp.main, being replaced by: #'dsbdp.local-dpp-self-adaptivity/update
+Reflection warning, dsbdp/main.clj:193:17 - call to method endsWith can't be resolved (target class is unknown).
+Reflection warning, dsbdp/main.clj:197:17 - call to method endsWith can't be resolved (target class is unknown).
+Reflection warning, dsbdp/main.clj:203:17 - call to method endsWith can't be resolved (target class is unknown).
+Reflection warning, dsbdp/main.clj:213:17 - call to method endsWith can't be resolved (target class is unknown).
+Reflection warning, dsbdp/main.clj:219:17 - call to method endsWith can't be resolved (target class is unknown).
+Reflection warning, dsbdp/main.clj:225:17 - call to method endsWith can't be resolved (target class is unknown).
+Reflection warning, dsbdp/main.clj:247:35 - call to method contains can't be resolved (target class is unknown).
+Compiling dsbdp.experiment-helper
+Created /home/rc/repositories/private/clojure/dsbdp/target/dsbdp-0.2.0-SNAPSHOT.jar
+Created /home/rc/repositories/private/clojure/dsbdp/target/dsbdp-0.2.0-SNAPSHOT-standalone.jar

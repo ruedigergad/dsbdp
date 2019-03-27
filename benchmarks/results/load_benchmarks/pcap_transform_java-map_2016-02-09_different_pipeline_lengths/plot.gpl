@@ -1,0 +1,12 @@
+set term pdfcairo font 'Times,14' dl 1
+set output "plot.pdf";
+set yrange [0:250]
+set xrange [-0.5:6.5]
+set xlabel "Scenario, respectively, Pipeline Length [# of Processing Elements]"
+set ylabel "Throughput [kdips]"
+set grid
+set key center top vertical maxrows 3 maxcols 2
+plot "extracted_data.txt" using 1:3 with points lw 2.5 dt 1 ps 0 lc "black" notitle,\
+     "extracted_data.txt" using 1:3:5 with errorbars lw 2.5 dt 1 pt 1 ps 1.5 lc "black" notitle,\
+
+

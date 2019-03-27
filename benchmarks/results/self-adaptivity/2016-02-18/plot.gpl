@@ -1,0 +1,19 @@
+set term pdfcairo font 'Times,14' dl 1 size 5, 2.25 noenhanced
+set output "plot.pdf";
+set yrange [0:50]
+set y2range [0:15]
+set xrange [0:35]
+set xlabel "Time [s]"
+set ylabel "Throughput [kdips]"
+set y2label "# of Mapped Fns (stacked)"
+set y2tics 0, 2, 15
+set grid
+set key center bottom horizontal outside
+plot "self-adaptivity_experiment_2016-02-18_4.mapping" using 1:($2+$3+$4+$5) with filledcurves x1 lw 2.5 dt 1 lc "green" axes x1y2 title "pe_3 [# (stkd.)]",\
+     "self-adaptivity_experiment_2016-02-18_4.mapping" using 1:($2+$3+$4) with filledcurves x1 lw 2.5 dt 1 lc "#ffee00" axes x1y2 title "pe_2 [# (stkd.)]",\
+     "self-adaptivity_experiment_2016-02-18_4.mapping" using 1:($2+$3) with filledcurves x1 lw 2.5 dt 1 lc "red" axes x1y2 title "pe_1 [# (stkd.)]",\
+     "self-adaptivity_experiment_2016-02-18_4.mapping" using 1:2 with filledcurves x1 lw 2.5 dt 1 lc "blue" axes x1y2 title "pe_0 [# (stkd.)]",\
+     "self-adaptivity_experiment_2016-02-18_4.in-delta" using 1:2 with lines lw 3 dt 2 lc "black" title "In [kdips]",\
+     "self-adaptivity_experiment_2016-02-18_4.out-delta" using 1:2 with lines lw 3 dt 1 lc "black" title "Out [kdips]",\
+
+

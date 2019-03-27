@@ -1,0 +1,21 @@
+set term pdfcairo dashed font 'Times New Roman,10' size 3, 2.5
+#font 'Times,10' size 3.5, 1.4
+set output "latency_comparison_no-op_pcap_opennlp_2016-05-28.pdf";
+set yrange [100:1000000000]
+set xrange [-0.5:21.5]
+set xlabel "Queue Implementation"
+set ylabel "Latency [ns]"
+set grid
+set xtics rotate
+set key below
+set logscale y
+set format y "10^{%L}"
+set bmargin 10
+set rmargin 1
+plot "2016-05-21_no-op/extracted_data.txt" using -1:xticlabel(1) with lines notitle,\
+     "2016-05-28_no-op/extracted_data.txt" using 7:9 pt 3 ps 1.5 lw 2 lc "green" with errorbars title "no-op",\
+     "2016-05-27_pcap/extracted_data.txt" using 7:9 pt 2 ps 1.5 lw 2 lc "orange" with errorbars title "pcap",\
+     "2016-05-27_opennlp/extracted_data.txt" using 7:9 pt 1 ps 1.5 lw 2 lc "red" with errorbars title "nlp"
+
+#     "baseline_test_setup_pps.data" using 1:($2/1000) with linespoints linewidth 4,\
+

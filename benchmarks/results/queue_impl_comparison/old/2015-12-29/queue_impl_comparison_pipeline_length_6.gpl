@@ -1,0 +1,9 @@
+set terminal pdf
+filename = 'queue_impl_comparison_pipeline_length_6'
+set style data boxes
+set style fill solid
+#set style data boxplot
+set xtics rotate
+set output filename . '.pdf'
+plot filename . '.data' using 3:xticlabel(1) notitle,\
+     filename . '.data' using 5:xticlabel(1) notitle

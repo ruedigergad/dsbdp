@@ -1,0 +1,132 @@
+queue_impl_comparison_pipeline_length_1
+ArrayBlockingQueue_offer_2015-12-28_1.stats_out 				 1133.002 1401.231 2355.054 270.5563
+ArrayBlockingQueue_offer_2015-12-28_2.stats_out 				 1144.323 1409.25 2438.624 189.8567
+ArrayBlockingQueue_offer_2015-12-28_3.stats_out 				 1076.456 1273.322 1853.894 110.2785
+ArrayBlockingQueue_put_2015-12-28_1.stats_out 				 1537.021 1872.962 2378.823 230.19
+ArrayBlockingQueue_put_2015-12-28_2.stats_out 				 1722.093 1999.625 2544.256 184.6199
+ArrayBlockingQueue_put_2015-12-28_3.stats_out 				 1560.515 1916.336 2540.24 260.5298
+LinkedBlockingQueue_offer_2015-12-28_1.stats_out 				 1754.393 2218.832 2963.701 432.4037
+LinkedBlockingQueue_offer_2015-12-28_2.stats_out 				 1766.793 1947.787 2836.277 204.3218
+LinkedBlockingQueue_offer_2015-12-28_3.stats_out 				 1698.158 1873.457 3321.016 196.401
+LinkedBlockingQueue_put_2015-12-28_1.stats_out 				 1855.157 2321.53 3271.689 290.4543
+LinkedBlockingQueue_put_2015-12-28_2.stats_out 				 1404.36 1917.749 2599.255 282.1048
+LinkedBlockingQueue_put_2015-12-28_3.stats_out 				 1294.726 2166.46 3062.451 262.7191
+LinkedTransferQueue_transfer-counted-no-sleep_2015-12-28_1.stats_out 				 2207.955 2425.155 2761.457 100.6172
+LinkedTransferQueue_transfer-counted-no-sleep_2015-12-28_2.stats_out 				 2063.999 2171.166 2430.415 88.25515
+LinkedTransferQueue_transfer-counted-no-sleep_2015-12-28_3.stats_out 				 2182.78 2439.436 2794.161 140.7208
+LinkedTransferQueue_transfer-counted-sleep-1ms_2015-12-28_1.stats_out 				 0.884 0.8923431 0.909 0.003727062
+LinkedTransferQueue_transfer-counted-sleep-1ms_2015-12-28_2.stats_out 				 0.882 0.892402 0.919 0.005993825
+LinkedTransferQueue_transfer-counted-sleep-1ms_2015-12-28_3.stats_out 				 0.879 0.8918824 0.922 0.005848405
+LinkedTransferQueue_transfer_2015-12-28_1.stats_out 				 2966.222 3230.075 3692.423 123.9013
+LinkedTransferQueue_transfer_2015-12-28_2.stats_out 				 3005.662 3122.587 3432.365 83.94329
+LinkedTransferQueue_transfer_2015-12-28_3.stats_out 				 3032.351 3243.736 3634.272 129.489
+LinkedTransferQueue_tryTransfer-counted-1ms_2015-12-28_1.stats_out 				 2836.591 3000.479 3460.808 129.5671
+LinkedTransferQueue_tryTransfer-counted-1ms_2015-12-28_2.stats_out 				 2813.514 2910.947 3543.182 118.4547
+LinkedTransferQueue_tryTransfer-counted-1ms_2015-12-28_3.stats_out 				 2920.455 3223.412 3881.88 198.4162
+LinkedTransferQueue_tryTransfer-counted-10ms_2015-12-28_1.stats_out 				 2694.342 2869.204 3348.937 141.6001
+LinkedTransferQueue_tryTransfer-counted-10ms_2015-12-28_2.stats_out 				 2926.956 3152.157 3657.403 178.3297
+LinkedTransferQueue_tryTransfer-counted-10ms_2015-12-28_3.stats_out 				 2757.674 2892.719 3226.611 81.44661
+LinkedTransferQueue_tryTransfer-counted-100ms_2015-12-28_1.stats_out 				 2824.539 2937.064 3263.603 88.98814
+LinkedTransferQueue_tryTransfer-counted-100ms_2015-12-28_2.stats_out 				 2633.125 2725.463 3111.985 96.76884
+LinkedTransferQueue_tryTransfer-counted-100ms_2015-12-28_3.stats_out 				 2858.341 2975.251 3395.32 94.16987
+LinkedTransferQueue_tryTransfer-counted-no-timeout_2015-12-28_1.stats_out 				 2111.743 2334.195 2842.414 159.6708
+LinkedTransferQueue_tryTransfer-counted-no-timeout_2015-12-28_2.stats_out 				 2077.875 2341.286 2802.738 152.2641
+LinkedTransferQueue_tryTransfer-counted-no-timeout_2015-12-28_3.stats_out 				 2267.351 2585.542 3132.875 189.3803
+LinkedTransferQueue_tryTransfer_2015-12-28_1.stats_out 				 2342.865 2531.192 2897.057 119.2761
+LinkedTransferQueue_tryTransfer_2015-12-28_2.stats_out 				 2359.691 2669.922 3062.452 148.2304
+LinkedTransferQueue_tryTransfer_2015-12-28_3.stats_out 				 2446.589 2615.33 2905.058 89.59882
+/home/rc/repositories/private/paper/dsbdp/benchmarks/2015-12-29
+queue_impl_comparison_pipeline_length_2
+ArrayBlockingQueue_offer_2015-12-28_3.stats_out 				 1338.031 1748.353 2099.938 159.0228
+ArrayBlockingQueue_offer_2015-12-29_1.stats_out 				 1354.863 1629.11 2087.411 134.4249
+ArrayBlockingQueue_offer_2015-12-29_2.stats_out 				 987.101 1424.444 1881.974 161.1107
+ArrayBlockingQueue_put_2015-12-28_3.stats_out 				 2030.494 2184.864 2438.443 76.07349
+ArrayBlockingQueue_put_2015-12-29_1.stats_out 				 1993.352 2113.831 2345.141 60.37258
+ArrayBlockingQueue_put_2015-12-29_2.stats_out 				 2003.373 2227.383 3153.844 147.2321
+LinkedBlockingQueue_offer_2015-12-28_3.stats_out 				 2074.712 2575.634 3221.412 326.8517
+LinkedBlockingQueue_offer_2015-12-29_1.stats_out 				 1778.336 2018.091 2243.909 110.7277
+LinkedBlockingQueue_offer_2015-12-29_2.stats_out 				 2094.838 2397.344 2596.305 108.8961
+LinkedBlockingQueue_put_2015-12-28_3.stats_out 				 2279.614 2671.236 3300.335 192.9995
+LinkedBlockingQueue_put_2015-12-29_1.stats_out 				 2471.528 2885.117 3636.174 366.523
+LinkedBlockingQueue_put_2015-12-29_2.stats_out 				 2263.027 2660.879 3268.183 165.6789
+LinkedTransferQueue_transfer-counted-no-sleep_2015-12-28_3.stats_out 				 1618.446 1846.703 2033.243 72.88439
+LinkedTransferQueue_transfer-counted-no-sleep_2015-12-29_1.stats_out 				 1738.551 1981.123 2149.427 77.77586
+LinkedTransferQueue_transfer-counted-no-sleep_2015-12-29_2.stats_out 				 1766.657 2027.874 2182.651 70.12305
+LinkedTransferQueue_transfer-counted-sleep-1ms_2015-12-28_3.stats_out 				 0.883 0.8945588 0.91 0.004996184
+LinkedTransferQueue_transfer-counted-sleep-1ms_2015-12-29_1.stats_out 				 0.883 0.8935392 0.909 0.004653693
+LinkedTransferQueue_transfer-counted-sleep-1ms_2015-12-29_2.stats_out 				 0.883 0.8937451 0.906 0.005049628
+LinkedTransferQueue_transfer_2015-12-28_3.stats_out 				 2372.254 2691.469 3008.367 124.5972
+LinkedTransferQueue_transfer_2015-12-29_1.stats_out 				 2346.658 2671.635 2996.949 108.996
+LinkedTransferQueue_transfer_2015-12-29_2.stats_out 				 2402.06 2688.135 3039.42 120.1434
+LinkedTransferQueue_tryTransfer-counted-1ms_2015-12-28_3.stats_out 				 2309.162 2585.276 2880.753 136.1804
+LinkedTransferQueue_tryTransfer-counted-1ms_2015-12-29_1.stats_out 				 1989.642 2417.399 2795.6 141.2579
+LinkedTransferQueue_tryTransfer-counted-1ms_2015-12-29_2.stats_out 				 2268.197 2547.367 2891.641 110.8683
+LinkedTransferQueue_tryTransfer-counted-10ms_2015-12-28_3.stats_out 				 2137.642 2588.533 3048.146 162.8567
+LinkedTransferQueue_tryTransfer-counted-10ms_2015-12-29_1.stats_out 				 2203.675 2473.311 2870.489 117.3834
+LinkedTransferQueue_tryTransfer-counted-10ms_2015-12-29_2.stats_out 				 1932.185 2464.049 2925.664 193.2307
+LinkedTransferQueue_tryTransfer-counted-100ms_2015-12-28_3.stats_out 				 2094.326 2587.205 3145.765 197.1784
+LinkedTransferQueue_tryTransfer-counted-100ms_2015-12-29_1.stats_out 				 1913.852 2361.78 2680.178 161.9034
+LinkedTransferQueue_tryTransfer-counted-100ms_2015-12-29_2.stats_out 				 1940.089 2464.864 2848.821 162.9882
+LinkedTransferQueue_tryTransfer-counted-no-timeout_2015-12-28_3.stats_out 				 1709.298 2010.115 2172.297 94.93938
+LinkedTransferQueue_tryTransfer-counted-no-timeout_2015-12-29_1.stats_out 				 1657.374 1949.989 2229.078 91.11121
+LinkedTransferQueue_tryTransfer-counted-no-timeout_2015-12-29_2.stats_out 				 1646.264 1896.969 2037.981 74.97001
+LinkedTransferQueue_tryTransfer_2015-12-28_3.stats_out 				 1882.636 2087.604 2276.39 77.49986
+LinkedTransferQueue_tryTransfer_2015-12-29_1.stats_out 				 1911.948 2185.078 2474.596 97.81677
+LinkedTransferQueue_tryTransfer_2015-12-29_2.stats_out 				 1901.622 2112.057 2412.931 84.09704
+/home/rc/repositories/private/paper/dsbdp/benchmarks/2015-12-29
+queue_impl_comparison_pipeline_length_3
+ArrayBlockingQueue_offer_2015-12-29_1.stats_out 				 1319.279 1657.949 2046.672 138.6549
+ArrayBlockingQueue_put_2015-12-29_1.stats_out 				 1615.096 1881.369 2061.096 73.03662
+LinkedBlockingQueue_offer_2015-12-29_1.stats_out 				 1851.155 2157.753 2345.818 117.662
+LinkedBlockingQueue_put_2015-12-29_1.stats_out 				 1932.623 2251.256 2698.07 111.9884
+LinkedTransferQueue_transfer-counted-no-sleep_2015-12-29_1.stats_out 				 1252.235 1545.242 1743.848 108.2733
+LinkedTransferQueue_transfer-counted-sleep-1ms_2015-12-29_1.stats_out 				 0.888 0.9073824 0.934 0.01073999
+LinkedTransferQueue_transfer_2015-12-29_1.stats_out 				 1731.628 2390.325 2699.408 176.6487
+LinkedTransferQueue_tryTransfer-counted-1ms_2015-12-29_1.stats_out 				 1423.691 2065.95 2378.724 161.8299
+LinkedTransferQueue_tryTransfer-counted-10ms_2015-12-29_1.stats_out 				 1254.499 2071.474 2468.502 225.5692
+LinkedTransferQueue_tryTransfer-counted-100ms_2015-12-29_1.stats_out 				 1256.17 1920.734 2343.329 247.2443
+LinkedTransferQueue_tryTransfer-counted-no-timeout_2015-12-29_1.stats_out 				 1344.689 1586.683 1792.978 84.74009
+LinkedTransferQueue_tryTransfer_2015-12-29_1.stats_out 				 1519.286 1750.919 2009.364 84.34513
+/home/rc/repositories/private/paper/dsbdp/benchmarks/2015-12-29
+queue_impl_comparison_pipeline_length_4
+ArrayBlockingQueue_offer_2015-12-29_1.stats_out 				 1248.576 1773.863 2196.179 193.3955
+ArrayBlockingQueue_put_2015-12-29_1.stats_out 				 1840.493 2266.145 2489.309 107.7298
+LinkedBlockingQueue_offer_2015-12-29_1.stats_out 				 1952.346 2249.183 2662.71 166.7008
+LinkedBlockingQueue_put_2015-12-29_1.stats_out 				 1734.28 2202.037 2730.005 167.4768
+LinkedTransferQueue_transfer-counted-no-sleep_2015-12-29_1.stats_out 				 1040.456 1320.109 1531.382 90.21227
+LinkedTransferQueue_transfer-counted-sleep-1ms_2015-12-29_1.stats_out 				 0.896 0.9160196 0.933 0.008171407
+LinkedTransferQueue_transfer_2015-12-29_1.stats_out 				 1564.557 2005.12 2358.975 174.3571
+LinkedTransferQueue_tryTransfer-counted-1ms_2015-12-29_1.stats_out 				 874.067 1500.352 2045.028 242.6196
+LinkedTransferQueue_tryTransfer-counted-10ms_2015-12-29_1.stats_out 				 921.944 1694.165 2128.559 243.7955
+LinkedTransferQueue_tryTransfer-counted-100ms_2015-12-29_1.stats_out 				 1021.828 1666.28 2096.516 238.9413
+LinkedTransferQueue_tryTransfer-counted-no-timeout_2015-12-29_1.stats_out 				 1119.669 1330.071 1502.081 76.3526
+LinkedTransferQueue_tryTransfer_2015-12-29_1.stats_out 				 1331.064 1537.641 1794.031 76.0198
+/home/rc/repositories/private/paper/dsbdp/benchmarks/2015-12-29
+queue_impl_comparison_pipeline_length_5
+ArrayBlockingQueue_offer_2015-12-29_1.stats_out 				 1039.615 1278.983 2035.34 177.5136
+ArrayBlockingQueue_put_2015-12-29_1.stats_out 				 1753.329 2077.981 2536.605 115.3279
+LinkedBlockingQueue_offer_2015-12-29_1.stats_out 				 1968.122 2240.725 2568.238 110.6904
+LinkedBlockingQueue_put_2015-12-29_1.stats_out 				 1658.647 2069.423 2228.081 88.06939
+LinkedTransferQueue_transfer-counted-no-sleep_2015-12-29_1.stats_out 				 999.644 1183.402 1353.482 65.01296
+LinkedTransferQueue_transfer-counted-sleep-1ms_2015-12-29_1.stats_out 				 0.898 0.9188137 0.935 0.006286447
+LinkedTransferQueue_transfer_2015-12-29_1.stats_out 				 1405.398 1755.468 2071.259 133.2649
+LinkedTransferQueue_tryTransfer-counted-1ms_2015-12-29_1.stats_out 				 574.441 1146.602 1591.965 213.7761
+LinkedTransferQueue_tryTransfer-counted-10ms_2015-12-29_1.stats_out 				 1025.468 1424.271 1874.944 192.9281
+LinkedTransferQueue_tryTransfer-counted-100ms_2015-12-29_1.stats_out 				 1675.155 1885.62 2066.261 76.81929
+LinkedTransferQueue_tryTransfer-counted-no-timeout_2015-12-29_1.stats_out 				 908.185 1123.166 1278.164 72.07135
+LinkedTransferQueue_tryTransfer_2015-12-29_1.stats_out 				 1184.89 1323.431 1531.913 56.2548
+/home/rc/repositories/private/paper/dsbdp/benchmarks/2015-12-29
+queue_impl_comparison_pipeline_length_6
+ArrayBlockingQueue_offer_2015-12-29_1.stats_out 				 1572.088 1723.925 1974.703 79.35778
+ArrayBlockingQueue_put_2015-12-29_1.stats_out 				 1721.031 1794.302 1952.535 45.78578
+LinkedBlockingQueue_offer_2015-12-29_1.stats_out 				 1762.337 1957.183 2258.742 108.2531
+LinkedBlockingQueue_put_2015-12-29_1.stats_out 				 1772.075 1950.878 2391.097 153.8225
+LinkedTransferQueue_transfer-counted-no-sleep_2015-12-29_1.stats_out 				 888.709 1101.19 1202.189 49.27355
+LinkedTransferQueue_transfer-counted-sleep-1ms_2015-12-29_1.stats_out 				 0.912 0.9215784 0.935 0.005506857
+LinkedTransferQueue_transfer_2015-12-29_1.stats_out 				 1595.508 1892.318 2063.351 70.27056
+LinkedTransferQueue_tryTransfer-counted-1ms_2015-12-29_1.stats_out 				 932.481 1352.235 1638.755 145.052
+LinkedTransferQueue_tryTransfer-counted-10ms_2015-12-29_1.stats_out 				 1545.8 1804.136 1963.315 67.90744
+LinkedTransferQueue_tryTransfer-counted-100ms_2015-12-29_1.stats_out 				 1628.088 1825.988 1952.308 54.08705
+LinkedTransferQueue_tryTransfer-counted-no-timeout_2015-12-29_1.stats_out 				 889.406 1035.611 1226.361 57.50448
+LinkedTransferQueue_tryTransfer_2015-12-29_1.stats_out 				 986.3 1170.534 1312.828 56.05665
+/home/rc/repositories/private/paper/dsbdp/benchmarks/2015-12-29

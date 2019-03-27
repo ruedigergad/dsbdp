@@ -1,0 +1,29 @@
+set terminal pdf
+filename = ''
+set output 'per_queue_setup_results_all.pdf'
+set yrange [0:3500]
+set key outside bottom center horizontal
+plot 'per_queue_setup_results_ABQ_offer_1.data' using 1:2 with lines title "ABQo",\
+     'per_queue_setup_results_ABQ_offer_1.data' using 1:2:3 with errorbars notitle,\
+     'per_queue_setup_results_ABQ_put_1.data' using 1:2 with lines title "ABQp",\
+     'per_queue_setup_results_ABQ_put_1.data' using 1:2:3 with errorbars notitle,\
+     'per_queue_setup_results_LBQ_offer_1.data' using 1:2 with lines title "LBQo",\
+     'per_queue_setup_results_LBQ_offer_1.data' using 1:2:3 with errorbars notitle,\
+     'per_queue_setup_results_LBQ_put_1.data' using 1:2 with lines title "LBQp",\
+     'per_queue_setup_results_LBQ_put_1.data' using 1:2:3 with errorbars notitle,\
+     'per_queue_setup_results_LTQ_tTr-c-100ms_1.data' using 1:2 with lines title "100",\
+     'per_queue_setup_results_LTQ_tTr-c-100ms_1.data' using 1:2:3 with errorbars notitle,\
+     'per_queue_setup_results_LTQ_tTr-c-10ms_1.data' using 1:2 with lines title "10",\
+     'per_queue_setup_results_LTQ_tTr-c-10ms_1.data' using 1:2:3 with errorbars notitle,\
+     'per_queue_setup_results_LTQ_tTr-c-1ms_1.data' using 1:2 with lines title "1",\
+     'per_queue_setup_results_LTQ_tTr-c-1ms_1.data' using 1:2:3 with errorbars notitle,\
+     'per_queue_setup_results_LTQ_tTr-c-no-timeout_1.data' using 1:2 with lines title "nt",\
+     'per_queue_setup_results_LTQ_tTr-c-no-timeout_1.data' using 1:2:3 with errorbars notitle,\
+     'per_queue_setup_results_LTQ_tTr_1.data' using 1:2 with lines title "tTr",\
+     'per_queue_setup_results_LTQ_tTr_1.data' using 1:2:3 with errorbars notitle,\
+     'per_queue_setup_results_LTQ_tr-c-no-sleep_1.data' using 1:2 with lines title "trn",\
+     'per_queue_setup_results_LTQ_tr-c-no-sleep_1.data' using 1:2:3 with errorbars notitle,\
+     'per_queue_setup_results_LTQ_tr-c-sleep-1ms_1.data' using 1:2 with lines title "trs",\
+     'per_queue_setup_results_LTQ_tr-c-sleep-1ms_1.data' using 1:2:3 with errorbars notitle,\
+     'per_queue_setup_results_LTQ_tr_1.data' using 1:2 with lines title "tr",\
+     'per_queue_setup_results_LTQ_tr_1.data' using 1:2:3 with errorbars notitle

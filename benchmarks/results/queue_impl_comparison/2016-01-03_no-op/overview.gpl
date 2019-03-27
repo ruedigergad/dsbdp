@@ -1,0 +1,14 @@
+set term pdfcairo dashed 
+#font 'Times,10' size 3.5, 1.4
+set output "overview.pdf";
+set yrange [0:7500]
+set xlabel "Foo"
+set ylabel "Bar"
+set grid
+set xtics rotate
+set nokey
+plot "extracted_data.txt" using 3:xticlabel(1),\
+     "extracted_data.txt" using 3:5 with errorbars
+
+#     "baseline_test_setup_pps.data" using 1:($2/1000) with linespoints linewidth 4,\
+

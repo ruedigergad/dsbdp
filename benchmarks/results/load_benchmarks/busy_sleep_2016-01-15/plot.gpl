@@ -1,0 +1,16 @@
+set term pdfcairo font 'Times,14' dl 1
+set output "plot.pdf";
+set yrange [0:8]
+set xrange [0.5:8.5]
+set xlabel "Scenario, respectively, Pipeline Length [# of Processing Elements]"
+set ylabel "Relative Throughput [tp_n/tp_1]"
+set grid
+set key center top vertical maxrows 3 maxcols 2
+plot "extracted_out_stats.data" using 1:($3/$2) with linespoints lw 2.5 dt 1 pt 1 ps 1.5 lc "green" title "1ms",\
+     "extracted_out_stats.data" using 1:($5/$4) with linespoints lw 2.5 dt 2 pt 1 ps 1.5 lc "#ffee00" title "100µs",\
+     "extracted_out_stats.data" using 1:($7/$6) with linespoints lw 2.5 dt 3 pt 1 ps 1.5 lc "red" title "10µs",\
+     "extracted_out_stats.data" using 1:($9/$8) with linespoints lw 2.5 dt 1 pt 2 ps 1.5 lc "green" title "5µs",\
+     "extracted_out_stats.data" using 1:($11/$10) with linespoints lw 2.5 dt 2 pt 2 ps 1.5 lc "#ffee00" title "2.5µs",\
+     "extracted_out_stats.data" using 1:($13/$12) with linespoints lw 2.5 dt 3 pt 2 ps 1.5 lc "red" title "1µs",\
+
+

@@ -1,0 +1,6 @@
+set terminal pdf
+filename = 'per_queue_setup_results_LTQ_tTr-c-10ms_1'
+set output filename . '.pdf'
+set yrange [0:3500]
+plot filename . '.data' using 1:2 with linespoints notitle,\
+     filename . '.data' using 1:2:3 with errorbars notitle

@@ -1,0 +1,2066 @@
+queue-setup.cfg not found. Using default.
+Using queue-setup: LinkedTransferQueue_tryTransfer-counted-10ms
+Starting dsbdp main...
+Using options: {:collection-size 16384, :batch-delay 1, :self-adaptivity-cfg nil, :partition-size 8192, :latency true, :pipeline-length 2, :in-data nil, :scenario opennlp-single-simple-reducers-map, :fn-mapping [5 5 4 3], :batch-size 1000}
+Using args: []
+Creating latency measurement pre-in-fn.
+Creating latency measurement out-fn.
+in-data: This is a simple sentence.
+fn-mapping: [5 5 4 3]
+Prepared fns for proc-fns: nil
+Using fns vector as-is for proc-fns.
+Wrapping direct processing fn for latency measurements.
+Wrapping async-pipeline direct processing fn for latency measurements.
+Starting experiment...
+Starting in-loop.
+time-delta: 0 ms; in: 0.0 k; out: 0.0 k; in-delta: 0 k/s; out-delta: 0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.006884992,0.0,0,0,0,0,0,0
+3,Finalizer,0.007092885,0.0,0,0,0,0,0,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0,0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0,0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0,0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0,0,0,0
+13,DataGenerationLoop,0.012321271,0.01,0,0,0,0,0,0
+14,Thread-3,0.013095311,0.01,0,0,0,0,0,0
+15,Thread-4,9.7323E-5,0.0,13,0,0,0,0,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0,0,0,0
+
+time-delta: 1464040567375 ms; in: 16.384 k; out: 0.0 k; in-delta: 16.384 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007025647,0.0,728,0,0.007025647,0.0,728,0
+3,Finalizer,0.007281388,0.0,729,0,0.007281388,0.0,729,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,1.0106E-4,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,3.50605E-4,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,9.15171E-4,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,1.61242E-4,0.0,0,0
+13,DataGenerationLoop,0.017236093,0.01,988,0,0.017236093,0.01,988,0
+14,Thread-3,0.019264381,0.01,985,0,0.019264381,0.01,985,0
+15,Thread-4,9.7323E-5,0.0,1006,0,9.7323E-5,0.0,1006,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,2.543921235,2.47,0,0
+17,ForkJoinPool-1-worker-1,0.948715155,0.93,0,4,0,0,0,0
+18,ForkJoinPool-1-worker-2,0.950527764,0.93,0,0,0,0,0,0
+
+time-delta: 1000 ms; in: 16.384 k; out: 0.0 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,1727,0,5.3854999999999355E-5,0.0,999,0
+3,Finalizer,0.00731884,0.0,1729,0,3.745200000000032E-5,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.017236093,0.01,1987,0,0.0,0.0,999,0
+14,Thread-3,0.024628665,0.02,1976,0,0.005364284,0.01,991,0
+15,Thread-4,9.7323E-5,0.0,2005,0,0.0,0.0,999,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,1.932169058,1.89,0,4,1.932169058,1.89,0,4
+18,ForkJoinPool-1-worker-2,1.933846042,1.89,0,0,1.933846042,1.89,0,0
+
+time-delta: 1000 ms; in: 16.384 k; out: 0.0 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,2727,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,2727,0,0.0,0.0,998,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.017236093,0.01,2984,0,0.0,0.0,997,0
+14,Thread-3,0.029368939,0.02,2965,0,0.004740273999999999,0.0,989,0
+15,Thread-4,9.7323E-5,0.0,3002,0,0.0,0.0,997,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,2.915629232,2.85,0,4,0.9834601740000002,0.9600000000000002,0,0
+18,ForkJoinPool-1-worker-2,2.917226611,2.87,0,0,0.9833805689999997,0.9800000000000002,0,0
+
+time-delta: 1000 ms; in: 32.768 k; out: 16.384 k; in-delta: 16.384 k/s; out-delta: 16.384 k/s; latency: 3762642305
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,3727,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,3727,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.026150462,0.02,3975,0,0.008914368999999998,0.01,991,0
+14,Thread-3,0.033704582,0.03,3961,0,0.004335642999999997,0.009999999999999998,996,0
+15,Thread-4,9.7323E-5,0.0,4002,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,3.753748965,3.68,155,4,0.8381197330000001,0.8300000000000001,155,0
+18,ForkJoinPool-1-worker-2,3.901720531,3.84,9,0,0.9844939200000002,0.9699999999999998,9,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,381,0,0,0,0,0
+
+time-delta: 1000 ms; in: 32.768 k; out: 16.384 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,4727,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,4727,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.026150462,0.02,4975,0,0.0,0.0,1000,0
+14,Thread-3,0.037771123,0.03,4957,0,0.004066541,0.0,996,0
+15,Thread-4,9.7323E-5,0.0,5002,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,4.751578259,4.68,155,4,0.9978292940000002,0.9999999999999996,0,0
+18,ForkJoinPool-1-worker-2,4.899381339,4.84,9,0,0.9976608079999996,1.0,0,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,1380,0,1.52086E-4,0.0,1380,0
+
+time-delta: 1000 ms; in: 32.768 k; out: 16.384 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,5726,0,0.0,0.0,999,0
+3,Finalizer,0.00731884,0.0,5726,0,0.0,0.0,999,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.026150462,0.02,5974,0,0.0,0.0,999,0
+14,Thread-3,0.040619538,0.03,5953,0,0.002848415,0.0,996,0
+15,Thread-4,9.7323E-5,0.0,6000,0,0.0,0.0,998,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,5.746960754,5.66,155,4,0.9953824949999994,0.9800000000000004,0,0
+18,ForkJoinPool-1-worker-2,5.89479419,5.82,9,0,0.9954128510000002,0.9800000000000004,0,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,2379,0,0.0,0.0,999,0
+
+time-delta: 1000 ms; in: 32.768 k; out: 16.384 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,6726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,6727,0,0.0,0.0,1001,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.026150462,0.02,6974,0,0.0,0.0,1000,0
+14,Thread-3,0.043100365,0.04,6950,0,0.002480827000000005,0.010000000000000002,997,0
+15,Thread-4,9.7323E-5,0.0,7000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,6.740073286,6.64,155,4,0.9931125320000005,0.9799999999999995,0,0
+18,ForkJoinPool-1-worker-2,6.888183761,6.8,9,0,0.9933895709999998,0.9799999999999995,0,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,3379,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 49.152 k; out: 32.768 k; in-delta: 16.384 k/s; out-delta: 16.384 k/s; latency: 3389064827
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,7726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,7727,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.032264337,0.03,7968,0,0.006113874999999998,0.009999999999999998,994,0
+14,Thread-3,0.045397693,0.04,7948,0,0.0022973280000000013,0.0,998,0
+15,Thread-4,9.7323E-5,0.0,8000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,7.731857956,7.63,161,4,0.9917846699999995,0.9900000000000002,6,0
+18,ForkJoinPool-1-worker-2,7.830666042,7.74,64,0,0.9424822810000002,0.9400000000000004,55,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,4379,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 49.152 k; out: 32.768 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,8726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,8726,0,0.0,0.0,999,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.032264337,0.03,8968,0,0.0,0.0,1000,0
+14,Thread-3,0.047389925,0.04,8946,0,0.0019922319999999966,0.0,998,0
+15,Thread-4,9.7323E-5,0.0,9000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,8.729667997,8.62,161,4,0.9978100410000001,0.9899999999999993,0,0
+18,ForkJoinPool-1-worker-2,8.828530963,8.73,64,0,0.9978649210000006,0.9900000000000002,0,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,5379,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 49.152 k; out: 32.768 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,9726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,9727,0,0.0,0.0,1001,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.032264337,0.03,9968,0,0.0,0.0,1000,0
+14,Thread-3,0.049648611,0.04,9944,0,0.002258686000000003,0.0,998,0
+15,Thread-4,9.7323E-5,0.0,10000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,9.72790761,9.62,161,4,0.9982396130000009,1.0,0,0
+18,ForkJoinPool-1-worker-2,9.82658942,9.73,64,0,0.9980584569999991,1.0,0,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,6379,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 65.536 k; out: 49.152 k; in-delta: 16.384 k/s; out-delta: 16.384 k/s; latency: 3036477174
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,10726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,10726,0,0.0,0.0,999,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.03690646,0.03,10963,0,0.004642123000000005,0.0,995,0
+14,Thread-3,0.051812033,0.04,10942,0,0.002163421999999998,0.0,998,0
+15,Thread-4,9.7323E-5,0.0,11000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,10.721785329,10.61,166,4,0.9938777189999985,0.9900000000000002,5,0
+18,ForkJoinPool-1-worker-2,10.731819433,10.63,157,0,0.9052300130000006,0.9000000000000004,93,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,7379,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 65.536 k; out: 49.152 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,11726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,11726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.03690646,0.03,11963,0,0.0,0.0,1000,0
+14,Thread-3,0.054227275,0.04,11939,0,0.002415241999999998,0.0,997,0
+15,Thread-4,9.7323E-5,0.0,12000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,11.71951423,11.6,166,4,0.9977289010000003,0.9900000000000002,0,0
+18,ForkJoinPool-1-worker-2,11.729459504,11.63,157,0,0.9976400709999993,1.0,0,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,8379,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 65.536 k; out: 49.152 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,12728,0,0.0,0.0,1002,0
+3,Finalizer,0.00731884,0.0,12728,0,0.0,0.0,1002,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.03690646,0.03,12965,0,0.0,0.0,1002,0
+14,Thread-3,0.05625548,0.05,12937,0,0.002028204999999998,0.010000000000000002,998,0
+15,Thread-4,9.7323E-5,0.0,13002,0,0.0,0.0,1002,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,12.717384687,12.6,166,4,0.9978704569999994,1.0,0,0
+18,ForkJoinPool-1-worker-2,12.727289277,12.62,157,0,0.9978297730000012,0.9899999999999984,0,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,9380,0,0.0,0.0,1001,0
+
+time-delta: 1000 ms; in: 81.92 k; out: 65.536 k; in-delta: 16.384 k/s; out-delta: 16.384 k/s; latency: 2952098917
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,13726,0,0.0,0.0,998,0
+3,Finalizer,0.00731884,0.0,13726,0,0.0,0.0,998,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.041056168,0.04,13959,0,0.004149707999999995,0.010000000000000002,994,0
+14,Thread-3,0.058084552,0.05,13933,0,0.001829072000000001,0.0,996,0
+15,Thread-4,9.7323E-5,0.0,14000,0,0.0,0.0,998,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,13.709184679,13.59,170,4,0.9917999920000007,0.9900000000000002,4,0
+18,ForkJoinPool-1-worker-2,13.708065926,13.6,173,0,0.9807766489999992,0.9800000000000004,16,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,10379,0,0.0,0.0,999,0
+
+time-delta: 1000 ms; in: 81.92 k; out: 65.536 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,14726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,14726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.041056168,0.04,14959,0,0.0,0.0,1000,0
+14,Thread-3,0.059971957,0.05,14932,0,0.0018874050000000017,0.0,999,0
+15,Thread-4,9.7323E-5,0.0,15000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,14.707631448,14.59,170,4,0.998446769000001,1.0,0,0
+18,ForkJoinPool-1-worker-2,14.706244494,14.6,173,0,0.9981785680000002,1.0,0,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,11379,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 81.92 k; out: 65.536 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,15726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,15726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.041056168,0.04,15959,0,0.0,0.0,1000,0
+14,Thread-3,0.062066828,0.05,15930,0,0.002094870999999998,0.0,998,0
+15,Thread-4,9.7323E-5,0.0,16000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,15.705886072,15.58,170,4,0.9982546239999994,0.9900000000000002,0,0
+18,ForkJoinPool-1-worker-2,15.704476767,15.59,173,0,0.9982322729999993,0.9900000000000002,0,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,12379,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 98.304 k; out: 81.92 k; in-delta: 16.384 k/s; out-delta: 16.384 k/s; latency: 2935631974
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,16726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,16726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.045092892,0.04,16955,0,0.004036724000000005,0.0,996,0
+14,Thread-3,0.063792295,0.05,16928,0,0.0017254670000000014,0.0,998,0
+15,Thread-4,9.7323E-5,0.0,17000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,16.699730182,16.58,174,4,0.9938441099999995,0.9999999999999982,4,0
+18,ForkJoinPool-1-worker-2,16.69216104,16.58,183,0,0.9876842729999993,0.9899999999999984,10,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,13378,0,0.0,0.0,999,0
+
+time-delta: 1000 ms; in: 98.304 k; out: 81.92 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,17728,0,0.0,0.0,1002,0
+3,Finalizer,0.00731884,0.0,17728,0,0.0,0.0,1002,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.045092892,0.04,17957,0,0.0,0.0,1002,0
+14,Thread-3,0.065787779,0.05,17926,0,0.0019954840000000057,0.0,998,0
+15,Thread-4,9.7323E-5,0.0,18002,0,0.0,0.0,1002,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,17.700053151,17.58,174,4,1.000322968999999,1.0,0,0
+18,ForkJoinPool-1-worker-2,17.692435899,17.57,183,0,1.000274859000001,0.990000000000002,0,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,14380,0,0.0,0.0,1002,0
+
+time-delta: 1000 ms; in: 98.304 k; out: 81.92 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,18726,0,0.0,0.0,998,0
+3,Finalizer,0.00731884,0.0,18727,0,0.0,0.0,999,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.045092892,0.04,18955,0,0.0,0.0,998,0
+14,Thread-3,0.068078967,0.05,18922,0,0.0022911879999999996,0.0,996,0
+15,Thread-4,9.7323E-5,0.0,19001,0,0.0,0.0,999,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,18.696609885,18.57,174,4,0.9965567340000021,0.990000000000002,0,0
+18,ForkJoinPool-1-worker-2,18.688960014,18.57,183,0,0.9965241149999997,1.0,0,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,15379,0,0.0,0.0,999,0
+
+time-delta: 1000 ms; in: 114.688 k; out: 98.304 k; in-delta: 16.384 k/s; out-delta: 16.384 k/s; latency: 2930340654
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,19726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,19726,0,0.0,0.0,999,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.049307041,0.04,19951,0,0.004214149,0.0,996,0
+14,Thread-3,0.069971332,0.05,19920,0,0.001892364999999993,0.0,998,0
+15,Thread-4,9.7323E-5,0.0,20000,0,0.0,0.0,999,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,19.690248442,19.57,178,4,0.9936385570000006,1.0,4,0
+18,ForkJoinPool-1-worker-2,19.676299293,19.55,193,0,0.9873392790000004,0.9800000000000004,10,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,16379,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 114.688 k; out: 98.304 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,20726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,20726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.049307041,0.04,20951,0,0.0,0.0,1000,0
+14,Thread-3,0.071638111,0.05,20918,0,0.0016667790000000071,0.0,998,0
+15,Thread-4,9.7323E-5,0.0,21000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,20.688260901,20.56,178,4,0.9980124589999981,0.9899999999999984,0,0
+18,ForkJoinPool-1-worker-2,20.674287192,20.55,193,0,0.9979878990000017,1.0,0,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,17378,0,0.0,0.0,999,0
+
+time-delta: 1000 ms; in: 131.072 k; out: 114.688 k; in-delta: 16.384 k/s; out-delta: 16.384 k/s; latency: 2933200177
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,21726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,21726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.053673391,0.05,21946,0,0.004366349999999998,0.010000000000000002,995,0
+14,Thread-3,0.073453563,0.06,21916,0,0.0018154519999999952,0.009999999999999995,998,0
+15,Thread-4,9.7323E-5,0.0,22000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,21.682483043,21.56,182,4,0.9942221420000017,1.0,4,0
+18,ForkJoinPool-1-worker-2,21.657939506,21.53,208,0,0.9836523140000004,0.9800000000000004,15,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,18378,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 131.072 k; out: 114.688 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,22728,0,0.0,0.0,1002,0
+3,Finalizer,0.00731884,0.0,22728,0,0.0,0.0,1002,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.053673391,0.05,22948,0,0.0,0.0,1002,0
+14,Thread-3,0.075291048,0.06,22915,0,0.0018374849999999998,0.0,999,0
+15,Thread-4,9.7323E-5,0.0,23002,0,0.0,0.0,1002,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,22.682232026,22.56,182,4,0.9997489829999999,1.0,0,0
+18,ForkJoinPool-1-worker-2,22.657761653,22.53,208,0,0.9998221469999997,1.0,0,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,19380,0,0.0,0.0,1002,0
+
+time-delta: 1000 ms; in: 131.072 k; out: 114.688 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,23726,0,0.0,0.0,998,0
+3,Finalizer,0.00731884,0.0,23727,0,0.0,0.0,999,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.053673391,0.05,23946,0,0.0,0.0,998,0
+14,Thread-3,0.077074175,0.06,23911,0,0.0017831269999999955,0.0,996,0
+15,Thread-4,9.7323E-5,0.0,24000,0,0.0,0.0,998,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,23.677913897,23.55,182,4,0.9956818709999986,0.990000000000002,0,0
+18,ForkJoinPool-1-worker-2,23.6534017,23.53,208,0,0.9956400469999984,1.0,0,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,20379,0,0.0,0.0,999,0
+
+time-delta: 1000 ms; in: 147.456 k; out: 131.072 k; in-delta: 16.383999999999986 k/s; out-delta: 16.384 k/s; latency: 2966923488
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,24726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,24726,0,0.0,0.0,999,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.057741936,0.05,24942,0,0.004068545,0.0,996,0
+14,Thread-3,0.078775893,0.06,24909,0,0.0017017180000000048,0.0,998,0
+15,Thread-4,9.7323E-5,0.0,25000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,24.671911258,24.55,186,4,0.9939973610000017,1.0,4,0
+18,ForkJoinPool-1-worker-2,24.5998295,24.47,260,0,0.9464277999999986,0.9399999999999977,52,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,21378,0,0.0,0.0,999,0
+
+time-delta: 1000 ms; in: 147.456 k; out: 131.072 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,25726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,25726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.057741936,0.05,25942,0,0.0,0.0,1000,0
+14,Thread-3,0.080480984,0.06,25908,0,0.0017050910000000058,0.0,999,0
+15,Thread-4,9.7323E-5,0.0,26000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,25.670362939,25.54,186,4,0.9984516809999988,0.9899999999999984,0,0
+18,ForkJoinPool-1-worker-2,25.598331078,25.47,260,0,0.9985015780000026,1.0,0,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,22378,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 147.456 k; out: 131.072 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,26726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,26726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.057741936,0.05,26942,0,0.0,0.0,1000,0
+14,Thread-3,0.082327742,0.06,26906,0,0.00184675799999999,0.0,998,0
+15,Thread-4,9.7323E-5,0.0,27000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,26.668946775,26.54,186,4,0.9985838359999981,1.0,0,0
+18,ForkJoinPool-1-worker-2,26.596830731,26.47,260,0,0.9984996529999997,1.0,0,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,23379,0,0.0,0.0,1001,0
+
+time-delta: 1000 ms; in: 163.84 k; out: 147.456 k; in-delta: 16.384000000000015 k/s; out-delta: 16.383999999999986 k/s; latency: 2934103099
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,27728,0,0.0,0.0,1002,0
+3,Finalizer,0.00731884,0.0,27728,0,0.0,0.0,1002,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.062104552,0.06,27940,0,0.004362616,0.009999999999999995,998,0
+14,Thread-3,0.084032556,0.07,27904,0,0.001704813999999999,0.010000000000000009,998,0
+15,Thread-4,9.7323E-5,0.0,28002,0,0.0,0.0,1002,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,27.664764384,27.53,191,4,0.995817609000003,0.990000000000002,5,0
+18,ForkJoinPool-1-worker-2,27.578182179,27.45,278,0,0.9813514479999981,0.9800000000000004,18,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,24380,0,0.0,0.0,1001,0
+
+time-delta: 1000 ms; in: 163.84 k; out: 147.456 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,28726,0,0.0,0.0,998,0
+3,Finalizer,0.00731884,0.0,28726,0,0.0,0.0,998,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.062104552,0.06,28938,0,0.0,0.0,998,0
+14,Thread-3,0.085692309,0.07,28901,0,0.001659753,0.0,997,0
+15,Thread-4,9.7323E-5,0.0,29000,0,0.0,0.0,998,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,28.661124211,28.53,191,4,0.9963598269999991,1.0,0,0
+18,ForkJoinPool-1-worker-2,28.574614595,28.44,278,0,0.9964324160000011,0.990000000000002,0,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,25378,0,0.0,0.0,998,0
+
+time-delta: 1000 ms; in: 163.84 k; out: 147.456 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,29726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,29726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.062104552,0.06,29938,0,0.0,0.0,1000,0
+14,Thread-3,0.087500405,0.07,29899,0,0.001808096000000009,0.0,998,0
+15,Thread-4,9.7323E-5,0.0,30000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,29.65961818,29.53,191,4,0.9984939689999983,1.0,0,0
+18,ForkJoinPool-1-worker-2,29.572831914,29.44,278,0,0.9982173190000019,1.0,0,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,26378,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 180.224 k; out: 163.84 k; in-delta: 16.383999999999986 k/s; out-delta: 16.384000000000015 k/s; latency: 2942832394
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,30726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,30726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.066193174,0.06,30934,0,0.004088621999999993,0.0,996,0
+14,Thread-3,0.089206458,0.07,30897,0,0.001706052999999999,0.0,998,0
+15,Thread-4,9.7323E-5,0.0,31000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,30.653797043,30.52,195,4,0.9941788630000019,0.9899999999999984,4,0
+18,ForkJoinPool-1-worker-2,30.552445985,30.42,297,0,0.9796140709999968,0.9800000000000004,19,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,27378,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 180.224 k; out: 163.84 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,31726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,31726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.066193174,0.06,31934,0,0.0,0.0,1000,0
+14,Thread-3,0.090902228,0.07,31895,0,0.0016957699999999992,0.0,998,0
+15,Thread-4,9.7323E-5,0.0,32000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,31.651999903,31.52,195,4,0.9982028599999992,1.0,0,0
+18,ForkJoinPool-1-worker-2,31.550726374,31.42,297,0,0.9982803890000014,1.0,0,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,28378,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 180.224 k; out: 163.84 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,32728,0,0.0,0.0,1002,0
+3,Finalizer,0.00731884,0.0,32728,0,0.0,0.0,1002,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.066193174,0.06,32936,0,0.0,0.0,1002,0
+14,Thread-3,0.092412892,0.07,32894,0,0.001510663999999995,0.0,999,0
+15,Thread-4,9.7323E-5,0.0,33002,0,0.0,0.0,1002,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,32.651849975,32.52,195,4,0.9998500719999974,1.0000000000000036,0,0
+18,ForkJoinPool-1-worker-2,32.550632465,32.42,297,0,0.9999060909999997,1.0,0,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,29380,0,0.0,0.0,1002,0
+
+time-delta: 1000 ms; in: 180.224 k; out: 163.84 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,33726,0,0.0,0.0,998,0
+3,Finalizer,0.00731884,0.0,33726,0,0.0,0.0,998,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.066193174,0.06,33934,0,0.0,0.0,998,0
+14,Thread-3,0.093955833,0.07,33890,0,0.001542941000000006,0.0,996,0
+15,Thread-4,9.7323E-5,0.0,34000,0,0.0,0.0,998,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,33.649830064,33.52,195,4,0.9979800890000021,1.0,0,0
+18,ForkJoinPool-1-worker-2,33.548908,33.41,297,0,0.9982755349999977,0.9899999999999949,0,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,30378,0,0.0,0.0,998,0
+
+time-delta: 1000 ms; in: 196.608 k; out: 180.224 k; in-delta: 16.384000000000015 k/s; out-delta: 16.383999999999986 k/s; latency: 3517018621
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,34726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,34726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.070273475,0.06,34930,0,0.004080301000000008,0.0,996,0
+14,Thread-3,0.095458099,0.07,34889,0,0.001502266000000002,0.0,999,0
+15,Thread-4,9.7323E-5,0.0,35000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,34.643532251,34.51,199,4,0.9937021870000038,0.9899999999999949,4,0
+18,ForkJoinPool-1-worker-2,34.535111173,34.4,309,0,0.9862031729999998,0.990000000000002,12,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,31378,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 196.608 k; out: 180.224 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,35726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,35726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.070273475,0.06,35930,0,0.0,0.0,1000,0
+14,Thread-3,0.096927365,0.08,35887,0,0.0014692659999999969,0.009999999999999995,998,0
+15,Thread-4,9.7323E-5,0.0,36000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,35.641309564,35.51,199,4,0.9977773129999932,1.0,0,0
+18,ForkJoinPool-1-worker-2,35.533272426,35.4,309,0,0.9981612530000064,1.0,0,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,32378,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 196.608 k; out: 180.224 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,36726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,36726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.070273475,0.06,36930,0,0.0,0.0,1000,0
+14,Thread-3,0.098458647,0.08,36886,0,0.001531281999999995,0.0,999,0
+15,Thread-4,9.7323E-5,0.0,37000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,36.639272026,36.5,199,4,0.9979624620000038,0.990000000000002,0,0
+18,ForkJoinPool-1-worker-2,36.531360708,36.39,309,0,0.9980882819999977,0.990000000000002,0,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,33378,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 212.992 k; out: 196.608 k; in-delta: 16.383999999999986 k/s; out-delta: 16.384000000000015 k/s; latency: 2984501006
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,37728,0,0.0,0.0,1002,0
+3,Finalizer,0.00731884,0.0,37728,0,0.0,0.0,1002,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.07427631,0.07,37926,0,0.004002834999999996,0.010000000000000009,996,0
+14,Thread-3,0.099986729,0.08,37884,0,0.001528082,0.0,998,0
+15,Thread-4,9.7323E-5,0.0,38002,0,0.0,0.0,1002,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,37.635787019,37.5,204,4,0.9965149929999981,1.0,5,0
+18,ForkJoinPool-1-worker-2,37.500437506,37.36,341,0,0.9690767979999961,0.9699999999999989,32,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,34380,0,0.0,0.0,1002,0
+
+time-delta: 1000 ms; in: 212.992 k; out: 196.608 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,38726,0,0.0,0.0,998,0
+3,Finalizer,0.00731884,0.0,38726,0,0.0,0.0,998,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.07427631,0.07,38924,0,0.0,0.0,998,0
+14,Thread-3,0.10146551,0.08,38881,0,0.0014787809999999985,0.0,997,0
+15,Thread-4,9.7323E-5,0.0,39000,0,0.0,0.0,998,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,38.632283787,38.5,204,4,0.9964967680000001,1.0,0,0
+18,ForkJoinPool-1-worker-2,38.497033484,38.36,341,0,0.996595978000002,1.0,0,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,35379,0,0.0,0.0,999,0
+
+time-delta: 1000 ms; in: 212.992 k; out: 196.608 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,39726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,39726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.07427631,0.07,39924,0,0.0,0.0,1000,0
+14,Thread-3,0.103609412,0.08,39879,0,0.002143902000000003,0.0,998,0
+15,Thread-4,9.7323E-5,0.0,40000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,39.63042313,39.5,204,4,0.9981393429999983,1.0,0,0
+18,ForkJoinPool-1-worker-2,39.494454371,39.36,341,0,0.9974208870000041,1.0,0,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,36378,0,0.0,0.0,999,0
+
+time-delta: 1000 ms; in: 229.376 k; out: 212.992 k; in-delta: 16.384000000000015 k/s; out-delta: 16.383999999999986 k/s; latency: 2933694503
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,40726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,40726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.078170666,0.07,40921,0,0.0038943560000000016,0.0,997,0
+14,Thread-3,0.105181804,0.08,40878,0,0.0015723920000000058,0.0,999,0
+15,Thread-4,9.7323E-5,0.0,41000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,40.624961819,40.49,208,4,0.9945386890000023,0.990000000000002,4,0
+18,ForkJoinPool-1-worker-2,40.472754454,40.34,361,0,0.9783000829999935,0.980000000000004,20,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,37378,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 229.376 k; out: 212.992 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,41726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,41726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.078170666,0.07,41921,0,0.0,0.0,1000,0
+14,Thread-3,0.106913899,0.08,41876,0,0.001732095000000003,0.0,998,0
+15,Thread-4,9.7323E-5,0.0,42000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,41.623022874,41.49,208,4,0.9980610550000009,1.0,0,0
+18,ForkJoinPool-1-worker-2,41.470526843,41.33,361,0,0.997772389000005,0.9899999999999949,0,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,38378,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 229.376 k; out: 212.992 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,42728,0,0.0,0.0,1002,0
+3,Finalizer,0.00731884,0.0,42728,0,0.0,0.0,1002,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.078170666,0.07,42922,0,0.0,0.0,1001,0
+14,Thread-3,0.108491565,0.08,42874,0,0.0015776659999999915,0.0,998,0
+15,Thread-4,9.7323E-5,0.0,43002,0,0.0,0.0,1002,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,42.62292323,42.49,208,4,0.9999003559999977,1.0,0,0
+18,ForkJoinPool-1-worker-2,42.470234236,42.33,361,0,0.9997073930000013,1.0,0,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,39380,0,0.0,0.0,1002,0
+
+time-delta: 1000 ms; in: 245.76 k; out: 229.376 k; in-delta: 16.383999999999986 k/s; out-delta: 16.384000000000015 k/s; latency: 2926857955
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,43726,0,0.0,0.0,998,0
+3,Finalizer,0.00731884,0.0,43726,0,0.0,0.0,998,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.082079859,0.08,43917,0,0.003909193000000005,0.009999999999999995,995,0
+14,Thread-3,0.110251556,0.09,43871,0,0.0017599910000000024,0.009999999999999995,997,0
+15,Thread-4,9.7323E-5,0.0,44000,0,0.0,0.0,998,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,43.615151483,43.48,212,4,0.9922282530000004,0.9899999999999949,4,0
+18,ForkJoinPool-1-worker-2,43.454039855,43.32,373,0,0.9838056189999946,0.990000000000002,12,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,40378,0,0.0,0.0,998,0
+
+time-delta: 1000 ms; in: 245.76 k; out: 229.376 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,44726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,44726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.082079859,0.08,44917,0,0.0,0.0,1000,0
+14,Thread-3,0.111677958,0.09,44869,0,0.0014264019999999933,0.0,998,0
+15,Thread-4,9.7323E-5,0.0,45000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,44.613644457,44.48,212,4,0.9984929740000013,1.0,0,0
+18,ForkJoinPool-1-worker-2,44.452295825,44.32,373,0,0.9982559700000024,1.0,0,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,41378,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 245.76 k; out: 229.376 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,45726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,45726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.082079859,0.08,45917,0,0.0,0.0,1000,0
+14,Thread-3,0.113406458,0.09,45868,0,0.0017285000000000078,0.0,999,0
+15,Thread-4,9.7323E-5,0.0,46000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,45.611662536,45.47,212,4,0.9980180789999977,0.990000000000002,0,0
+18,ForkJoinPool-1-worker-2,45.450080165,45.31,373,0,0.9977843400000026,0.990000000000002,0,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,42378,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 262.144 k; out: 245.76 k; in-delta: 16.384000000000015 k/s; out-delta: 16.383999999999986 k/s; latency: 2930383897
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,46726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,46726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.08612839,0.08,46913,0,0.004048530999999994,0.0,996,0
+14,Thread-3,0.115459695,0.09,46866,0,0.0020532369999999994,0.0,998,0
+15,Thread-4,9.7323E-5,0.0,47000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,46.606069507,46.47,216,4,0.9944069710000036,1.0,4,0
+18,ForkJoinPool-1-worker-2,46.424697499,46.29,397,0,0.9746173339999942,0.9799999999999969,24,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,43379,0,0.0,0.0,1001,0
+
+time-delta: 1000 ms; in: 262.144 k; out: 245.76 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,47728,0,0.0,0.0,1002,0
+3,Finalizer,0.00731884,0.0,47728,0,0.0,0.0,1002,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.08612839,0.08,47914,0,0.0,0.0,1001,0
+14,Thread-3,0.117246425,0.09,47864,0,0.0017867300000000003,0.0,998,0
+15,Thread-4,9.7323E-5,0.0,48002,0,0.0,0.0,1002,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,47.605737928,47.47,216,4,0.9996684210000026,1.0,0,0
+18,ForkJoinPool-1-worker-2,47.424096592,47.29,397,0,0.999399093000001,1.0,0,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,44380,0,0.0,0.0,1001,0
+
+time-delta: 1000 ms; in: 262.144 k; out: 245.76 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,48726,0,0.0,0.0,998,0
+3,Finalizer,0.00731884,0.0,48726,0,0.0,0.0,998,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.08612839,0.08,48913,0,0.0,0.0,999,0
+14,Thread-3,0.118981228,0.09,48860,0,0.001734802999999993,0.0,996,0
+15,Thread-4,9.7323E-5,0.0,49000,0,0.0,0.0,998,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,48.601939911,48.46,216,4,0.9962019829999988,0.990000000000002,0,0
+18,ForkJoinPool-1-worker-2,48.420328273,48.28,397,0,0.9962316810000047,0.990000000000002,0,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,45379,0,0.0,0.0,999,0
+
+time-delta: 1000 ms; in: 278.528 k; out: 262.144 k; in-delta: 16.384000000000015 k/s; out-delta: 16.384000000000015 k/s; latency: 2940700018
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,49726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,49726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.090264569,0.08,49909,0,0.004136179000000004,0.0,996,0
+14,Thread-3,0.120773828,0.09,49858,0,0.0017926000000000053,0.0,998,0
+15,Thread-4,9.7323E-5,0.0,50000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,49.595476387,49.46,220,4,0.9935364759999956,1.0,4,0
+18,ForkJoinPool-1-worker-2,49.391443349,49.25,424,0,0.9711150759999967,0.9699999999999989,27,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,46378,0,0.0,0.0,999,0
+
+time-delta: 1000 ms; in: 278.528 k; out: 262.144 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,50726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,50726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.090264569,0.08,50909,0,0.0,0.0,1000,0
+14,Thread-3,0.122186719,0.1,50857,0,0.0014128909999999995,0.010000000000000009,999,0
+15,Thread-4,9.7323E-5,0.0,51000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,50.593262831,50.46,220,4,0.997786443999999,1.0,0,0
+18,ForkJoinPool-1-worker-2,50.389385941,50.25,424,0,0.9979425920000011,1.0,0,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,47378,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 278.528 k; out: 262.144 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,51726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,51726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.090264569,0.08,51908,0,0.0,0.0,999,0
+14,Thread-3,0.123726086,0.1,51855,0,0.0015393669999999998,0.0,998,0
+15,Thread-4,9.7323E-5,0.0,52000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,51.590915164,51.45,220,4,0.9976523330000049,0.990000000000002,0,0
+18,ForkJoinPool-1-worker-2,51.375703252,51.24,435,0,0.9863173110000005,0.990000000000002,11,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,48378,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 294.912 k; out: 278.528 k; in-delta: 16.383999999999958 k/s; out-delta: 16.384000000000015 k/s; latency: 2980679131
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,52728,0,0.0,0.0,1002,0
+3,Finalizer,0.00731884,0.0,52728,0,0.0,0.0,1002,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.094438632,0.09,52906,0,0.004174062999999992,0.009999999999999995,998,0
+14,Thread-3,0.125096695,0.1,52854,0,0.0013706090000000087,0.0,999,0
+15,Thread-4,9.7323E-5,0.0,53002,0,0.0,0.0,1002,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,52.58697294,52.45,224,4,0.9960577760000007,1.0,4,0
+18,ForkJoinPool-1-worker-2,52.331298573,52.19,480,0,0.955595320999997,0.9499999999999957,45,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,49380,0,0.0,0.0,1002,0
+
+time-delta: 1000 ms; in: 294.912 k; out: 278.528 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,53726,0,0.0,0.0,998,0
+3,Finalizer,0.00731884,0.0,53726,0,0.0,0.0,998,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.094438632,0.09,53904,0,0.0,0.0,998,0
+14,Thread-3,0.126485409,0.1,53851,0,0.0013887139999999853,0.0,997,0
+15,Thread-4,9.7323E-5,0.0,54000,0,0.0,0.0,998,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,53.583152597,53.45,224,4,0.996179656999999,1.0,0,0
+18,ForkJoinPool-1-worker-2,53.327547781,53.19,480,0,0.9962492080000018,1.0,0,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,50378,0,0.0,0.0,998,0
+
+time-delta: 1000 ms; in: 311.296 k; out: 294.912 k; in-delta: 16.384000000000015 k/s; out-delta: 16.383999999999958 k/s; latency: 2940188808
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,54726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,54726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.098696705,0.09,54900,0,0.004258073000000001,0.0,996,0
+14,Thread-3,0.127819762,0.1,54850,0,0.0013343530000000103,0.0,999,0
+15,Thread-4,9.7323E-5,0.0,55000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,54.575326524,54.44,228,4,0.9921739269999961,0.9899999999999949,4,0
+18,ForkJoinPool-1-worker-2,54.301687262,54.16,502,0,0.9741394810000017,0.9699999999999989,22,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,51378,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 311.296 k; out: 294.912 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,55726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,55726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.098696705,0.09,55900,0,0.0,0.0,1000,0
+14,Thread-3,0.129249037,0.1,55848,0,0.0014292750000000076,0.0,998,0
+15,Thread-4,9.7323E-5,0.0,56000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,55.573627155,55.44,228,4,0.9983006309999993,1.0,0,0
+18,ForkJoinPool-1-worker-2,55.300096116,55.16,502,0,0.9984088539999973,1.0,0,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,52378,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 311.296 k; out: 294.912 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,56726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,56726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.098696705,0.09,56900,0,0.0,0.0,1000,0
+14,Thread-3,0.130848252,0.1,56846,0,0.0015992149999999872,0.0,998,0
+15,Thread-4,9.7323E-5,0.0,57000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,56.569801173,56.43,228,4,0.9961740180000049,0.990000000000002,0,0
+18,ForkJoinPool-1-worker-2,56.296228059,56.16,502,0,0.9961319430000017,1.0,0,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,53378,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 311.296 k; out: 294.912 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,57728,0,0.0,0.0,1002,0
+3,Finalizer,0.00731884,0.0,57728,0,0.0,0.0,1002,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.099218885,0.09,57902,0,5.22180000000011E-4,0.0,1002,0
+14,Thread-3,0.132497664,0.1,57845,0,0.001649411999999989,0.0,999,0
+15,Thread-4,9.7323E-5,0.0,58002,0,0.0,0.0,1002,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,57.567415799,57.43,229,4,0.9976146260000007,1.0,1,0
+18,ForkJoinPool-1-worker-2,57.218607998,57.08,580,0,0.9223799390000025,0.9200000000000017,78,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,54380,0,0.0,0.0,1002,0
+
+time-delta: 1000 ms; in: 327.68 k; out: 311.296 k; in-delta: 16.384000000000015 k/s; out-delta: 16.384000000000015 k/s; latency: 3016584100
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,58726,0,0.0,0.0,998,0
+3,Finalizer,0.00731884,0.0,58726,0,0.0,0.0,998,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.102838987,0.1,58896,0,0.003620102,0.010000000000000009,994,0
+14,Thread-3,0.134055646,0.1,58841,0,0.0015579820000000133,0.0,996,0
+15,Thread-4,9.7323E-5,0.0,59000,0,0.0,0.0,998,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,58.560122043,58.42,233,4,0.9927062439999972,0.990000000000002,4,0
+18,ForkJoinPool-1-worker-2,58.211449703,58.07,583,0,0.9928417049999965,0.990000000000002,3,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,55378,0,0.0,0.0,998,0
+
+time-delta: 1000 ms; in: 327.68 k; out: 311.296 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,59726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,59726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.102838987,0.1,59896,0,0.0,0.0,1000,0
+14,Thread-3,0.135379711,0.1,59840,0,0.0013240650000000131,0.0,999,0
+15,Thread-4,9.7323E-5,0.0,60000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,59.554896556,59.42,233,4,0.994774513000003,1.0,0,0
+18,ForkJoinPool-1-worker-2,59.205878029,59.07,583,0,0.9944283259999978,1.0,0,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,56378,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 327.68 k; out: 311.296 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,60726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,60726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.102838987,0.1,60896,0,0.0,0.0,1000,0
+14,Thread-3,0.136569894,0.11,60839,0,0.0011901829999999836,0.009999999999999995,999,0
+15,Thread-4,9.7323E-5,0.0,61000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,60.550551317,60.41,233,4,0.9956547609999973,0.9899999999999949,0,0
+18,ForkJoinPool-1-worker-2,60.140540567,60.0,644,0,0.9346625380000049,0.9299999999999997,61,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,57378,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 344.064 k; out: 327.68 k; in-delta: 16.384000000000015 k/s; out-delta: 16.384000000000015 k/s; latency: 3021775276
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,61726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,61726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.106855966,0.1,61892,0,0.00401697899999999,0.0,996,0
+14,Thread-3,0.137810831,0.11,61838,0,0.0012409369999999975,0.0,999,0
+15,Thread-4,9.7323E-5,0.0,62000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,61.542587235,61.41,236,4,0.9920359179999991,1.0,3,0
+18,ForkJoinPool-1-worker-2,61.107458842,60.97,673,0,0.9669182749999976,0.9699999999999989,29,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,58378,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 344.064 k; out: 327.68 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,62728,0,0.0,0.0,1002,0
+3,Finalizer,0.00731884,0.0,62728,0,0.0,0.0,1002,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.106855966,0.1,62894,0,0.0,0.0,1002,0
+14,Thread-3,0.139194647,0.11,62837,0,0.00138381600000001,0.0,999,0
+15,Thread-4,9.7323E-5,0.0,63002,0,0.0,0.0,1002,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,62.541085476,62.4,236,4,0.9984982410000001,0.990000000000002,0,0
+18,ForkJoinPool-1-worker-2,62.106144612,61.97,673,0,0.9986857700000016,1.0,0,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,59380,0,0.0,0.0,1002,0
+
+time-delta: 1000 ms; in: 360.448 k; out: 344.064 k; in-delta: 16.383999999999958 k/s; out-delta: 16.384000000000015 k/s; latency: 2941185025
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,63726,0,0.0,0.0,998,0
+3,Finalizer,0.00731884,0.0,63726,0,0.0,0.0,998,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.11112804,0.11,63888,0,0.004272074000000001,0.009999999999999995,994,0
+14,Thread-3,0.14045579,0.11,63833,0,0.0012611429999999924,0.0,996,0
+15,Thread-4,9.7323E-5,0.0,64000,0,0.0,0.0,998,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,63.531349735,63.39,241,4,0.9902642589999999,0.990000000000002,5,0
+18,ForkJoinPool-1-worker-2,63.06646166,62.93,708,0,0.9603170480000003,0.9600000000000009,35,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,60378,0,0.0,0.0,998,0
+
+time-delta: 1000 ms; in: 360.448 k; out: 344.064 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,64726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,64726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.11112804,0.11,64888,0,0.0,0.0,1000,0
+14,Thread-3,0.141864456,0.11,64832,0,0.0014086660000000029,0.0,999,0
+15,Thread-4,9.7323E-5,0.0,65000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,64.527293723,64.39,241,4,0.9959439880000005,1.0,0,0
+18,ForkJoinPool-1-worker-2,64.062333423,63.92,708,0,0.9958717629999967,0.990000000000002,0,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,61378,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 360.448 k; out: 344.064 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,65726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,65726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.11112804,0.11,65888,0,0.0,0.0,1000,0
+14,Thread-3,0.143199669,0.11,65831,0,0.0013352130000000018,0.0,999,0
+15,Thread-4,9.7323E-5,0.0,66000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,65.522301366,65.39,241,4,0.9950076429999939,1.0,0,0
+18,ForkJoinPool-1-worker-2,65.057303375,64.92,708,0,0.9949699520000053,1.0,0,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,62378,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 376.832 k; out: 360.448 k; in-delta: 16.384000000000015 k/s; out-delta: 16.383999999999958 k/s; latency: 2943896266
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,66726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,66726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.11521831,0.11,66884,0,0.004090270000000007,0.0,996,0
+14,Thread-3,0.144615779,0.11,66829,0,0.0014161099999999982,0.0,998,0
+15,Thread-4,9.7323E-5,0.0,67000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,66.510643242,66.37,245,4,0.9883418760000069,0.980000000000004,4,0
+18,ForkJoinPool-1-worker-2,66.010531442,65.87,747,0,0.9532280669999977,0.9500000000000028,39,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,63378,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 376.832 k; out: 360.448 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,67728,0,0.0,0.0,1002,0
+3,Finalizer,0.00731884,0.0,67728,0,0.0,0.0,1002,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.11521831,0.11,67886,0,0.0,0.0,1002,0
+14,Thread-3,0.145866303,0.11,67828,0,0.0012505240000000029,0.0,999,0
+15,Thread-4,9.7323E-5,0.0,68001,0,0.0,0.0,1001,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,67.508158068,67.37,245,4,0.9975148259999997,1.0,0,0
+18,ForkJoinPool-1-worker-2,67.008174043,66.87,747,0,0.9976426009999955,1.0,0,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,64380,0,0.0,0.0,1002,0
+
+time-delta: 1000 ms; in: 376.832 k; out: 360.448 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,68726,0,0.0,0.0,998,0
+3,Finalizer,0.00731884,0.0,68726,0,0.0,0.0,998,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.11521831,0.11,68884,0,0.0,0.0,998,0
+14,Thread-3,0.147126864,0.11,68825,0,0.0012605609999999934,0.0,997,0
+15,Thread-4,9.7323E-5,0.0,69000,0,0.0,0.0,999,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,68.50285777,68.37,245,4,0.9946997020000055,1.0,0,0
+18,ForkJoinPool-1-worker-2,68.002787042,67.86,747,0,0.9946129989999974,0.9899999999999949,0,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,65378,0,0.0,0.0,998,0
+
+time-delta: 1000 ms; in: 393.216 k; out: 376.832 k; in-delta: 16.384000000000015 k/s; out-delta: 16.384000000000015 k/s; latency: 2933406390
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,69726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,69726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.119085089,0.11,69880,0,0.0038667790000000007,0.0,996,0
+14,Thread-3,0.14857832,0.11,69824,0,0.0014514560000000176,0.0,999,0
+15,Thread-4,9.7323E-5,0.0,70000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,69.493369213,69.36,249,4,0.9905114429999884,0.9899999999999949,4,0
+18,ForkJoinPool-1-worker-2,68.988009292,68.85,755,0,0.9852222500000067,0.9899999999999949,8,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,66378,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 393.216 k; out: 376.832 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,70726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,70726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.119085089,0.11,70880,0,0.0,0.0,1000,0
+14,Thread-3,0.149785179,0.12,70822,0,0.0012068589999999768,0.009999999999999995,998,0
+15,Thread-4,9.7323E-5,0.0,71000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,70.48953558,70.35,249,4,0.9961663670000007,0.9899999999999949,0,0
+18,ForkJoinPool-1-worker-2,69.983845179,69.84,755,0,0.9958358869999984,0.9900000000000091,0,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,67378,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 393.216 k; out: 376.832 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,71726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,71726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.119085089,0.11,71880,0,0.0,0.0,1000,0
+14,Thread-3,0.15112081,0.12,71821,0,0.0013356310000000038,0.0,999,0
+15,Thread-4,9.7323E-5,0.0,72000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,71.483691236,71.35,249,4,0.9941556560000038,1.0,0,0
+18,ForkJoinPool-1-worker-2,70.977985568,70.84,755,0,0.9941403889999947,1.0,0,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,68378,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 409.6 k; out: 393.216 k; in-delta: 16.384000000000015 k/s; out-delta: 16.384000000000015 k/s; latency: 3128380935
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,72728,0,0.0,0.0,1002,0
+3,Finalizer,0.00731884,0.0,72728,0,0.0,0.0,1002,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.123486681,0.12,72878,0,0.004401591999999996,0.009999999999999995,998,0
+14,Thread-3,0.152401668,0.12,72820,0,0.0012808579999999958,0.0,999,0
+15,Thread-4,9.7323E-5,0.0,73002,0,0.0,0.0,1002,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,72.477195451,72.34,253,4,0.9935042150000015,0.9900000000000091,4,0
+18,ForkJoinPool-1-worker-2,71.957900022,71.82,773,0,0.97991445400001,0.9799999999999898,18,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,69380,0,0.0,0.0,1002,0
+
+time-delta: 1000 ms; in: 409.6 k; out: 393.216 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,73726,0,0.0,0.0,998,0
+3,Finalizer,0.00731884,0.0,73726,0,0.0,0.0,998,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.123486681,0.12,73876,0,0.0,0.0,998,0
+14,Thread-3,0.153617552,0.12,73817,0,0.0012158840000000004,0.0,997,0
+15,Thread-4,9.7323E-5,0.0,74000,0,0.0,0.0,998,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,73.473589945,73.34,253,4,0.9963944940000005,1.0,0,0
+18,ForkJoinPool-1-worker-2,72.95423457,72.81,773,0,0.996334547999993,0.9900000000000091,0,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,70378,0,0.0,0.0,998,0
+
+time-delta: 1000 ms; in: 409.6 k; out: 393.216 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,74726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,74726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.123486681,0.12,74876,0,0.0,0.0,1000,0
+14,Thread-3,0.154847002,0.12,74816,0,0.0012294500000000208,0.0,999,0
+15,Thread-4,9.7323E-5,0.0,75000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,74.468091024,74.33,253,4,0.9945010790000026,0.9899999999999949,0,0
+18,ForkJoinPool-1-worker-2,73.947882171,73.81,773,0,0.9936476010000064,1.0,0,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,71378,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 409.6 k; out: 393.216 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,75726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,75726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.123486681,0.12,75876,0,0.0,0.0,1000,0
+14,Thread-3,0.156055743,0.12,75814,0,0.0012087409999999854,0.0,998,0
+15,Thread-4,9.7323E-5,0.0,76000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,75.461131349,75.32,253,4,0.9930403249999955,0.9899999999999949,0,0
+18,ForkJoinPool-1-worker-2,74.940608309,74.8,773,0,0.9927261379999948,0.9899999999999949,0,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,72378,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 425.984 k; out: 409.6 k; in-delta: 16.383999999999958 k/s; out-delta: 16.384000000000015 k/s; latency: 3261721893
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,76726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,76726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.127483035,0.12,76872,0,0.003996353999999994,0.0,996,0
+14,Thread-3,0.157243298,0.12,76813,0,0.0011875550000000068,0.0,999,0
+15,Thread-4,9.7323E-5,0.0,77000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,76.451645861,76.31,257,4,0.9905145120000043,0.9900000000000091,4,0
+18,ForkJoinPool-1-worker-2,75.922049903,75.78,786,0,0.9814415940000032,0.980000000000004,13,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,73378,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 425.984 k; out: 409.6 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,77728,0,0.0,0.0,1002,0
+3,Finalizer,0.00731884,0.0,77728,0,0.0,0.0,1002,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.127483035,0.12,77874,0,0.0,0.0,1002,0
+14,Thread-3,0.158495415,0.12,77812,0,0.001252116999999997,0.0,999,0
+15,Thread-4,9.7323E-5,0.0,78001,0,0.0,0.0,1001,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,77.44745892,77.31,257,4,0.9958130589999996,1.0,0,0
+18,ForkJoinPool-1-worker-2,76.918028906,76.78,786,0,0.9959790030000022,1.0,0,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,74380,0,0.0,0.0,1002,0
+
+time-delta: 1000 ms; in: 425.984 k; out: 409.6 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,78726,0,0.0,0.0,998,0
+3,Finalizer,0.00731884,0.0,78726,0,0.0,0.0,998,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.127483035,0.12,78872,0,0.0,0.0,998,0
+14,Thread-3,0.159681064,0.12,78809,0,0.0011856490000000108,0.0,997,0
+15,Thread-4,9.7323E-5,0.0,79000,0,0.0,0.0,999,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,78.441956285,78.3,257,4,0.9944973650000009,0.9899999999999949,0,0
+18,ForkJoinPool-1-worker-2,77.912348732,77.77,786,0,0.9943198259999946,0.9899999999999949,0,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,75378,0,0.0,0.0,998,0
+
+time-delta: 1000 ms; in: 442.368 k; out: 425.984 k; in-delta: 16.384000000000015 k/s; out-delta: 16.383999999999958 k/s; latency: 2946713033
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,79726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,79726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.131341304,0.13,79868,0,0.0038582689999999975,0.010000000000000009,996,0
+14,Thread-3,0.160839788,0.13,79808,0,0.0011587239999999999,0.010000000000000009,999,0
+15,Thread-4,9.7323E-5,0.0,80000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,79.431284312,79.29,261,4,0.9893280269999991,0.9900000000000091,4,0
+18,ForkJoinPool-1-worker-2,78.885357997,78.74,806,0,0.9730092650000017,0.9699999999999989,20,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,76378,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 442.368 k; out: 425.984 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,80726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,80726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.131341304,0.13,80868,0,0.0,0.0,1000,0
+14,Thread-3,0.162048052,0.13,80807,0,0.0012082639999999867,0.0,999,0
+15,Thread-4,9.7323E-5,0.0,81000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,80.426258109,80.29,261,4,0.9949737970000001,1.0,0,0
+18,ForkJoinPool-1-worker-2,79.880297516,79.74,806,0,0.994939518999999,1.0,0,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,77378,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 442.368 k; out: 425.984 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,81726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,81726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.131341304,0.13,81868,0,0.0,0.0,1000,0
+14,Thread-3,0.163266488,0.13,81806,0,0.0012184359999999894,0.0,999,0
+15,Thread-4,9.7323E-5,0.0,82000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,81.420084908,81.28,261,4,0.9938267990000043,0.9899999999999949,0,0
+18,ForkJoinPool-1-worker-2,80.874035318,80.73,806,0,0.9937378019999983,0.9900000000000091,0,0
+19,ForkJoinPool-1-worker-3,1.52086E-4,0.0,78378,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 458.752 k; out: 442.368 k; in-delta: 16.384000000000015 k/s; out-delta: 16.384000000000015 k/s; latency: 2977253132
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,82728,0,0.0,0.0,1002,0
+3,Finalizer,0.00731884,0.0,82728,0,0.0,0.0,1002,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.135446904,0.13,82866,0,0.004105600000000015,0.0,998,0
+14,Thread-3,0.164500373,0.13,82804,0,0.0012338850000000179,0.0,998,0
+15,Thread-4,9.7323E-5,0.0,83001,0,0.0,0.0,1001,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,82.375221898,82.24,295,4,0.9551369899999997,0.9599999999999937,34,0
+18,ForkJoinPool-1-worker-2,81.85923118,81.72,810,0,0.9851958619999976,0.9899999999999949,4,0
+19,ForkJoinPool-1-worker-3,1.94363E-4,0.0,79380,0,4.227699999999999E-5,0.0,1002,0
+
+time-delta: 1000 ms; in: 458.752 k; out: 442.368 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,83726,0,0.0,0.0,998,0
+3,Finalizer,0.00731884,0.0,83726,0,0.0,0.0,998,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.135446904,0.13,83864,0,0.0,0.0,998,0
+14,Thread-3,0.165801267,0.13,83801,0,0.0013008939999999969,0.0,997,0
+15,Thread-4,9.7323E-5,0.0,84000,0,0.0,0.0,999,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,83.363312715,83.23,295,4,0.9880908169999998,0.9900000000000091,0,0
+18,ForkJoinPool-1-worker-2,82.847440302,82.71,810,0,0.9882091220000007,0.9899999999999949,0,0
+19,ForkJoinPool-1-worker-3,1.94363E-4,0.0,80378,0,0.0,0.0,998,0
+
+time-delta: 1000 ms; in: 458.752 k; out: 442.368 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,84726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,84726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.135446904,0.13,84864,0,0.0,0.0,1000,0
+14,Thread-3,0.167343388,0.13,84800,0,0.0015421210000000074,0.0,999,0
+15,Thread-4,9.7323E-5,0.0,85000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,84.3595815,84.22,295,4,0.996268784999998,0.9899999999999949,0,0
+18,ForkJoinPool-1-worker-2,83.843513368,83.7,810,0,0.9960730660000081,0.9900000000000091,0,0
+19,ForkJoinPool-1-worker-3,1.94363E-4,0.0,81378,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 475.136 k; out: 458.752 k; in-delta: 16.384000000000015 k/s; out-delta: 16.384000000000015 k/s; latency: 2946944784
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,85726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,85726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.13967675,0.13,85860,0,0.0042298459999999816,0.0,996,0
+14,Thread-3,0.168585519,0.13,85798,0,0.0012421309999999797,0.0,998,0
+15,Thread-4,9.7323E-5,0.0,86000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,85.344181882,85.21,306,4,0.9846003819999964,0.9899999999999949,11,0
+18,ForkJoinPool-1-worker-2,84.834869332,84.69,815,0,0.9913559639999932,0.9899999999999949,5,0
+19,ForkJoinPool-1-worker-3,2.29194E-4,0.0,82378,0,3.4831000000000006E-5,0.0,1000,0
+
+time-delta: 1000 ms; in: 475.136 k; out: 458.752 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,86726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,86726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.13967675,0.13,86860,0,0.0,0.0,1000,0
+14,Thread-3,0.169809482,0.13,86797,0,0.0012239630000000223,0.0,999,0
+15,Thread-4,9.7323E-5,0.0,87000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,86.33868461,86.2,306,4,0.9945027280000005,0.9900000000000091,0,0
+18,ForkJoinPool-1-worker-2,85.82924286,85.69,815,0,0.994373527999997,1.0,0,0
+19,ForkJoinPool-1-worker-3,2.29194E-4,0.0,83378,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 475.136 k; out: 458.752 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,87728,0,0.0,0.0,1002,0
+3,Finalizer,0.00731884,0.0,87728,0,0.0,0.0,1002,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.13967675,0.13,87862,0,0.0,0.0,1002,0
+14,Thread-3,0.171185098,0.13,87796,0,0.0013756159999999962,0.0,999,0
+15,Thread-4,9.7323E-5,0.0,88002,0,0.0,0.0,1002,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,87.335381467,87.2,306,4,0.9966968570000034,1.0,0,0
+18,ForkJoinPool-1-worker-2,86.826134283,86.69,815,0,0.9968914230000081,1.0,0,0
+19,ForkJoinPool-1-worker-3,2.29194E-4,0.0,84380,0,0.0,0.0,1002,0
+
+time-delta: 1000 ms; in: 491.52 k; out: 475.136 k; in-delta: 16.383999999999958 k/s; out-delta: 16.384000000000015 k/s; latency: 3316652613
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,88726,0,0.0,0.0,998,0
+3,Finalizer,0.00731884,0.0,88726,0,0.0,0.0,998,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.143550236,0.14,88856,0,0.0038734860000000093,0.010000000000000009,994,0
+14,Thread-3,0.172441597,0.14,88793,0,0.0012564989999999943,0.010000000000000009,997,0
+15,Thread-4,9.7323E-5,0.0,89000,0,0.0,0.0,998,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,88.325314602,88.19,310,4,0.9899331350000011,0.9899999999999949,4,0
+18,ForkJoinPool-1-worker-2,87.805000016,87.66,830,0,0.9788657329999921,0.9699999999999989,15,0
+19,ForkJoinPool-1-worker-3,2.29194E-4,0.0,85378,0,0.0,0.0,998,0
+
+time-delta: 1000 ms; in: 491.52 k; out: 475.136 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,89726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,89726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.143550236,0.14,89856,0,0.0,0.0,1000,0
+14,Thread-3,0.173650173,0.14,89792,0,0.001208575999999989,0.0,999,0
+15,Thread-4,9.7323E-5,0.0,90000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,89.319997149,89.18,310,4,0.9946825469999965,0.9900000000000091,0,0
+18,ForkJoinPool-1-worker-2,88.799895435,88.66,830,0,0.9948954190000023,1.0,0,0
+19,ForkJoinPool-1-worker-3,2.29194E-4,0.0,86378,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 491.52 k; out: 475.136 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,90726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,90726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.143550236,0.14,90856,0,0.0,0.0,1000,0
+14,Thread-3,0.174989851,0.14,90790,0,0.0013396780000000108,0.0,998,0
+15,Thread-4,9.7323E-5,0.0,91000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,90.312025026,90.17,310,4,0.9920278769999982,0.9899999999999949,0,0
+18,ForkJoinPool-1-worker-2,89.7922373,89.65,830,0,0.9923418650000002,0.9900000000000091,0,0
+19,ForkJoinPool-1-worker-3,2.29194E-4,0.0,87378,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 491.52 k; out: 475.136 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,91726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,91726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.143550236,0.14,91856,0,0.0,0.0,1000,0
+14,Thread-3,0.176206929,0.14,91789,0,0.0012170780000000103,0.0,999,0
+15,Thread-4,9.7323E-5,0.0,92000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,91.306362425,91.17,310,4,0.9943373990000026,1.0,0,0
+18,ForkJoinPool-1-worker-2,90.786556177,90.65,830,0,0.9943188769999978,1.0,0,0
+19,ForkJoinPool-1-worker-3,2.29194E-4,0.0,88378,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 507.904 k; out: 491.52 k; in-delta: 16.384000000000015 k/s; out-delta: 16.383999999999958 k/s; latency: 3620689521
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,92728,0,0.0,0.0,1002,0
+3,Finalizer,0.00731884,0.0,92728,0,0.0,0.0,1002,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.147561436,0.14,92854,0,0.0040111999999999925,0.0,998,0
+14,Thread-3,0.177538783,0.14,92788,0,0.0013318539999999934,0.0,999,0
+15,Thread-4,9.7323E-5,0.0,93001,0,0.0,0.0,1001,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,92.297687068,92.16,314,4,0.9913246429999987,0.9899999999999949,4,0
+18,ForkJoinPool-1-worker-2,91.766172871,91.63,846,0,0.9796166940000006,0.9799999999999898,16,0
+19,ForkJoinPool-1-worker-3,2.29194E-4,0.0,89380,0,0.0,0.0,1002,0
+
+time-delta: 1000 ms; in: 507.904 k; out: 491.52 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,93726,0,0.0,0.0,998,0
+3,Finalizer,0.00731884,0.0,93726,0,0.0,0.0,998,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.147561436,0.14,93852,0,0.0,0.0,998,0
+14,Thread-3,0.178941922,0.14,93785,0,0.0014031389999999977,0.0,997,0
+15,Thread-4,9.7323E-5,0.0,94000,0,0.0,0.0,999,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,93.290223953,93.15,314,4,0.9925368849999927,0.9900000000000091,0,0
+18,ForkJoinPool-1-worker-2,92.7588177,92.62,846,0,0.9926448289999996,0.9900000000000091,0,0
+19,ForkJoinPool-1-worker-3,2.29194E-4,0.0,90378,0,0.0,0.0,998,0
+
+time-delta: 1000 ms; in: 507.904 k; out: 491.52 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,94726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,94726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.147561436,0.14,94852,0,0.0,0.0,1000,0
+14,Thread-3,0.180355123,0.14,94783,0,0.0014132010000000028,0.0,998,0
+15,Thread-4,9.7323E-5,0.0,95000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,94.279459649,94.14,314,4,0.9892356960000086,0.9899999999999949,0,0
+18,ForkJoinPool-1-worker-2,93.742446982,93.6,852,0,0.9836292820000097,0.9799999999999898,6,0
+19,ForkJoinPool-1-worker-3,2.29194E-4,0.0,91378,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 524.288 k; out: 507.904 k; in-delta: 16.384000000000015 k/s; out-delta: 16.384000000000015 k/s; latency: 2949889127
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,95726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,95726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.151902037,0.15,95848,0,0.0043406009999999995,0.009999999999999981,996,0
+14,Thread-3,0.181526152,0.14,95782,0,0.00117102899999999,0.0,999,0
+15,Thread-4,9.7323E-5,0.0,96000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,95.26927603,95.13,319,4,0.9898163809999971,0.9899999999999949,5,0
+18,ForkJoinPool-1-worker-2,94.71873454,94.58,869,0,0.9762875579999957,0.980000000000004,17,0
+19,ForkJoinPool-1-worker-3,2.29194E-4,0.0,92378,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 524.288 k; out: 507.904 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,96726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,96726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.151902037,0.15,96848,0,0.0,0.0,1000,0
+14,Thread-3,0.182872557,0.14,96781,0,0.001346404999999995,0.0,999,0
+15,Thread-4,9.7323E-5,0.0,97000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,96.263652826,96.12,319,4,0.9943767959999974,0.9900000000000091,0,0
+18,ForkJoinPool-1-worker-2,95.713102281,95.57,869,0,0.9943677410000049,0.9899999999999949,0,0
+19,ForkJoinPool-1-worker-3,2.29194E-4,0.0,93378,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 540.672 k; out: 524.288 k; in-delta: 16.384000000000015 k/s; out-delta: 16.384000000000015 k/s; latency: 2949462274
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,97728,0,0.0,0.0,1002,0
+3,Finalizer,0.00731884,0.0,97728,0,0.0,0.0,1002,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.155845517,0.15,97846,0,0.003943479999999999,0.0,998,0
+14,Thread-3,0.184352496,0.15,97779,0,0.0014799390000000134,0.009999999999999981,998,0
+15,Thread-4,9.7323E-5,0.0,98001,0,0.0,0.0,1001,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,97.254713164,97.11,322,4,0.9910603379999969,0.9899999999999949,3,0
+18,ForkJoinPool-1-worker-2,96.677114876,96.54,901,0,0.9640125949999998,0.9700000000000131,32,0
+19,ForkJoinPool-1-worker-3,2.29194E-4,0.0,94380,0,0.0,0.0,1002,0
+
+time-delta: 1000 ms; in: 540.672 k; out: 524.288 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,98726,0,0.0,0.0,998,0
+3,Finalizer,0.00731884,0.0,98726,0,0.0,0.0,998,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.155845517,0.15,98844,0,0.0,0.0,998,0
+14,Thread-3,0.185581025,0.15,98776,0,0.001228529000000006,0.0,997,0
+15,Thread-4,9.7323E-5,0.0,99000,0,0.0,0.0,999,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,98.246940536,98.1,322,4,0.9922273720000021,0.9899999999999949,0,0
+18,ForkJoinPool-1-worker-2,97.669188772,97.53,901,0,0.9920738959999937,0.9899999999999949,0,0
+19,ForkJoinPool-1-worker-3,2.29194E-4,0.0,95378,0,0.0,0.0,998,0
+
+time-delta: 1000 ms; in: 540.672 k; out: 524.288 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,99726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,99726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.155845517,0.15,99844,0,0.0,0.0,1000,0
+14,Thread-3,0.186901911,0.15,99775,0,0.0013208859999999933,0.0,999,0
+15,Thread-4,9.7323E-5,0.0,100000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,99.240058601,99.1,322,4,0.9931180650000044,1.0,0,0
+18,ForkJoinPool-1-worker-2,98.662272272,98.52,901,0,0.9930834999999973,0.9899999999999949,0,0
+19,ForkJoinPool-1-worker-3,2.29194E-4,0.0,96378,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 557.056 k; out: 540.672 k; in-delta: 16.384000000000015 k/s; out-delta: 16.384000000000015 k/s; latency: 2948107027
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,100726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,100726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.160078,0.15,100839,0,0.004232483000000009,0.0,995,0
+14,Thread-3,0.188103957,0.15,100774,0,0.0012020459999999844,0.0,999,0
+15,Thread-4,9.7323E-5,0.0,101000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,100.230668322,100.09,327,4,0.9906097209999984,0.9900000000000091,5,0
+18,ForkJoinPool-1-worker-2,99.632867356,99.49,925,0,0.9705950840000099,0.9699999999999989,24,0
+19,ForkJoinPool-1-worker-3,2.29194E-4,0.0,97378,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 557.056 k; out: 540.672 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,101726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,101726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.160078,0.15,101839,0,0.0,0.0,1000,0
+14,Thread-3,0.189168228,0.15,101773,0,0.0010642710000000055,0.0,999,0
+15,Thread-4,9.7323E-5,0.0,102000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,101.223626639,101.08,327,4,0.9929583170000029,0.9899999999999949,0,0
+18,ForkJoinPool-1-worker-2,100.625773491,100.48,925,0,0.9929061349999984,0.9900000000000091,0,0
+19,ForkJoinPool-1-worker-3,2.29194E-4,0.0,98378,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 557.056 k; out: 540.672 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,102728,0,0.0,0.0,1002,0
+3,Finalizer,0.00731884,0.0,102728,0,0.0,0.0,1002,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.160078,0.15,102841,0,0.0,0.0,1002,0
+14,Thread-3,0.190496998,0.15,102772,0,0.0013287700000000069,0.0,999,0
+15,Thread-4,9.7323E-5,0.0,103002,0,0.0,0.0,1002,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,102.218823768,102.08,327,4,0.9951971289999904,1.0,0,0
+18,ForkJoinPool-1-worker-2,101.621175566,101.48,925,0,0.9954020750000012,1.0,0,0
+19,ForkJoinPool-1-worker-3,2.29194E-4,0.0,99380,0,0.0,0.0,1002,0
+
+time-delta: 1000 ms; in: 573.44 k; out: 557.056 k; in-delta: 16.384000000000015 k/s; out-delta: 16.384000000000015 k/s; latency: 2948953531
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,103726,0,0.0,0.0,998,0
+3,Finalizer,0.00731884,0.0,103726,0,0.0,0.0,998,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.164035264,0.16,103836,0,0.003957263999999988,0.010000000000000009,995,0
+14,Thread-3,0.192091926,0.15,103768,0,0.0015949279999999955,0.0,996,0
+15,Thread-4,9.7323E-5,0.0,104000,0,0.0,0.0,998,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,103.203402104,103.06,331,4,0.9845783360000127,0.980000000000004,4,0
+18,ForkJoinPool-1-worker-2,102.584097137,102.44,951,0,0.9629215709999954,0.9599999999999937,26,0
+19,ForkJoinPool-1-worker-3,2.29194E-4,0.0,100378,0,0.0,0.0,998,0
+
+time-delta: 1000 ms; in: 573.44 k; out: 557.056 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,104726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,104726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.164035264,0.16,104835,0,0.0,0.0,999,0
+14,Thread-3,0.193301895,0.15,104767,0,0.0012099690000000052,0.0,999,0
+15,Thread-4,9.7323E-5,0.0,105000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,104.193739644,104.05,331,4,0.9903375399999987,0.9899999999999949,0,0
+18,ForkJoinPool-1-worker-2,103.574336989,103.43,951,0,0.990239852000002,0.9900000000000091,0,0
+19,ForkJoinPool-1-worker-3,2.29194E-4,0.0,101378,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 573.44 k; out: 557.056 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,105726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,105726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.164035264,0.16,105836,0,0.0,0.0,1001,0
+14,Thread-3,0.194510022,0.15,105766,0,0.0012081270000000033,0.0,999,0
+15,Thread-4,9.7323E-5,0.0,106000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,105.187829459,105.05,331,4,0.9940898149999953,1.0,0,0
+18,ForkJoinPool-1-worker-2,104.568302339,104.43,951,0,0.9939653499999963,1.0,0,0
+19,ForkJoinPool-1-worker-3,2.29194E-4,0.0,102378,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 589.824 k; out: 573.44 k; in-delta: 16.3839999999999 k/s; out-delta: 16.384000000000015 k/s; latency: 2948084916
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,106726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,106726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.167997712,0.16,106832,0,0.003962448000000007,0.0,996,0
+14,Thread-3,0.196136252,0.15,106764,0,0.0016262300000000063,0.0,998,0
+15,Thread-4,9.7323E-5,0.0,107000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,106.174441654,106.03,334,4,0.9866121950000064,0.980000000000004,3,0
+18,ForkJoinPool-1-worker-2,105.544656996,105.4,965,0,0.9763546570000017,0.9699999999999989,14,0
+19,ForkJoinPool-1-worker-3,2.29194E-4,0.0,103378,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 589.824 k; out: 573.44 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,107728,0,0.0,0.0,1002,0
+3,Finalizer,0.00731884,0.0,107728,0,0.0,0.0,1002,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.167997712,0.16,107833,0,0.0,0.0,1001,0
+14,Thread-3,0.197495916,0.15,107763,0,0.0013596639999999827,0.0,999,0
+15,Thread-4,9.7323E-5,0.0,108001,0,0.0,0.0,1001,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,107.172934149,107.03,334,4,0.9984924949999936,1.0,0,0
+18,ForkJoinPool-1-worker-2,106.542889442,106.4,965,0,0.9982324460000029,1.0,0,0
+19,ForkJoinPool-1-worker-3,2.29194E-4,0.0,104380,0,0.0,0.0,1002,0
+
+time-delta: 1000 ms; in: 589.824 k; out: 573.44 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,108726,0,0.0,0.0,998,0
+3,Finalizer,0.00731884,0.0,108726,0,0.0,0.0,998,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.167997712,0.16,108832,0,0.0,0.0,999,0
+14,Thread-3,0.198532329,0.15,108760,0,0.0010364130000000138,0.0,997,0
+15,Thread-4,9.7323E-5,0.0,108999,0,0.0,0.0,998,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,108.165710789,108.02,334,4,0.9927766400000024,0.9899999999999949,0,0
+18,ForkJoinPool-1-worker-2,107.535230609,107.39,965,0,0.9923411669999922,0.9899999999999949,0,0
+19,ForkJoinPool-1-worker-3,2.29194E-4,0.0,105378,0,0.0,0.0,998,0
+
+time-delta: 1000 ms; in: 606.208 k; out: 589.824 k; in-delta: 16.384000000000015 k/s; out-delta: 16.3839999999999 k/s; latency: 2944441332
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,109726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,109726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.171986912,0.17,109828,0,0.003989199999999998,0.010000000000000009,996,0
+14,Thread-3,0.199551566,0.15,109759,0,0.0010192370000000062,0.0,999,0
+15,Thread-4,9.7323E-5,0.0,109999,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,109.154102766,109.01,338,4,0.988391976999992,0.9900000000000091,4,0
+18,ForkJoinPool-1-worker-2,108.507620575,108.37,985,0,0.9723899660000086,0.980000000000004,20,0
+19,ForkJoinPool-1-worker-3,2.29194E-4,0.0,106378,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 606.208 k; out: 589.824 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,110726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,110726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.171986912,0.17,110828,0,0.0,0.0,1000,0
+14,Thread-3,0.200924882,0.16,110758,0,0.0013733159999999855,0.010000000000000009,999,0
+15,Thread-4,9.7323E-5,0.0,111000,0,0.0,0.0,1001,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,110.146804184,110.0,338,4,0.99270141800001,0.9899999999999949,0,0
+18,ForkJoinPool-1-worker-2,109.500168931,109.36,985,0,0.9925483560000004,0.9899999999999949,0,0
+19,ForkJoinPool-1-worker-3,2.29194E-4,0.0,107378,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 606.208 k; out: 589.824 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,111726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,111726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.171986912,0.17,111828,0,0.0,0.0,1000,0
+14,Thread-3,0.202420287,0.16,111756,0,0.0014954050000000052,0.0,998,0
+15,Thread-4,9.7323E-5,0.0,112000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,111.141615962,111.0,338,4,0.994811777999999,1.0,0,0
+18,ForkJoinPool-1-worker-2,110.495151744,110.35,985,0,0.9949828129999929,0.9899999999999949,0,0
+19,ForkJoinPool-1-worker-3,2.29194E-4,0.0,108378,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 622.592 k; out: 606.208 k; in-delta: 16.384000000000015 k/s; out-delta: 16.384000000000015 k/s; latency: 2936318541
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,112728,0,0.0,0.0,1002,0
+3,Finalizer,0.00731884,0.0,112728,0,0.0,0.0,1002,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.175885238,0.17,112826,0,0.0038983260000000075,0.0,998,0
+14,Thread-3,0.203898871,0.16,112755,0,0.001478584000000005,0.0,999,0
+15,Thread-4,9.7323E-5,0.0,113002,0,0.0,0.0,1002,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,112.129984181,111.99,342,4,0.9883682189999945,0.9899999999999949,4,0
+18,ForkJoinPool-1-worker-2,111.461609526,111.32,1010,0,0.9664577820000062,0.9699999999999989,25,0
+19,ForkJoinPool-1-worker-3,2.29194E-4,0.0,109380,0,0.0,0.0,1002,0
+
+time-delta: 1000 ms; in: 622.592 k; out: 606.208 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,113726,0,0.0,0.0,998,0
+3,Finalizer,0.00731884,0.0,113726,0,0.0,0.0,998,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.175885238,0.17,113824,0,0.0,0.0,998,0
+14,Thread-3,0.205394333,0.16,113752,0,0.001495462000000003,0.0,997,0
+15,Thread-4,9.7323E-5,0.0,114000,0,0.0,0.0,998,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,113.122613298,112.98,342,4,0.992629117000007,0.9900000000000091,0,0
+18,ForkJoinPool-1-worker-2,112.454526367,112.31,1010,0,0.992916840999996,0.9900000000000091,0,0
+19,ForkJoinPool-1-worker-3,2.29194E-4,0.0,110378,0,0.0,0.0,998,0
+
+time-delta: 1000 ms; in: 622.592 k; out: 606.208 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,114726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,114726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.175885238,0.17,114824,0,0.0,0.0,1000,0
+14,Thread-3,0.206827037,0.16,114750,0,0.001432703999999979,0.0,998,0
+15,Thread-4,9.7323E-5,0.0,115000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,114.114424459,113.97,342,4,0.9918111610000011,0.9899999999999949,0,0
+18,ForkJoinPool-1-worker-2,113.446298746,113.31,1010,0,0.9917723789999968,1.0,0,0
+19,ForkJoinPool-1-worker-3,2.29194E-4,0.0,111378,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 638.976 k; out: 622.592 k; in-delta: 16.384000000000015 k/s; out-delta: 16.384000000000015 k/s; latency: 2952634565
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,115726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,115726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.17993231,0.17,115820,0,0.004047072000000013,0.0,996,0
+14,Thread-3,0.208334665,0.16,115749,0,0.0015076280000000108,0.0,999,0
+15,Thread-4,9.7323E-5,0.0,116000,0,0.0,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,115.104089498,114.96,346,4,0.9896650389999877,0.9899999999999949,4,0
+18,ForkJoinPool-1-worker-2,114.409328436,114.27,1041,0,0.963029689999999,0.9599999999999937,31,0
+19,ForkJoinPool-1-worker-3,2.29194E-4,0.0,112378,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 638.976 k; out: 622.592 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,116726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,116726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.17993231,0.17,116820,0,0.0,0.0,1000,0
+14,Thread-3,0.209476627,0.16,116747,0,0.0011419619999999964,0.0,998,0
+15,Thread-4,9.7323E-5,0.0,116999,0,0.0,0.0,999,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,116.096629886,115.95,346,4,0.992540388000009,0.9900000000000091,0,0
+18,ForkJoinPool-1-worker-2,115.401993016,115.26,1041,0,0.9926645800000102,0.9900000000000091,0,0
+19,ForkJoinPool-1-worker-3,2.29194E-4,0.0,113378,0,0.0,0.0,1000,0
+
+time-delta: 1000 ms; in: 638.976 k; out: 622.592 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,117728,0,0.0,0.0,1002,0
+3,Finalizer,0.00731884,0.0,117728,0,0.0,0.0,1002,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.17993231,0.17,117822,0,0.0,0.0,1002,0
+14,Thread-3,0.210532014,0.16,117746,0,0.001055386999999991,0.0,999,0
+15,Thread-4,9.7323E-5,0.0,118001,0,0.0,0.0,1002,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,117.093254018,116.95,346,4,0.9966241319999938,1.0,0,0
+18,ForkJoinPool-1-worker-2,116.398638694,116.26,1041,0,0.996645677999993,1.0,0,0
+19,ForkJoinPool-1-worker-3,2.29194E-4,0.0,114380,0,0.0,0.0,1002,0
+
+time-delta: 1000 ms; in: 638.976 k; out: 622.592 k; in-delta: 0.0 k/s; out-delta: 0.0 k/s; latency: 0
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,118726,0,0.0,0.0,998,0
+3,Finalizer,0.00731884,0.0,118726,0,0.0,0.0,998,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.17993231,0.17,118820,0,0.0,0.0,998,0
+14,Thread-3,0.211570975,0.17,118743,0,0.001038961000000005,0.010000000000000009,997,0
+15,Thread-4,9.7323E-5,0.0,118999,0,0.0,0.0,998,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,118.081801322,117.94,346,4,0.9885473040000079,0.9899999999999949,0,0
+18,ForkJoinPool-1-worker-2,117.387204965,117.25,1041,0,0.9885662709999963,0.9899999999999949,0,0
+19,ForkJoinPool-1-worker-3,2.29194E-4,0.0,115378,0,0.0,0.0,998,0
+
+time-delta: 1000 ms; in: 655.36 k; out: 638.976 k; in-delta: 16.384000000000015 k/s; out-delta: 16.384000000000015 k/s; latency: 3455174106
+mapping: [5 5 4 3]
+{:pipeline {:in 0, :dropped 0}, 0 {:out 0, :dropped 0}}
+2,Reference Handler,0.007079502,0.0,119726,0,0.0,0.0,1000,0
+3,Finalizer,0.00731884,0.0,119726,0,0.0,0.0,1000,0
+4,Signal Dispatcher,1.0106E-4,0.0,0,0,0.0,0.0,0,0
+10,clojure.core.async.timers/timeout-daemon,3.50605E-4,0.0,0,0,0.0,0.0,0,0
+11,ProcessingElement_0,9.15171E-4,0.0,0,0,0.0,0.0,0,0
+12,PipelineOut,1.61242E-4,0.0,0,0,0.0,0.0,0,0
+13,DataGenerationLoop,0.183815538,0.18,119816,1,0.0038832279999999886,0.009999999999999981,996,1
+14,Thread-3,0.212563195,0.17,119742,0,9.922200000000159E-4,0.0,999,0
+15,Thread-4,2.06759E-4,0.0,119999,0,1.0943599999999999E-4,0.0,1000,0
+16,DestroyJavaVM,2.543921235,2.47,0,0,0.0,0.0,0,0
+17,ForkJoinPool-1-worker-1,119.058731381,118.92,350,4,0.9769300589999972,0.980000000000004,4,0
+18,ForkJoinPool-1-worker-2,118.325936286,118.18,1083,0,0.9387313210000059,0.9300000000000068,42,0
+19,ForkJoinPool-1-worker-3,2.29194E-4,0.0,116378,0,0.0,0.0,1000,0
+

@@ -1,0 +1,22 @@
+Compiling 6 source files to /home/rc/repositories/private/clojure/dsbdp/target/classes
+Compiling dsbdp.data-processing-dsl
+Compiling dsbdp.local-data-processing-pipeline
+Using queue-setup defined in: queue-setup.cfg
+Using queue-setup: ArrayBlockingQueue_put
+Setting up queue creation for: ArrayBlockingQueue_put
+(java.util.concurrent.ArrayBlockingQueue. dsbdp.local-data-processing-pipeline/queue-size)
+Retrieving data from queue via:
+(.take in-queue)
+Enqueueing data via:
+(.put out-queue c)
+Setting up queue creation for: ArrayBlockingQueue_put
+(java.util.concurrent.ArrayBlockingQueue. dsbdp.local-data-processing-pipeline/queue-size)
+Retrieving data from queue via:
+(.take out-queue)
+Enqueueing data via:
+(.put in-queue (LocalTransferContainer. in nil))
+Compiling dsbdp.byte-array-conversion
+Compiling dsbdp.main
+Compiling dsbdp.experiment-helper
+Created /home/rc/repositories/private/clojure/dsbdp/target/dsbdp-0.1.0-SNAPSHOT.jar
+Created /home/rc/repositories/private/clojure/dsbdp/target/dsbdp-0.1.0-SNAPSHOT-standalone.jar

@@ -14,8 +14,10 @@
     [clojure.walk :refer :all]
     [clojure.pprint :refer :all]
     [dsbdp.byte-array-conversion :refer :all]
-    [dsbdp.data-processing-dsl :refer :all])
+    [dsbdp.data-processing-dsl :refer :all]
+    [dsbdp.processing-fn-utils :as utils])
   (:import
+    (dsbdp ExperimentHelper)
     (java.util HashMap Map)))
 
 (def pcap-byte-array-test-data
@@ -63,6 +65,59 @@
 
 
 
+(defn create-no-op-proc-fns
+  "Create a vector of n no-op functions."
+  [n]
+  (utils/create-proc-fn-vec-from-template
+    '(fn [_ _] 0)
+    '(fn [_ _] 1)
+    n))
+
+(defn create-inc-proc-fns
+  "Create a vector of functions which each perform a single increment operation.
+   The first function will increment the input argument and subsequent functions will increment the output argument."
+  [n]
+  (utils/create-proc-fn-vec-from-template
+    '(fn [i _] (inc i))
+    '(fn [_ o] (inc o))
+    n))
+
+(defn create-hashmap-inc-put-proc-fns
+  "The general behaviour is analogous to create-inc-proc-fns, however, the results are stored in a map in which the index of the processing function is used as key to which the result of the operation is associated as value."
+  [n]
+  (let [o-sym 'o]
+    (let [o-meta (vary-meta o-sym assoc :tag 'java.util.Map)]
+     (utils/create-proc-fn-vec-from-template
+       '(fn [i _] (doto (java.util.HashMap.) (.put (str :_idx_) (inc i))))
+       '(fn [_ o-meta] (.put o-meta (str :_idx_) (inc (.get o-meta (str (dec :_idx_))))))
+       n))))
+
+(defn factorial
+  "A purposely naive implementation for calculating factorials."
+  ([n]
+    (factorial 1N 1N n))
+  ([result i n]
+    (if (<= i n)
+      (recur (* result i) (inc i) n)
+      result)))
+
+(defn create-factorial-proc-fns
+  "Create a vector of processing functions that each calculate the factorial of the input data."
+  [n]
+  (utils/create-proc-fn-vec-from-template
+    '(fn [i _] (dsbdp.experiment-helper/factorial i))
+    '(fn [i _] (dsbdp.experiment-helper/factorial i))
+     n))
+
+(defn create-busy-sleep-proc-fns
+  "Create a vector of processing functions that perform a busy sleep.
+   The duration of the busy sleep is given as input data in nanoseconds."
+  [n]
+  (utils/create-proc-fn-vec-from-template
+    '(fn [i _] (dsbdp.ExperimentHelper/busySleep ^long (i :_idx_)) 0)
+    '(fn [i _] (dsbdp.ExperimentHelper/busySleep ^long (i :_idx_)) 0)
+     n))
+
 (def sample-pcap-processing-definition-rules
   [['timestamp '(timestamp-str-be 0) :string]
    ['capture-length '(int32be 8)]
@@ -97,4 +152,55 @@
 (def sample-pcap-processing-definition-java-map
   {:output-type :java-map
    :rules sample-pcap-processing-definition-rules})
+
+(def synthetic-low-throughput-self-adaptivity-processing-fns
+  [(fn [i _] (dsbdp.ExperimentHelper/busySleep 200000) i)
+   (fn [_ o] (dsbdp.ExperimentHelper/busySleep 100000) o)
+   (fn [_ o] (dsbdp.ExperimentHelper/busySleep 100000) o)
+   (fn [_ o] (dsbdp.ExperimentHelper/busySleep  50000) o)
+   (fn [_ o] (dsbdp.ExperimentHelper/busySleep  50000) o)
+   (fn [_ o] (dsbdp.ExperimentHelper/busySleep  50000) o)
+   (fn [_ o] (dsbdp.ExperimentHelper/busySleep  50000) o)
+   (fn [_ o] (dsbdp.ExperimentHelper/busySleep  25000) o)
+   (fn [_ o] (dsbdp.ExperimentHelper/busySleep  25000) o)
+   (fn [_ o] (dsbdp.ExperimentHelper/busySleep  25000) o)
+   (fn [_ o] (dsbdp.ExperimentHelper/busySleep  20500) o)
+   (fn [_ o] (dsbdp.ExperimentHelper/busySleep  25000) o)
+   (fn [_ o] (dsbdp.ExperimentHelper/busySleep  25000) o)
+   (fn [_ o] (dsbdp.ExperimentHelper/busySleep  25000) o)
+   (fn [_ o] (dsbdp.ExperimentHelper/busySleep  25000) o)])
+
+(def synthetic-average-throughput-self-adaptivity-processing-fns
+  [(fn [i _] (dsbdp.ExperimentHelper/busySleep 20000) i)
+   (fn [_ o] (dsbdp.ExperimentHelper/busySleep 10000) o)
+   (fn [_ o] (dsbdp.ExperimentHelper/busySleep 10000) o)
+   (fn [_ o] (dsbdp.ExperimentHelper/busySleep  5000) o)
+   (fn [_ o] (dsbdp.ExperimentHelper/busySleep  5000) o)
+   (fn [_ o] (dsbdp.ExperimentHelper/busySleep  5000) o)
+   (fn [_ o] (dsbdp.ExperimentHelper/busySleep  5000) o)
+   (fn [_ o] (dsbdp.ExperimentHelper/busySleep  2500) o)
+   (fn [_ o] (dsbdp.ExperimentHelper/busySleep  2500) o)
+   (fn [_ o] (dsbdp.ExperimentHelper/busySleep  2500) o)
+   (fn [_ o] (dsbdp.ExperimentHelper/busySleep  2500) o)
+   (fn [_ o] (dsbdp.ExperimentHelper/busySleep  2500) o)
+   (fn [_ o] (dsbdp.ExperimentHelper/busySleep  2500) o)
+   (fn [_ o] (dsbdp.ExperimentHelper/busySleep  2500) o)
+   (fn [_ o] (dsbdp.ExperimentHelper/busySleep  2500) o)])
+
+(def synthetic-high-throughput-self-adaptivity-processing-fns
+  [(fn [i _] (dsbdp.ExperimentHelper/busySleep 5000) i)
+   (fn [_ o] (dsbdp.ExperimentHelper/busySleep 2500) o)
+   (fn [_ o] (dsbdp.ExperimentHelper/busySleep 2500) o)
+   (fn [_ o] (dsbdp.ExperimentHelper/busySleep 1250) o)
+   (fn [_ o] (dsbdp.ExperimentHelper/busySleep 1250) o)
+   (fn [_ o] (dsbdp.ExperimentHelper/busySleep 1250) o)
+   (fn [_ o] (dsbdp.ExperimentHelper/busySleep 1250) o)
+   (fn [_ o] (dsbdp.ExperimentHelper/busySleep  625) o)
+   (fn [_ o] (dsbdp.ExperimentHelper/busySleep  625) o)
+   (fn [_ o] (dsbdp.ExperimentHelper/busySleep  625) o)
+   (fn [_ o] (dsbdp.ExperimentHelper/busySleep  625) o)
+   (fn [_ o] (dsbdp.ExperimentHelper/busySleep  625) o)
+   (fn [_ o] (dsbdp.ExperimentHelper/busySleep  625) o)
+   (fn [_ o] (dsbdp.ExperimentHelper/busySleep  625) o)
+   (fn [_ o] (dsbdp.ExperimentHelper/busySleep  625) o)])
 

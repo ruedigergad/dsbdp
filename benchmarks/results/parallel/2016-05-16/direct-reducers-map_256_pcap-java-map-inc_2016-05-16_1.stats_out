@@ -1,0 +1,10 @@
+queue-setup.cfg not found. Using default.
+Using queue-setup: LinkedTransferQueue_tryTransfer-counted-10ms
+Starting dsbdp main...
+Using options: {:batch-size 1000, :collection-size 256, :batch-delay 1, :in-data nil, :pipeline-length 2, :fn-mapping [5 5 4 3], :partition-size 64, :scenario pcap-java-map-direct-reducers-map, :self-adaptivity-cfg nil}
+Using args: []
+in-data: #object[[B 0x675b18ff [B@675b18ff]
+fn-mapping: [5 5 4 3]
+proc-fns: #object[clojure.lang.Atom 0x6094de13 {:status :ready, :val nil}]
+Starting experiment...
+time-delta: 0 ms; in: 0.0 k; out: 0.0 k; in-delta: 0 k/s; out-delta: 0 k/s;
